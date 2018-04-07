@@ -1,0 +1,16 @@
+PODS:
+  - EasyTransitions (0.1.0)
+
+DEPENDENCIES:
+  - EasyTransitions (from `../`)
+
+EXTERNAL SOURCES:
+  EasyTransitions:
+    :path: ../
+
+SPEC CHECKSUMS:
+  EasyTransitions: d2e527a5ca64e2e6e08acf25c266f5be74e48657
+
+PODFILE CHECKSUM: aef2d3cc98822f36a4f684670427a18f2496d792
+
+COCOAPODS: 1.4.0

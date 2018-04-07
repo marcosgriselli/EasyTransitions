@@ -1,0 +1,6 @@
+framework module Pods_EasyTransitions_Example {
+  umbrella header "Pods-EasyTransitions_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
