@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'EasyTransitions_Example' do
+  pod 'EasyTransitions', :path => '../'
+
+  target 'EasyTransitions_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
