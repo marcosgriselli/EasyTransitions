@@ -57,6 +57,7 @@ public class AppStoreAnimator: ModalTransitionAnimator {
                                                   container: container)
             }
             self.auxAnimation(presenting)
+            modalView.layoutIfNeeded()
             container.layoutIfNeeded()
         }
     }

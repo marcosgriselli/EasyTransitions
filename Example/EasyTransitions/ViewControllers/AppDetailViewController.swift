@@ -29,7 +29,7 @@ class AppDetailViewController: UIViewController {
         super.viewDidLoad()
         cardView.delegate = self
         backView.set(shadowStyle: .todayCard)
-        layout(presenting: true)
+        layout(presenting: false)
         if #available(iOS 11, *) {
             contentView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         }
