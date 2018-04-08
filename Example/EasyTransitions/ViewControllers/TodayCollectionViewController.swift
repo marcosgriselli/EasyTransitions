@@ -11,8 +11,8 @@ import EasyTransitions
 
 class TodayCollectionViewController: UICollectionViewController {
     
-    private var appStoreAnimator: AppStoreAnimator!
     private var interactiveController = TransitionInteractiveController()
+    private var configurator: ModalTransitionConfigurator!
     
     // MARK: - Init
     init() {
@@ -55,9 +55,9 @@ class TodayCollectionViewController: UICollectionViewController {
 
         let cellFrame = view.convert(cell.frame, from: collectionView)
         
-        appStoreAnimator = AppStoreAnimator(initialFrame: cellFrame)
-//        appStoreTransition.onReady = { cell.isHidden = true }
-//        appStoreTransition.onComplete = { cell.isHidden = false }
+        let appStoreAnimator = AppStoreAnimator(initialFrame: cellFrame)
+        appStoreAnimator.onReady = { cell.isHidden = true }
+        appStoreAnimator.onDismissed = { cell.isHidden = false }
         appStoreAnimator.presentAuxAnimation = detailViewController.animations(for: .present)
         appStoreAnimator.dismissAuxAnimation = detailViewController.animations(for: .dismiss)
     
@@ -69,6 +69,8 @@ class TodayCollectionViewController: UICollectionViewController {
         
         detailViewController.transitioningDelegate = self
         detailViewController.modalPresentationStyle = .custom
+        configurator = ModalTransitionConfigurator(transitionAnimator: appStoreAnimator)
+        
         present(detailViewController, animated: true, completion: nil)
     }
 }
@@ -76,11 +78,11 @@ class TodayCollectionViewController: UICollectionViewController {
 extension TodayCollectionViewController: UIViewControllerTransitioningDelegate {
 
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return ModalTransitionConfigurator(transitionAnimator: appStoreAnimator)
+        return configurator
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return ModalTransitionConfigurator(transitionAnimator: appStoreAnimator)
+        return configurator
     }
     
     func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {

@@ -11,7 +11,7 @@ import UIKit
 public class ModalTransitionConfigurator: NSObject, UIViewControllerAnimatedTransitioning {
 
     private let transitionAnimator: ModalTransitionAnimator
-    private var animator: UIViewImplicitlyAnimating?
+//    private var animator: UIViewImplicitlyAnimating?
     
     public init(transitionAnimator: ModalTransitionAnimator) {
         self.transitionAnimator = transitionAnimator
@@ -22,12 +22,7 @@ public class ModalTransitionConfigurator: NSObject, UIViewControllerAnimatedTran
     }
     
     public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
-        guard let currentAnimator = animator else {
-            animator = transitionAnimator(using: transitionContext)
-            animator?.startAnimation()
-            return
-        }
-        currentAnimator.startAnimation()
+        transitionAnimator(using: transitionContext).startAnimation()
     }
     
      private func transitionAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {
@@ -48,16 +43,32 @@ public class ModalTransitionConfigurator: NSObject, UIViewControllerAnimatedTran
         transitionAnimator.layout(presenting: isPresenting, modalView: modalView, in: containerView)
         
         let duration = transitionDuration(using: transitionContext)
-        return transitionAnimator.performAnimation(duration: duration, presenting: isPresenting, modalView: modalView, in: containerView) {
-            transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
-        }!
+        
+        let animator = UIViewPropertyAnimator(duration: duration, dampingRatio: 0.7)
+        let animations = transitionAnimator.animations(presenting: isPresenting,
+                                                       modalView: modalView,
+                                                       in: containerView)
+        animator.addAnimations(animations)
+        animator.addCompletion { position in
+            switch position {
+            case .end:
+                if !isPresenting {
+                    self.transitionAnimator.onDismissed()
+                }
+                transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+            default:
+                self.transitionAnimator.animations(presenting: !isPresenting,
+                                                   modalView: modalView,
+                                                   in: containerView)()
+                transitionContext.completeTransition(false)
+            }
+        }
+        animator.isUserInteractionEnabled = true
+        
+        return animator
     }
     
     public func interruptibleAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {
-        guard let currentAnimator = animator else {
-            animator = transitionAnimator(using: transitionContext)
-            return animator!
-        }
-        return currentAnimator
+        return transitionAnimator(using: transitionContext)
     }
 }

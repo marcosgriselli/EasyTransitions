@@ -45,50 +45,23 @@ public class AppStoreAnimator: ModalTransitionAnimator {
         }
     }
     
-    public func performAnimation(duration: TimeInterval, presenting: Bool, modalView: UIView, in container: UIView, then: @escaping () -> Void) -> UIViewImplicitlyAnimating? {
+    public func animations(presenting: Bool,
+                           modalView: UIView, in container: UIView) -> () -> Void {
+        guard presenting else {
+            return {
+                self.blurView.effect = nil
+                self.edgeLayoutConstraints?.match(to: self.initialFrame,
+                                                  container: container)
+                self.dismissAuxAnimation()
+                container.layoutIfNeeded()
+            }
+        }
         
-        let presentingLayout = {
+        return {
             self.blurView.effect = UIBlurEffect(style: .light)
-            self.edgeLayoutConstraints?.verticalConstants(to: 0)
+            self.edgeLayoutConstraints?.constants(to: 0)
             self.presentAuxAnimation()
             container.layoutIfNeeded()
         }
-        
-        let dimissLayout = {
-            self.blurView.effect = nil
-            self.edgeLayoutConstraints?.match(to: self.initialFrame,
-                                              container: container)
-            self.dismissAuxAnimation()
-            container.layoutIfNeeded()
-        }
-        
-        if #available(iOS 10.0, *) {
-            let animator = UIViewPropertyAnimator(duration: duration, dampingRatio: 0.7)
-            let animation = presenting ? presentingLayout : dimissLayout
-            animator.addAnimations(animation)
-            if presenting {
-                animator.addAnimations({
-                    self.edgeLayoutConstraints?.horizontalConstants(to: 0)
-                    container.layoutIfNeeded()
-                }, delayFactor: 0.16)
-            }
-            
-            animator.addCompletion { position in
-                then()
-                if position != .end {
-                    self.edgeLayoutConstraints?.horizontalConstants(to: 0)
-                    presentingLayout()
-                } else {
-                    if !presenting {
-                        self.onDismissed()
-                    }
-                }
-            }
-            
-            animator.isUserInteractionEnabled = true
-            return animator
-        }
-        
-        return nil
     }
 }
