@@ -11,7 +11,7 @@ public protocol NavigationTransitionAnimator {
     var auxAnimations: (Bool) -> [AuxAnimation] { get set }
     func layout(presenting: Bool, fromView: UIView,
                 toView: UIView, in container: UIView)
-    func animations(duration: TimeInterval, presenting: Bool,
-                          fromView: UIView, toView: UIView,
-                          in container: UIView)
+    func animations(presenting: Bool,
+                    fromView: UIView, toView: UIView,
+                    in container: UIView)
 }

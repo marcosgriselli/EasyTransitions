@@ -61,7 +61,7 @@ class TodayCollectionViewController: UICollectionViewController {
     
         modalTransitionDelegate.set(animator: appStoreAnimator)
         modalTransitionDelegate.wire(viewController: detailViewController,
-                                     with: .regular(.vertical))
+                                     with: .regular(.fromTop))
         
         detailViewController.transitioningDelegate = modalTransitionDelegate
         detailViewController.modalPresentationStyle = .overFullScreen

@@ -13,7 +13,7 @@ public protocol ModalTransitionAnimator {
     func layout(presenting: Bool,
                 modalView: UIView,
                 in container: UIView)
-    func animations(presenting: Bool,
-                    modalView: UIView,
-                    in container: UIView) -> () -> Void 
+    func animate(presenting: Bool,
+                 modalView: UIView,
+                 in container: UIView) 
 }

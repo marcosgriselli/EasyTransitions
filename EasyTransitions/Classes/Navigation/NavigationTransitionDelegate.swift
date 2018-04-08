@@ -27,9 +27,11 @@ public class NavigationTransitionDelegate: NSObject {
 extension NavigationTransitionDelegate: UINavigationControllerDelegate {
     
     public func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        if operation == .push {
-            return nil
-        }
+        
+        // TODO: - Toggle supported operations.
+//        if operation == .pop {
+//            return nil
+//        }
         
         if let animator = transitionAnimator {
             return NavigationTransitionConfigurator(transitionAnimator: animator)

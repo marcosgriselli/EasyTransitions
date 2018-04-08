@@ -44,10 +44,11 @@ public class ModalTransitionConfigurator: NSObject, UIViewControllerAnimatedTran
         let duration = transitionDuration(using: transitionContext)
         
         let animator = UIViewPropertyAnimator(duration: duration, dampingRatio: 0.7)
-        let animations = transitionAnimator.animations(presenting: isPresenting,
-                                                       modalView: modalView,
-                                                       in: containerView)
-        animator.addAnimations(animations)
+        animator.addAnimations {
+            self.transitionAnimator.animate(presenting: isPresenting,
+                                            modalView: modalView, in: containerView)
+        }
+
         animator.addCompletion { position in
             switch position {
             case .end:
@@ -56,9 +57,9 @@ public class ModalTransitionConfigurator: NSObject, UIViewControllerAnimatedTran
                 }
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
             default:
-                self.transitionAnimator.animations(presenting: !isPresenting,
-                                                   modalView: modalView,
-                                                   in: containerView)()
+                self.transitionAnimator.animate(presenting: !isPresenting,
+                                                modalView: modalView,
+                                                in: containerView)
                 transitionContext.completeTransition(false)
             }
         }

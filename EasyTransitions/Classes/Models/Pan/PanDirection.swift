@@ -7,8 +7,9 @@
 
 import Foundation
 
-// TODO: - Support topToBottom / bottomToTop. bottomToTop won't work with this approach.
 public enum PanDirection {
-    case vertical
-    case horizontal
+    case fromTop
+    case fromLeft
+    case fromBottom
+    case fromRight
 }

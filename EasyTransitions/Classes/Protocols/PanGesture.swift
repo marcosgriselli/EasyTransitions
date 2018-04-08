@@ -14,6 +14,7 @@ internal protocol PanGesture {
     func velocityForPan() -> CGFloat
 }
 
+// TODO: - Find a simpler way.
 extension PanGesture where Self: UIPanGestureRecognizer {
     func percentagePanned() -> CGFloat {
         guard let view = view else {
@@ -24,10 +25,14 @@ extension PanGesture where Self: UIPanGestureRecognizer {
         switch pan {
         case .regular(let direction):
             switch direction {
-            case .horizontal:
-                return translation.x / view.bounds.width
-            case .vertical:
+            case .fromTop:
                 return translation.y / view.bounds.height
+            case .fromLeft:
+                return translation.x / view.bounds.width
+            case .fromBottom:
+                return -translation.y / view.bounds.height
+            case .fromRight:
+                return -translation.x / view.bounds.width
             }
         case .edge(let rectEdge):
             switch rectEdge {
@@ -54,10 +59,14 @@ extension PanGesture where Self: UIPanGestureRecognizer {
         switch pan {
         case .regular(let direction):
             switch direction {
-            case .horizontal:
-                return velocity.x
-            case .vertical:
+            case .fromTop:
                 return velocity.y
+            case .fromLeft:
+                return velocity.x
+            case .fromBottom:
+                return -velocity.y
+            case .fromRight:
+                return -velocity.x
             }
         case .edge(let rectEdge):
             switch rectEdge {

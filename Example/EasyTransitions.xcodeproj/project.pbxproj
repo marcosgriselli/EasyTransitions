@@ -9,18 +9,13 @@
 /* Begin PBXBuildFile section */
 		49A14481C8A8B276745490DA /* Pods_EasyTransitions_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65100B46AB43FDD270667D05 /* Pods_EasyTransitions_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		AEC652E5417A7CD20F019E20 /* Pods_EasyTransitions_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDB7DBBF3E916EFA4DC8DF1 /* Pods_EasyTransitions_Tests.framework */; };
 		FB29323F207A64DE00223747 /* UICollectionView + OrderedCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29323E207A64DE00223747 /* UICollectionView + OrderedCells.swift */; };
 		FB293244207A6C7A00223747 /* FunctionalEnumerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB293243207A6C7A00223747 /* FunctionalEnumerated.swift */; };
-		FB293248207A8DC600223747 /* TeamTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB293247207A8DC600223747 /* TeamTableViewController.swift */; };
-		FB29324B207A8E5E00223747 /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB293249207A8E5E00223747 /* TeamTableViewCell.swift */; };
-		FB29324C207A8E5E00223747 /* TeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB29324A207A8E5E00223747 /* TeamTableViewCell.xib */; };
 		FB29324E207A8ECA00223747 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29324D207A8ECA00223747 /* CircularImageView.swift */; };
-		FB293251207A8F1C00223747 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB293250207A8F1C00223747 /* Team.swift */; };
 		FB756F372078D3ED00C40C0A /* ReusableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F352078D3ED00C40C0A /* ReusableCells.swift */; };
 		FB756F382078D3ED00C40C0A /* NibLoadbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F362078D3ED00C40C0A /* NibLoadbleView.swift */; };
 		FB756F3F2078D40900C40C0A /* AppDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB756F3A2078D40900C40C0A /* AppDetailViewController.xib */; };
@@ -59,7 +54,6 @@
 		607FACD01AFB9204008FA782 /* EasyTransitions_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTransitions_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* EasyTransitions_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyTransitions_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,11 +65,7 @@
 		C51D28049D62F8D6165D6379 /* Pods-EasyTransitions_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTransitions_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTransitions_Example/Pods-EasyTransitions_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FB29323E207A64DE00223747 /* UICollectionView + OrderedCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + OrderedCells.swift"; sourceTree = "<group>"; };
 		FB293243207A6C7A00223747 /* FunctionalEnumerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalEnumerated.swift; sourceTree = "<group>"; };
-		FB293247207A8DC600223747 /* TeamTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewController.swift; sourceTree = "<group>"; };
-		FB293249207A8E5E00223747 /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
-		FB29324A207A8E5E00223747 /* TeamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamTableViewCell.xib; sourceTree = "<group>"; };
 		FB29324D207A8ECA00223747 /* CircularImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
-		FB293250207A8F1C00223747 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		FB756F352078D3ED00C40C0A /* ReusableCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCells.swift; sourceTree = "<group>"; };
 		FB756F362078D3ED00C40C0A /* NibLoadbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadbleView.swift; sourceTree = "<group>"; };
 		FB756F3A2078D40900C40C0A /* AppDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppDetailViewController.xib; sourceTree = "<group>"; };
@@ -157,7 +147,6 @@
 				FB756F392078D3FD00C40C0A /* ViewControllers */,
 				FB756F342078D3E000C40C0A /* Utilities */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
@@ -228,18 +217,9 @@
 			path = Today;
 			sourceTree = "<group>";
 		};
-		FB293246207A8DA400223747 /* New */ = {
-			isa = PBXGroup;
-			children = (
-				FB293247207A8DC600223747 /* TeamTableViewController.swift */,
-			);
-			path = New;
-			sourceTree = "<group>";
-		};
 		FB29324F207A8F1500223747 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FB293250207A8F1C00223747 /* Team.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -256,7 +236,6 @@
 		FB756F392078D3FD00C40C0A /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				FB293246207A8DA400223747 /* New */,
 				FB293245207A8D9200223747 /* Today */,
 			);
 			path = ViewControllers;
@@ -290,8 +269,6 @@
 			children = (
 				FB756F542078D44E00C40C0A /* TodayCollectionViewCell.swift */,
 				FB756F532078D44E00C40C0A /* TodayCollectionViewCell.xib */,
-				FB293249207A8E5E00223747 /* TeamTableViewCell.swift */,
-				FB29324A207A8E5E00223747 /* TeamTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -427,7 +404,6 @@
 				FB756F502078D43700C40C0A /* CardView.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 				FB756F552078D44E00C40C0A /* TodayCollectionViewCell.xib in Resources */,
-				FB29324C207A8E5E00223747 /* TeamTableViewCell.xib in Resources */,
 				FB756F3F2078D40900C40C0A /* AppDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -550,13 +526,10 @@
 			files = (
 				FB756F512078D43700C40C0A /* CardViewState.swift in Sources */,
 				FB756F622078D48100C40C0A /* UIWindow + SafeArea.swift in Sources */,
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				FB293248207A8DC600223747 /* TeamTableViewController.swift in Sources */,
 				FB756F612078D48100C40C0A /* NSLayoutConstraint + Multiplier.swift in Sources */,
 				FB29323F207A64DE00223747 /* UICollectionView + OrderedCells.swift in Sources */,
 				FB756F372078D3ED00C40C0A /* ReusableCells.swift in Sources */,
 				FB293244207A6C7A00223747 /* FunctionalEnumerated.swift in Sources */,
-				FB293251207A8F1C00223747 /* Team.swift in Sources */,
 				FB756F5C2078D46A00C40C0A /* ShadowStyle.swift in Sources */,
 				FB756F412078D40900C40C0A /* TodayCollectionViewController.swift in Sources */,
 				FB756F382078D3ED00C40C0A /* NibLoadbleView.swift in Sources */,
@@ -566,7 +539,6 @@
 				FB756F482078D42300C40C0A /* RoundCornersButton.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				FB29324E207A8ECA00223747 /* CircularImageView.swift in Sources */,
-				FB29324B207A8E5E00223747 /* TeamTableViewCell.swift in Sources */,
 				FB756F4E2078D43700C40C0A /* CardViewDelegate.swift in Sources */,
 				FB756F4F2078D43700C40C0A /* CardView.swift in Sources */,
 				FB756F562078D44E00C40C0A /* TodayCollectionViewCell.swift in Sources */,

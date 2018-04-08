@@ -45,20 +45,19 @@ public class AppStoreAnimator: ModalTransitionAnimator {
         onReady()
     }
     
-    public func animations(presenting: Bool,
-                           modalView: UIView, in container: UIView) -> () -> Void {
-        return {
-            if presenting {
-                self.blurView.effect = UIBlurEffect(style: .light)
-                self.edgeLayoutConstraints?.constants(to: 0)
-            } else {
-                self.blurView.effect = nil
-                self.edgeLayoutConstraints?.match(to: self.initialFrame,
-                                                  container: container)
-            }
-            self.auxAnimation(presenting)
-            modalView.layoutIfNeeded()
-            container.layoutIfNeeded()
+    public func animate(presenting: Bool,
+                        modalView: UIView, in container: UIView) {
+        if presenting {
+            self.blurView.effect = UIBlurEffect(style: .light)
+            self.edgeLayoutConstraints?.constants(to: 0)
+            // self.edgeLayoutConstraints?.vertical(to: 0) with 0.16 offsetDelay
+        } else {
+            self.blurView.effect = nil
+            self.edgeLayoutConstraints?.match(to: self.initialFrame,
+                                              container: container)
         }
+        self.auxAnimation(presenting)
+        modalView.layoutIfNeeded()
+        container.layoutIfNeeded()
     }
 }
