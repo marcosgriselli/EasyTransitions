@@ -9,21 +9,24 @@
 import UIKit
 import EasyTransitions
 
-public extension UICollectionView {    
-    private func indexPathFor(cell: UICollectionViewCell) -> Int {
-        return indexPath(for: cell)?.item ?? -1
-    }
+private struct CellAnimate {
+    var transform: CGAffineTransform
+    var alpha: CGFloat
 
-    var orderedVisibleCells: [UICollectionViewCell] {
-        let items = visibleCells
-        return items.sorted(by: { indexPathFor(cell: $1) > indexPathFor(cell: $0) })
+    private init(transform: CGAffineTransform, alpha: CGFloat) {
+        self.transform = transform
+        self.alpha = alpha
     }
+    
+    static let show = CellAnimate(transform: CGAffineTransform.identity, alpha: 1.0)
+    static let hide = CellAnimate(transform: CGAffineTransform(translationX: 0, y: 50),
+                                  alpha: 0.0)
 }
 
 class CollectionViewController: UICollectionViewController {
     
     private let cellColor: UIColor
-    private var interactor = TransitionInteractiveController()
+    var navigationTransitionDelegate = NavigationTransitionDelegate()
     
     init(itemSize: CGSize, cellColor: UIColor) {
         let layout = UICollectionViewFlowLayout()
@@ -39,38 +42,21 @@ class CollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "Collection"
         collectionView?.backgroundColor = UIColor.white
         collectionView?.register(UICollectionViewCell.self)
     }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        navigationController?.interactivePopGestureRecognizer?.addTarget(self, action: #selector(edgeSwipe(_:)))
-    }
-    
-    @objc func edgeSwipe(_ recognizer: UIScreenEdgePanGestureRecognizer) {
-        
-    }
-    
-    public func animations(presenting: Bool) -> [() -> Void] {
-        return collectionView!.orderedVisibleCells.map { item in
-            if presenting {
-                item.transform = CGAffineTransform(translationX: 0, y: 40.0)
-                item.alpha = 0.0
-            } else {
-                item.transform = CGAffineTransform.identity
-                item.alpha = 1.0
-            }
-            return {
-                if presenting {
-                    item.transform = CGAffineTransform.identity
-                    item.alpha = 1.0
-                } else {
-                    item.transform = CGAffineTransform(translationX: 0, y: 40.0)
-                    item.alpha = 0.0
-                }
-            }
+
+    public func animations(presenting: Bool) -> [AuxAnimation] {
+        let animation: CellAnimate = presenting ? .show : .hide
+        let setupAnimation: CellAnimate = !presenting ? .show : .hide
+        return collectionView!.orderedVisibleCells.enumeratedMap { index, item in
+            item.transform = setupAnimation.transform
+            item.alpha = setupAnimation.alpha
+            let offset = CGFloat(index) * 0.1
+            return AuxAnimation(block: {
+                item.transform = animation.transform
+                item.alpha = animation.alpha
+            }, delayOffset: offset)
         }
     }
 
@@ -86,32 +72,16 @@ class CollectionViewController: UICollectionViewController {
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let controller = CollectionViewController(itemSize: CGSize(width: 100, height: 140), cellColor: UIColor.blue)
+        let controller = CollectionViewController(itemSize: CGSize(width: 200, height: 140), cellColor: UIColor.blue)
         controller.title = "Blue CollectionView"
-//        navigationController?.delegate = self
-        interactor.wireTo(viewController: controller, with: .edge(.left))
+        
+        let slideTransition = SlideTransitionAnimator()
+        slideTransition.auxAnimations = { controller.animations(presenting: $0) }
+        navigationTransitionDelegate.set(animator: slideTransition)
+        navigationTransitionDelegate.wire(viewController: controller,
+                                          with: .edge(.left))
         navigationController?.pushViewController(controller, animated: true)
     }
 }
 
-//extension CollectionViewController: UINavigationControllerDelegate {
-//    public func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-//        if operation == .push {
-//            return nil
-//        }
-//        if interactor.interactionInProgress {
-//            let swipeBackAnimator = SwipeBackTransitionAnimator()
-//            if let collectionController = fromVC as? CollectionViewController {
-//                swipeBackAnimator.toAnimations = animations(presenting: true)
-//                swipeBackAnimator.fromAnimationsBlock = collectionController.animations(presenting: false)
-//            }
-//            return swipeBackAnimator
-//        }
-//        return nil
-//    }
-//    
-//    public func navigationController(_ navigationController: UINavigationController, interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
-//        return interactor.interactionInProgress ? interactor : nil
-//    }
-//}
 

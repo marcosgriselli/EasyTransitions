@@ -13,8 +13,7 @@ public class AppStoreAnimator: ModalTransitionAnimator {
     private var edgeLayoutConstraints: NSEdgeLayoutConstraints?
     private let blurView = UIVisualEffectView(effect: nil)
     
-    public var presentAuxAnimation: () -> Void = {}
-    public var dismissAuxAnimation: () -> Void = {}
+    public var auxAnimation: (Bool) -> Void = { _ in }
     
     public var onReady: () -> Void = {}
     public var onDismissed: () -> Void = {}
@@ -24,43 +23,40 @@ public class AppStoreAnimator: ModalTransitionAnimator {
     }
     
     public var duration: TimeInterval {
-        return 0.9
+        return 0.85
     }
     
     public func layout(presenting: Bool, modalView: UIView, in container: UIView) {
-        if presenting {
-            blurView.frame = container.frame
-            container.addSubview(blurView)
-            
-            modalView.translatesAutoresizingMaskIntoConstraints = false
-            container.addSubview(modalView)
-            edgeLayoutConstraints = NSEdgeLayoutConstraints(view: modalView,
-                                                            container: container,
-                                                            frame: initialFrame)
-            edgeLayoutConstraints?.toggleConstraints(true)
-            container.layoutIfNeeded()
-            onReady()
-        } else {
+        guard presenting else {
             edgeLayoutConstraints?.constants(to: 0)
+            return
         }
+        
+        blurView.frame = container.frame
+        container.addSubview(blurView)
+        
+        modalView.translatesAutoresizingMaskIntoConstraints = false
+        container.addSubview(modalView)
+        edgeLayoutConstraints = NSEdgeLayoutConstraints(view: modalView,
+                                                        container: container,
+                                                        frame: initialFrame)
+        edgeLayoutConstraints?.toggleConstraints(true)
+        container.layoutIfNeeded()
+        onReady()
     }
     
     public func animations(presenting: Bool,
                            modalView: UIView, in container: UIView) -> () -> Void {
-        guard presenting else {
-            return {
+        return {
+            if presenting {
+                self.blurView.effect = UIBlurEffect(style: .light)
+                self.edgeLayoutConstraints?.constants(to: 0)
+            } else {
                 self.blurView.effect = nil
                 self.edgeLayoutConstraints?.match(to: self.initialFrame,
                                                   container: container)
-                self.dismissAuxAnimation()
-                container.layoutIfNeeded()
             }
-        }
-        
-        return {
-            self.blurView.effect = UIBlurEffect(style: .light)
-            self.edgeLayoutConstraints?.constants(to: 0)
-            self.presentAuxAnimation()
+            self.auxAnimation(presenting)
             container.layoutIfNeeded()
         }
     }

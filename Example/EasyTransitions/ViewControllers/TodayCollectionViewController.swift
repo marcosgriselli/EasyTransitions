@@ -10,9 +10,8 @@ import UIKit
 import EasyTransitions
 
 class TodayCollectionViewController: UICollectionViewController {
-    
-    private var interactiveController = TransitionInteractiveController()
-    private var configurator: ModalTransitionConfigurator!
+
+    private var modalTransitionDelegate = ModalTransitionDelegate()
     
     // MARK: - Init
     init() {
@@ -58,34 +57,15 @@ class TodayCollectionViewController: UICollectionViewController {
         let appStoreAnimator = AppStoreAnimator(initialFrame: cellFrame)
         appStoreAnimator.onReady = { cell.isHidden = true }
         appStoreAnimator.onDismissed = { cell.isHidden = false }
-        appStoreAnimator.presentAuxAnimation = detailViewController.animations(for: .present)
-        appStoreAnimator.dismissAuxAnimation = detailViewController.animations(for: .dismiss)
+        appStoreAnimator.auxAnimation = { detailViewController.layout(presenting: $0) }
     
-        interactiveController.wireTo(viewController: detailViewController,
-                           with: Pan.regular(.vertical))
-        interactiveController.navigationAction = {
-            detailViewController.dismiss(animated: true, completion: nil)
-        }
+        modalTransitionDelegate.set(animator: appStoreAnimator)
+        modalTransitionDelegate.wire(viewController: detailViewController,
+                                     with: .regular(.vertical))
         
-        detailViewController.transitioningDelegate = self
-        detailViewController.modalPresentationStyle = .custom
-        configurator = ModalTransitionConfigurator(transitionAnimator: appStoreAnimator)
+        detailViewController.transitioningDelegate = modalTransitionDelegate
+        detailViewController.modalPresentationStyle = .overFullScreen
         
         present(detailViewController, animated: true, completion: nil)
-    }
-}
-
-extension TodayCollectionViewController: UIViewControllerTransitioningDelegate {
-
-    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return configurator
-    }
-    
-    func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return configurator
-    }
-    
-    func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
-        return interactiveController.interactionInProgress ? interactiveController : nil
     }
 }

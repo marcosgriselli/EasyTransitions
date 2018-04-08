@@ -11,8 +11,7 @@ import UIKit
 public class ModalTransitionConfigurator: NSObject, UIViewControllerAnimatedTransitioning {
 
     private let transitionAnimator: ModalTransitionAnimator
-//    private var animator: UIViewImplicitlyAnimating?
-    
+
     public init(transitionAnimator: ModalTransitionAnimator) {
         self.transitionAnimator = transitionAnimator
     }

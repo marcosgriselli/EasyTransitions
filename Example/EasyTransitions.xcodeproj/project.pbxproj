@@ -15,6 +15,8 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		AEC652E5417A7CD20F019E20 /* Pods_EasyTransitions_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDB7DBBF3E916EFA4DC8DF1 /* Pods_EasyTransitions_Tests.framework */; };
+		FB29323F207A64DE00223747 /* UICollectionView + OrderedCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29323E207A64DE00223747 /* UICollectionView + OrderedCells.swift */; };
+		FB293244207A6C7A00223747 /* FunctionalEnumerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB293243207A6C7A00223747 /* FunctionalEnumerated.swift */; };
 		FB756F372078D3ED00C40C0A /* ReusableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F352078D3ED00C40C0A /* ReusableCells.swift */; };
 		FB756F382078D3ED00C40C0A /* NibLoadbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F362078D3ED00C40C0A /* NibLoadbleView.swift */; };
 		FB756F3F2078D40900C40C0A /* AppDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB756F3A2078D40900C40C0A /* AppDetailViewController.xib */; };
@@ -65,6 +67,8 @@
 		6961D27C11E8A36C5028514E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9FDB7DBBF3E916EFA4DC8DF1 /* Pods_EasyTransitions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTransitions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C51D28049D62F8D6165D6379 /* Pods-EasyTransitions_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTransitions_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTransitions_Example/Pods-EasyTransitions_Example.release.xcconfig"; sourceTree = "<group>"; };
+		FB29323E207A64DE00223747 /* UICollectionView + OrderedCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + OrderedCells.swift"; sourceTree = "<group>"; };
+		FB293243207A6C7A00223747 /* FunctionalEnumerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalEnumerated.swift; sourceTree = "<group>"; };
 		FB756F352078D3ED00C40C0A /* ReusableCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCells.swift; sourceTree = "<group>"; };
 		FB756F362078D3ED00C40C0A /* NibLoadbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadbleView.swift; sourceTree = "<group>"; };
 		FB756F3A2078D40900C40C0A /* AppDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppDetailViewController.xib; sourceTree = "<group>"; };
@@ -200,6 +204,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FB293242207A6C5B00223747 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				FB293243207A6C7A00223747 /* FunctionalEnumerated.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
 		FB756F342078D3E000C40C0A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +283,7 @@
 		FB756F5D2078D47300C40C0A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FB293242207A6C5B00223747 /* Foundation */,
 				FB756F5E2078D47800C40C0A /* UIKit */,
 			);
 			path = Extensions;
@@ -281,6 +294,7 @@
 			children = (
 				FB756F5F2078D48100C40C0A /* NSLayoutConstraint + Multiplier.swift */,
 				FB756F602078D48100C40C0A /* UIWindow + SafeArea.swift */,
+				FB29323E207A64DE00223747 /* UICollectionView + OrderedCells.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -505,7 +519,9 @@
 				FB756F622078D48100C40C0A /* UIWindow + SafeArea.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				FB756F612078D48100C40C0A /* NSLayoutConstraint + Multiplier.swift in Sources */,
+				FB29323F207A64DE00223747 /* UICollectionView + OrderedCells.swift in Sources */,
 				FB756F372078D3ED00C40C0A /* ReusableCells.swift in Sources */,
+				FB293244207A6C7A00223747 /* FunctionalEnumerated.swift in Sources */,
 				FB756F5C2078D46A00C40C0A /* ShadowStyle.swift in Sources */,
 				FB756F412078D40900C40C0A /* TodayCollectionViewController.swift in Sources */,
 				FB756F382078D3ED00C40C0A /* NibLoadbleView.swift in Sources */,

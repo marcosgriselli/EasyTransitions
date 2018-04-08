@@ -9,11 +9,18 @@ import Foundation
 
 public class ModalTransitionDelegate: NSObject {
 
-    private let transitionAnimator: ModalTransitionAnimator? = .none
+    private var transitionAnimator: ModalTransitionAnimator? = .none
     private let interactiveController = TransitionInteractiveController()
     
     public func wire(viewController: UIViewController, with pan: Pan) {
         interactiveController.wireTo(viewController: viewController, with: pan)
+        interactiveController.navigationAction = {
+            viewController.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    public func set(animator: ModalTransitionAnimator?) {
+        transitionAnimator = animator
     }
 }
 
