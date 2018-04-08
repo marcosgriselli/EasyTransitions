@@ -7,7 +7,7 @@
 
 import UIKit
 
-internal class TransitionPanGestureRecognizer: UIPanGestureRecognizer {
+internal class TransitionPanGestureRecognizer: UIPanGestureRecognizer, PanGesture {
     var pan: Pan
     required init(pan: Pan) {
         self.pan = pan

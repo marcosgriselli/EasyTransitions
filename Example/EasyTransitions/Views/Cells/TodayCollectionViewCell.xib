@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TodayCollectionViewCell" customModule="AppStoreTransition" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="412"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="412"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zlS-D4-EYB" customClass="CardView" customModule="AppStoreTransition" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="335" height="412"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="zlS-D4-EYB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Cw4-qW-Igh"/>
+                <constraint firstItem="zlS-D4-EYB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DcX-K5-pCF"/>
+                <constraint firstItem="zlS-D4-EYB" firstAttribute="bottom" secondItem="gTV-IL-0wX" secondAttribute="bottom" id="ZNO-LF-760"/>
+                <constraint firstItem="zlS-D4-EYB" firstAttribute="trailing" secondItem="gTV-IL-0wX" secondAttribute="trailing" id="mnh-Cr-iib"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="355" height="430"/>
+            <connections>
+                <outlet property="cardView" destination="zlS-D4-EYB" id="mpb-3l-lLm"/>
+            </connections>
+            <point key="canvasLocation" x="186.5" y="244"/>
+        </collectionViewCell>
+    </objects>
+</document>

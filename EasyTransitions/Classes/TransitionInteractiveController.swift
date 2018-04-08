@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TransitionInteractiveController: UIPercentDrivenInteractiveTransition {
+public class TransitionInteractiveController: UIPercentDrivenInteractiveTransition {
 
     // MARK: - Private
     private var viewController: UIViewController?
@@ -27,6 +27,9 @@ class TransitionInteractiveController: UIPercentDrivenInteractiveTransition {
     }
     public var interactionInProgress = false
     public var completeOnPercentage: CGFloat = 0.5
+    public var navigationAction: (() -> Void) = {
+        fatalError("Missing navigationAction (ex: navigation.dismiss) on TransitionInteractiveController")
+    }
     
     deinit {
         if let gestureRecognizer = gestureRecognizer {
@@ -39,7 +42,7 @@ class TransitionInteractiveController: UIPercentDrivenInteractiveTransition {
     /// - Parameter viewController: `UIViewController` in charge of the the transition.
     public func wireTo(viewController: UIViewController, with pan: Pan) {
         self.viewController = viewController
-        gestureRecognizer = TransitionPanGestureRecognizer(pan: pan)
+        gestureRecognizer = PanFactory.create(with: pan)
         gestureRecognizer?.addTarget(self, action: #selector(handle(_:)))
         gestureRecognizer?.delegate = self
         gestureRecognizer?.isEnabled = isEnabled
@@ -51,28 +54,25 @@ class TransitionInteractiveController: UIPercentDrivenInteractiveTransition {
     /// - Parameter recognizer: `UIPanGestureRecognizer` in the current tab controller's view.
     @objc func handle(_ recognizer: UIGestureRecognizer) {
         guard let panGesture = recognizer as? PanGesture else { return }
+        let panVelocity = panGesture.velocityForPan()
+        let panned = panGesture.percentagePanned()
         switch recognizer.state {
         case .began:
-            if panGesture.velocityForPan() > 0 {
+            if panVelocity > 0 {
                 interactionInProgress = true
-                viewController?.dismiss(animated: true, completion: nil)
-                //                viewController?.navigationController?.popViewController(animated: true)
+                navigationAction()
             }
         case .changed:
             if interactionInProgress {
-                let panned = panGesture.percentagePanned()
                 let fraction = min(max(panned, 0.0), 0.99)
-                let panVelocity = panGesture.velocityForPan()
-                shouldCompleteTransition =
-                    (fraction > completeOnPercentage ||
-                        panVelocity > InteractionConstants.velocityForComplete) &&
-                    panVelocity > InteractionConstants.velocityForCancel
                 update(fraction)
             }
         case .ended, .cancelled:
             if interactionInProgress {
                 interactionInProgress = false
                 // TODO: - Support completion speed.
+                shouldCompleteTransition = (panned > completeOnPercentage ||                panVelocity > InteractionConstants.velocityForComplete) &&
+                    panVelocity > InteractionConstants.velocityForCancel
                 shouldCompleteTransition ? finish() : cancel()
             }
             

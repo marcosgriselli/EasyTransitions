@@ -7,7 +7,7 @@
 
 import UIKit
 
-internal class TransitionEdgePanGestureRecognier: UIScreenEdgePanGestureRecognizer {
+internal class TransitionEdgePanGestureRecognier: UIScreenEdgePanGestureRecognizer, PanGesture {
     var pan: Pan
     required init(pan: Pan) {
         self.pan = pan

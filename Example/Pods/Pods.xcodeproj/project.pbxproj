@@ -16,6 +16,11 @@
 		F5DDA58EB4DFC79E162CB38885349CC0 /* EasyTransitions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5293BA6EC4BA9F742ED5421CBD0C3D /* EasyTransitions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F68C399C1F3451353AC81585F07DC718 /* Pods-EasyTransitions_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F174455D728F39D37604ECAAF89D5D31 /* Pods-EasyTransitions_Tests-dummy.m */; };
 		F7D8718042B106196A07F934A717203B /* Pods-EasyTransitions_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F84D5C3BDE2B8832E05172F79FA2EAD9 /* Pods-EasyTransitions_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB756F302078D1C700C40C0A /* NSEdgeLayoutConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F2F2078D1C700C40C0A /* NSEdgeLayoutConstraints.swift */; };
+		FB756F322078D26A00C40C0A /* AppStoreAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F312078D26A00C40C0A /* AppStoreAnimator.swift */; };
+		FB756F642078D64C00C40C0A /* ModalTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F632078D64C00C40C0A /* ModalTransitionAnimator.swift */; };
+		FB756F662078D6B600C40C0A /* ModalTransitionConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F652078D6B600C40C0A /* ModalTransitionConfigurator.swift */; };
+		FB756F682078DDD800C40C0A /* ModalTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F672078DDD800C40C0A /* ModalTransitionDelegate.swift */; };
 		FBD09B4D2078BBCF0029DAE1 /* TransitionInteractiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD09B4C2078BBCF0029DAE1 /* TransitionInteractiveController.swift */; };
 		FBD09B502078BC250029DAE1 /* Pan.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD09B4F2078BC250029DAE1 /* Pan.swift */; };
 		FBD09B522078BC370029DAE1 /* PanDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD09B512078BC370029DAE1 /* PanDirection.swift */; };
@@ -23,6 +28,9 @@
 		FBD09B572078BEA20029DAE1 /* PanFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD09B562078BEA20029DAE1 /* PanFactory.swift */; };
 		FBD09B5B2078BF940029DAE1 /* TransitionPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD09B5A2078BF940029DAE1 /* TransitionPanGestureRecognizer.swift */; };
 		FBD09B5D2078BFC00029DAE1 /* TransitionEdgePanGestureRecognier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD09B5C2078BFC00029DAE1 /* TransitionEdgePanGestureRecognier.swift */; };
+		FBD09B602078C2240029DAE1 /* NavigationTransitionConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD09B5F2078C2240029DAE1 /* NavigationTransitionConfigurator.swift */; };
+		FBD09B622078C2A00029DAE1 /* NavigationTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD09B612078C2A00029DAE1 /* NavigationTransitionAnimator.swift */; };
+		FBD09B652078C51A0029DAE1 /* SlideTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD09B642078C51A0029DAE1 /* SlideTransitionAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +77,11 @@
 		F1D464A02CA3F4764717FAFA6340BB21 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4AA6392A19BCC41E88F09B516463D33 /* Pods-EasyTransitions_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyTransitions_Example-dummy.m"; sourceTree = "<group>"; };
 		F84D5C3BDE2B8832E05172F79FA2EAD9 /* Pods-EasyTransitions_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyTransitions_Example-umbrella.h"; sourceTree = "<group>"; };
+		FB756F2F2078D1C700C40C0A /* NSEdgeLayoutConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSEdgeLayoutConstraints.swift; sourceTree = "<group>"; };
+		FB756F312078D26A00C40C0A /* AppStoreAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreAnimator.swift; sourceTree = "<group>"; };
+		FB756F632078D64C00C40C0A /* ModalTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTransitionAnimator.swift; sourceTree = "<group>"; };
+		FB756F652078D6B600C40C0A /* ModalTransitionConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModalTransitionConfigurator.swift; path = EasyTransitions/Classes/ModalTransitionConfigurator.swift; sourceTree = "<group>"; };
+		FB756F672078DDD800C40C0A /* ModalTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ModalTransitionDelegate.swift; path = EasyTransitions/Classes/ModalTransitionDelegate.swift; sourceTree = "<group>"; };
 		FBD09B4C2078BBCF0029DAE1 /* TransitionInteractiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TransitionInteractiveController.swift; path = EasyTransitions/Classes/TransitionInteractiveController.swift; sourceTree = "<group>"; };
 		FBD09B4F2078BC250029DAE1 /* Pan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pan.swift; sourceTree = "<group>"; };
 		FBD09B512078BC370029DAE1 /* PanDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanDirection.swift; sourceTree = "<group>"; };
@@ -76,6 +89,9 @@
 		FBD09B562078BEA20029DAE1 /* PanFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanFactory.swift; sourceTree = "<group>"; };
 		FBD09B5A2078BF940029DAE1 /* TransitionPanGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionPanGestureRecognizer.swift; sourceTree = "<group>"; };
 		FBD09B5C2078BFC00029DAE1 /* TransitionEdgePanGestureRecognier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionEdgePanGestureRecognier.swift; sourceTree = "<group>"; };
+		FBD09B5F2078C2240029DAE1 /* NavigationTransitionConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NavigationTransitionConfigurator.swift; path = EasyTransitions/Classes/NavigationTransitionConfigurator.swift; sourceTree = "<group>"; };
+		FBD09B612078C2A00029DAE1 /* NavigationTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTransitionAnimator.swift; sourceTree = "<group>"; };
+		FBD09B642078C51A0029DAE1 /* SlideTransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideTransitionAnimator.swift; sourceTree = "<group>"; };
 		FDF8EBA4CC38D2C0EB1230C67F574AB5 /* EasyTransitions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyTransitions-prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -198,9 +214,14 @@
 		C9F57EC15433A80AF353A09D365CBF94 /* EasyTransitions */ = {
 			isa = PBXGroup;
 			children = (
+				FB756F2E2078D1AA00C40C0A /* Utilities */,
+				FBD09B632078C4E30029DAE1 /* Animators */,
 				FBD09B532078BC470029DAE1 /* Protocols */,
 				FBD09B4E2078BC010029DAE1 /* Models */,
 				FBD09B4C2078BBCF0029DAE1 /* TransitionInteractiveController.swift */,
+				FBD09B5F2078C2240029DAE1 /* NavigationTransitionConfigurator.swift */,
+				FB756F652078D6B600C40C0A /* ModalTransitionConfigurator.swift */,
+				FB756F672078DDD800C40C0A /* ModalTransitionDelegate.swift */,
 				049F88834EB1F82659E59B6C59768D1C /* Pod */,
 				1022C054EE072DA8C5AABF548CDF73F6 /* Support Files */,
 			);
@@ -234,6 +255,15 @@
 			path = "Target Support Files/Pods-EasyTransitions_Tests";
 			sourceTree = "<group>";
 		};
+		FB756F2E2078D1AA00C40C0A /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FB756F2F2078D1C700C40C0A /* NSEdgeLayoutConstraints.swift */,
+			);
+			name = Utilities;
+			path = EasyTransitions/Classes/Utilities;
+			sourceTree = "<group>";
+		};
 		FBD09B4E2078BC010029DAE1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +277,8 @@
 		FBD09B532078BC470029DAE1 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				FBD09B612078C2A00029DAE1 /* NavigationTransitionAnimator.swift */,
+				FB756F632078D64C00C40C0A /* ModalTransitionAnimator.swift */,
 				FBD09B542078BC660029DAE1 /* PanGesture.swift */,
 			);
 			name = Protocols;
@@ -270,6 +302,16 @@
 				FBD09B5C2078BFC00029DAE1 /* TransitionEdgePanGestureRecognier.swift */,
 			);
 			path = Gestures;
+			sourceTree = "<group>";
+		};
+		FBD09B632078C4E30029DAE1 /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				FBD09B642078C51A0029DAE1 /* SlideTransitionAnimator.swift */,
+				FB756F312078D26A00C40C0A /* AppStoreAnimator.swift */,
+			);
+			name = Animators;
+			path = EasyTransitions/Classes/Animators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -392,11 +434,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBD09B622078C2A00029DAE1 /* NavigationTransitionAnimator.swift in Sources */,
+				FB756F662078D6B600C40C0A /* ModalTransitionConfigurator.swift in Sources */,
 				FBD09B572078BEA20029DAE1 /* PanFactory.swift in Sources */,
 				FBD09B552078BC660029DAE1 /* PanGesture.swift in Sources */,
+				FB756F322078D26A00C40C0A /* AppStoreAnimator.swift in Sources */,
+				FBD09B602078C2240029DAE1 /* NavigationTransitionConfigurator.swift in Sources */,
 				FBD09B5B2078BF940029DAE1 /* TransitionPanGestureRecognizer.swift in Sources */,
 				FBD09B502078BC250029DAE1 /* Pan.swift in Sources */,
+				FBD09B652078C51A0029DAE1 /* SlideTransitionAnimator.swift in Sources */,
 				FBD09B522078BC370029DAE1 /* PanDirection.swift in Sources */,
+				FB756F642078D64C00C40C0A /* ModalTransitionAnimator.swift in Sources */,
+				FB756F682078DDD800C40C0A /* ModalTransitionDelegate.swift in Sources */,
+				FB756F302078D1C700C40C0A /* NSEdgeLayoutConstraints.swift in Sources */,
 				74E2251A68D6D8DA951B130CEC7B30E4 /* EasyTransitions-dummy.m in Sources */,
 				FBD09B5D2078BFC00029DAE1 /* TransitionEdgePanGestureRecognier.swift in Sources */,
 				FBD09B4D2078BBCF0029DAE1 /* TransitionInteractiveController.swift in Sources */,
@@ -448,7 +498,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EasyTransitions/EasyTransitions-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EasyTransitions/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/EasyTransitions/EasyTransitions.modulemap";
 				PRODUCT_NAME = EasyTransitions;
@@ -479,7 +529,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-EasyTransitions_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-EasyTransitions_Example/Pods-EasyTransitions_Example.modulemap";
@@ -515,7 +565,7 @@
 				GCC_PREFIX_HEADER = "Target Support Files/EasyTransitions/EasyTransitions-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/EasyTransitions/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/EasyTransitions/EasyTransitions.modulemap";
 				PRODUCT_NAME = EasyTransitions;
@@ -545,7 +595,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-EasyTransitions_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-EasyTransitions_Tests/Pods-EasyTransitions_Tests.modulemap";
@@ -614,7 +664,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -674,7 +724,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
@@ -698,7 +748,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-EasyTransitions_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-EasyTransitions_Example/Pods-EasyTransitions_Example.modulemap";
@@ -732,7 +782,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-EasyTransitions_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-EasyTransitions_Tests/Pods-EasyTransitions_Tests.modulemap";
