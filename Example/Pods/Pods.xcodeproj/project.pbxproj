@@ -22,6 +22,7 @@
 		FB29323A207A63DB00223747 /* NavigationTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB293239207A63DB00223747 /* NavigationTransitionAnimator.swift */; };
 		FB29323D207A640300223747 /* NavigationTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29323C207A640300223747 /* NavigationTransitionDelegate.swift */; };
 		FB293241207A6BA200223747 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB293240207A6BA200223747 /* Configuration.swift */; };
+		FB293253207A914E00223747 /* MatchAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB293252207A914E00223747 /* MatchAnimator.swift */; };
 		FB756F302078D1C700C40C0A /* NSEdgeLayoutConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F2F2078D1C700C40C0A /* NSEdgeLayoutConstraints.swift */; };
 		FB756F322078D26A00C40C0A /* AppStoreAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F312078D26A00C40C0A /* AppStoreAnimator.swift */; };
 		FBD09B4D2078BBCF0029DAE1 /* TransitionInteractiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD09B4C2078BBCF0029DAE1 /* TransitionInteractiveController.swift */; };
@@ -85,6 +86,7 @@
 		FB293239207A63DB00223747 /* NavigationTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationTransitionAnimator.swift; sourceTree = "<group>"; };
 		FB29323C207A640300223747 /* NavigationTransitionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTransitionDelegate.swift; sourceTree = "<group>"; };
 		FB293240207A6BA200223747 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = EasyTransitions/Classes/Configuration.swift; sourceTree = "<group>"; };
+		FB293252207A914E00223747 /* MatchAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchAnimator.swift; sourceTree = "<group>"; };
 		FB756F2F2078D1C700C40C0A /* NSEdgeLayoutConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSEdgeLayoutConstraints.swift; sourceTree = "<group>"; };
 		FB756F312078D26A00C40C0A /* AppStoreAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreAnimator.swift; sourceTree = "<group>"; };
 		FBD09B4C2078BBCF0029DAE1 /* TransitionInteractiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TransitionInteractiveController.swift; path = EasyTransitions/Classes/TransitionInteractiveController.swift; sourceTree = "<group>"; };
@@ -331,6 +333,7 @@
 		FBD09B632078C4E30029DAE1 /* Animators */ = {
 			isa = PBXGroup;
 			children = (
+				FB293252207A914E00223747 /* MatchAnimator.swift */,
 				FBD09B642078C51A0029DAE1 /* SlideTransitionAnimator.swift */,
 				FB756F312078D26A00C40C0A /* AppStoreAnimator.swift */,
 			);
@@ -468,6 +471,7 @@
 				FBD09B502078BC250029DAE1 /* Pan.swift in Sources */,
 				FBD09B652078C51A0029DAE1 /* SlideTransitionAnimator.swift in Sources */,
 				FBD09B522078BC370029DAE1 /* PanDirection.swift in Sources */,
+				FB293253207A914E00223747 /* MatchAnimator.swift in Sources */,
 				FB756F302078D1C700C40C0A /* NSEdgeLayoutConstraints.swift in Sources */,
 				74E2251A68D6D8DA951B130CEC7B30E4 /* EasyTransitions-dummy.m in Sources */,
 				FB293241207A6BA200223747 /* Configuration.swift in Sources */,

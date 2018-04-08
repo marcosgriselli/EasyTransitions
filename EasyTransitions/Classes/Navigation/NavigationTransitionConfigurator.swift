@@ -20,10 +20,7 @@ public class NavigationTransitionConfigurator: NSObject, UIViewControllerAnimate
     }
     
     public func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
-        transitionAnimator(using: transitionContext).startAnimation()
-    }
-    
-    private func transitionAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {
+
         let fromViewController = transitionContext.viewController(forKey: .from)!
         let toViewController = transitionContext.viewController(forKey: .to)!
         
@@ -46,38 +43,38 @@ public class NavigationTransitionConfigurator: NSObject, UIViewControllerAnimate
             isPush = toIndex > fromIndex
         }
         
-        fromView.frame = transitionContext.initialFrame(for: fromViewController)
-        toView.frame = transitionContext.finalFrame(for: toViewController)
+        let fromFrame = transitionContext.initialFrame(for: fromViewController)
+        let toFrame = transitionContext.finalFrame(for: toViewController)
+        
+        fromView.frame = fromFrame
+        toView.frame = toFrame.offsetBy(dx: -toFrame.size.width * 0.3, dy: 0)
         
         transitionAnimator.layout(presenting: isPush, fromView: fromView,
                                   toView: toView, in: containerView)
         
         let duration = transitionDuration(using: transitionContext)
         
-        let animator = UIViewPropertyAnimator(duration: duration, curve: .easeOut)
-        animator.addAnimations {
-            self.transitionAnimator.animations(duration: duration, presenting: isPush,
-                                               fromView: fromView, toView: toView,
-                                               in: containerView)
+        UIView.animateKeyframes(withDuration: duration, delay: 0.0, options: .calculationModeLinear, animations: {
+            
+            UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 1, animations: {
+                self.transitionAnimator.animations(duration: 0, presenting: isPush, fromView: fromView, toView: toView, in: containerView)
+            })
+            
+//            for (index, block) in self.fromAnimationsBlock.enumerated() {
+//                let start = Double(index) * 0.1
+//                UIView.addKeyframe(withRelativeStartTime: start,
+//                                   relativeDuration: 0.2, animations: block)
+//            }
+//
+//            for (index, block) in self.toAnimations.enumerated() {
+//                let start = Double(index) * 0.1
+//                UIView.addKeyframe(withRelativeStartTime: start,
+//                                   relativeDuration: 0.2, animations: block)
+//            }
+            
+        }) { finished in
+            let wasCancelled = transitionContext.transitionWasCancelled
+            transitionContext.completeTransition(!wasCancelled)
         }
-        
-        let auxAnimations = transitionAnimator.auxAnimations(isPush)
-        auxAnimations.forEach(animator.addAnimations)
-
-        animator.addCompletion { position in
-            switch position {
-            case .end:
-                transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
-            default:
-                transitionContext.completeTransition(false)
-            }
-        }
-        animator.isUserInteractionEnabled = true
-        
-        return animator
-    }
-    
-    public func interruptibleAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {
-        return transitionAnimator(using: transitionContext)
     }
 }

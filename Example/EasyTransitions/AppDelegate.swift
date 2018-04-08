@@ -19,15 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         
         // Modal
-        window?.rootViewController = TodayCollectionViewController()
-        
-        // Navigation
-//        let collection = CollectionViewController(itemSize: CGSize(width: 200, height: 100),
-//                                                  cellColor: .red)
-//        collection.title = "Initial Controller"
-//        let navigation = UINavigationController(rootViewController: collection)
-//        navigation.delegate = collection.navigationTransitionDelegate
-//        window?.rootViewController = navigation
+//        let navigation = UINavigationController(rootViewController: TodayCollectionViewController())
+        let navigation = UINavigationController(rootViewController: TeamTableViewController())
+        window?.rootViewController = navigation
         window?.makeKeyAndVisible()
         return true
     }
