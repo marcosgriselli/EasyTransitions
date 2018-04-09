@@ -10,7 +10,7 @@ import UIKit
 public class TransitionInteractiveController: UIPercentDrivenInteractiveTransition {
 
     // MARK: - Private
-    private var viewController: UIViewController?
+    private weak var viewController: UIViewController?
     private var gestureRecognizer: UIPanGestureRecognizer?
     private var shouldCompleteTransition = false
     
