@@ -7,7 +7,11 @@
 ![Swift 4](https://img.shields.io/badge/Swift-4-orange.svg?style=flat)
 [![codebeat badge](https://codebeat.co/badges/633fb33d-66b6-4034-93c0-0f52c5d0e15c)](https://codebeat.co/projects/github-com-marcosgriselli-easytransitions-master)
 
+### Modal Transitions
 <img src="./Resources/Gifs/app_store_transition.gif"/>
+
+### UINavigationController Transitions
+<img src="./Resources/Gifs/swipe_back_animations.gif"/>
 
 ## Project Details
 
