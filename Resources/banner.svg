@@ -1,0 +1,65 @@
+
+<svg width="2385px" height="583px" viewBox="0 0 2385 583" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <desc>EasyTransition banner</desc>
+    <defs>
+        <linearGradient x1="47.8620457%" y1="0%" x2="90.3648137%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#3023AE" offset="0%"></stop>
+            <stop stop-color="#C86DD7" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="2361" height="551" rx="20"></rect>
+        <filter x="-1.2%" y="-2.9%" width="102.4%" height="111.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="50%" x2="50%" y2="100%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FAFBFC" offset="100%"></stop>
+        </linearGradient>
+        <path d="M172.827731,134 L262.172269,134 C273.122822,134 282,142.877178 282,153.827731 L282,374.172269 C282,385.122822 273.122822,394 262.172269,394 L172.827731,394 C161.877178,394 153,385.122822 153,374.172269 L153,153.827731 C153,142.877178 161.877178,134 172.827731,134 Z" id="path-5"></path>
+        <filter x="-34.9%" y="-13.1%" width="169.8%" height="134.6%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="7" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="9.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="6.5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-27.9%" y="-9.6%" width="155.8%" height="127.7%" filterUnits="objectBoundingBox" id="filter-7">
+            <feGaussianBlur stdDeviation="3" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="-2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M0,131.801386 L0,62.7482679 L0,232.378753 C0,238.62842 5.16144394,243.787529 11.4265734,243.787529 L101.335664,243.787529 C107.600794,243.787529 112.762238,238.62842 112.762238,232.378753 L112.762238,129.399538 L112.762238,11.408776 C112.762238,5.15910875 107.600794,0 101.335664,0 L89.6067168,2.22044605e-16 C88.6112119,4.04915882e-16 87.8041958,0.807016144 87.8041958,1.80252101 L87.8041958,2.10161663 C87.9041087,6.13815046 84.6782062,9.36259343 80.5874126,9.30715935 L31.8741259,9.30715935 C27.7237688,9.36259343 24.4978664,6.13815046 24.6573427,2.10161663 L24.6573427,1.80252101 C24.6573427,0.807016144 23.8503265,-1.82871277e-16 22.8548216,0 L21.6503497,0 L18.6433566,0 L15.9370629,0 C15.8515606,1.02346504e-14 14.4105096,1.02346504e-14 11.4265734,0 C5.16144394,1.02346504e-14 0,5.15910875 0,11.408776 L0,64.2494226" id="path-8"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Banner" transform="translate(12.000000, 0.000000)">
+            <g id="Rectangle">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+            </g>
+            <text id="EasyTransitions" font-family="Arial-Black, Arial Black" font-size="200" font-weight="700" letter-spacing="3.42857242" fill="#FFFFFF">
+                <tspan x="430" y="343">EasyTransitions</tspan>
+            </text>
+            <g id="iPhone" transform="translate(153.000000, 134.000000)"></g>
+            <g id="base">
+                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-5"></use>
+            </g>
+            <g id="YOUR-DESIGN-HERE" transform="translate(160.818182, 141.806005)">
+                <mask id="mask-9" fill="white">
+                    <use xlink:href="#path-8"></use>
+                </mask>
+                <use id="Mask" fill="#FBFBFB" xlink:href="#path-8"></use>
+                <path d="M0,131.801386 L0,62.7482679 L0,232.378753 C0,238.62842 5.16144394,243.787529 11.4265734,243.787529 L101.335664,243.787529 C107.600794,243.787529 112.762238,238.62842 112.762238,232.378753 L112.762238,129.399538 L112.762238,11.408776 C112.762238,5.15910875 107.600794,0 101.335664,0 L89.6067168,2.22044605e-16 C88.6112119,4.04915882e-16 87.8041958,0.807016144 87.8041958,1.80252101 L87.8041958,2.10161663 C87.9041087,6.13815046 84.6782062,9.36259343 80.5874126,9.30715935 L31.8741259,9.30715935 C27.7237688,9.36259343 24.4978664,6.13815046 24.6573427,2.10161663 L24.6573427,1.80252101 C24.6573427,0.807016144 23.8503265,-1.82871277e-16 22.8548216,0 L21.6503497,0 L18.6433566,0 L15.9370629,0 C15.8515606,1.02346504e-14 14.4105096,1.02346504e-14 11.4265734,0 C5.16144394,1.02346504e-14 0,5.15910875 0,11.408776 L0,64.2494226" fill="#FBFBFB" mask="url(#mask-9)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

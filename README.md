@@ -1,4 +1,4 @@
-# EasyTransitions
+<img src="./Resources/banner.svg" width=100%/>
 
 **EasyTransitions** is a library that helps developers create custom interactive transitions using a similar API to UIView.animate or UIViewPropertyAnimator. 
 
@@ -8,10 +8,10 @@
 [![codebeat badge](https://codebeat.co/badges/633fb33d-66b6-4034-93c0-0f52c5d0e15c)](https://codebeat.co/projects/github-com-marcosgriselli-easytransitions-master)
 
 ### Modal Transitions
-<img src="./Resources/Gifs/app_store_transition.gif"/>
+<img src="./Resources/Gifs/app_store.gif"/>
 
 ### UINavigationController Transitions
-<img src="./Resources/Gifs/swipe_back_animations.gif"/>
+<img src="./Resources/Gifs/navigation.gif"/>
 
 ## Project Details
 
