@@ -9,7 +9,7 @@
 
 ## ⚠️ This library is a work in progress (WIP) expect many changes until it reaches 1.0 ⚠️
 
-The development roadmap will be documented using Github issues, milestons and project. Contributions are welcome! 
+The development roadmap will be documented using Github issues, milestones and project. Contributions are welcome! 
 
 ## Transitions
 
@@ -22,6 +22,8 @@ Each of them grabs the available views to perfrom the transition. As read in the
 
 ### Modal Transitions
 <img src="https://cdn.rawgit.com/marcosgriselli/EasyTransitions/40b7070b/app_store_short.gif" width="200px"/>
+
+Designs from [Meng To](https://twitter.com/mengto)'s [Design+Code](https://designcode.io)
 
 ```swift 
 public protocol ModalTransitionAnimator {
@@ -121,7 +123,7 @@ Marcos Griselli | <a href="url"><img src="https://cdn.rawgit.com/marcosgriselli/
 
 ### License
 
-> Copyright (c) 2017 Marcos Griselli
+> Copyright (c) 2018 Marcos Griselli
 
 > Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
