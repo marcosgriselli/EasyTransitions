@@ -1,4 +1,4 @@
-<img src="https://cdn.rawgit.com/marcosgriselli/EasyTransitions/d0d5b005/Resources/banner.svg" width=100%/>
+<img src="https://cdn.rawgit.com/marcosgriselli/EasyTransitions/b614067c/banner.svg" width=100%/>
 
 **EasyTransitions** is a library that helps developers create custom interactive transitions using simple functions defined in a protocol and avoid handling with the mutiple transitions API's in UIKit.
 
