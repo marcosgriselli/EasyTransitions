@@ -21,7 +21,7 @@ Given that `UIViewControllerAnimatedTransitioning` works differently for Modal p
 Each of them grabs the available views to perfrom the transition. As read in the docs I avoid grabbing the views directly from the `UIViewControllers` and access them via `UIViewControllerContextTransitioning`'s `view(forKey: UITransitionContextViewKey)`. 
 
 ### Modal Transitions
-<img src="https://cdn.rawgit.com/marcosgriselli/EasyTransitions/d0d5b005/Resources/Gifs/app_store.gif" width="200px"/>
+<img src="https://cdn.rawgit.com/marcosgriselli/EasyTransitions/40b7070b/app_store_short.gif" width="200px"/>
 
 ```swift 
 public protocol ModalTransitionAnimator {
