@@ -1,4 +1,4 @@
-<img src="./Resources/banner.svg" width=100%/>
+<img src="https://cdn.rawgit.com/marcosgriselli/EasyTransitions/d0d5b005/Resources/banner.svg" width=100%/>
 
 **EasyTransitions** is a library that helps developers create custom interactive transitions using simple functions defined in a protocol and avoid handling with the mutiple transitions API's in UIKit.
 
@@ -21,7 +21,7 @@ Given that `UIViewControllerAnimatedTransitioning` works differently for Modal p
 Each of them grabs the available views to perfrom the transition. As read in the docs I avoid grabbing the views directly from the `UIViewControllers` and access them via `UIViewControllerContextTransitioning`'s `view(forKey: UITransitionContextViewKey)`. 
 
 ### Modal Transitions
-<img src="./Resources/Gifs/app_store.gif"/>
+<img src="https://cdn.rawgit.com/marcosgriselli/EasyTransitions/d0d5b005/Resources/Gifs/app_store.gif"/>
 
 ```swift 
 public protocol ModalTransitionAnimator {
@@ -41,7 +41,7 @@ During a modal transition we should only manage the view that is being presented
 The `ModalTransitionAnimator` is a really straight forward protocol. Just layout the views ready to be animated on `layout` function and perform the animations on `animate`. You can check the [AppStoreAnimator](https://github.com/marcosgriselli/EasyTransitions/blob/master/EasyTransitions/Classes/Animators/AppStoreAnimator.swift) for a basic example. 
 
 ### UINavigationController Transitions
-<img src="./Resources/Gifs/navigation.gif"/>
+<img src="https://cdn.rawgit.com/marcosgriselli/EasyTransitions/d0d5b005/Resources/Gifs/navigation.gif"/>
 
 `UINavigationController` have a slightly different approach. Both the _from_ and _to_ view are accessible using `view(forKey: UITransitionContextViewKey)` so we add them to the protocol functions. 
 
