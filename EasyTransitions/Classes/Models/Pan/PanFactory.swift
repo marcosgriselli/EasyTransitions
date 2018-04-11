@@ -15,7 +15,7 @@ internal class PanFactory {
         case .regular(_):
             gestureRecognizer = TransitionPanGestureRecognizer(pan: pan)
         case .edge(let rectEdge):
-            let edgeGestureRecognizer = TransitionEdgePanGestureRecognier(pan: pan)
+            let edgeGestureRecognizer = TransitionEdgePanGestureRecognizer(pan: pan)
             edgeGestureRecognizer.edges = rectEdge
             gestureRecognizer = edgeGestureRecognizer
         }

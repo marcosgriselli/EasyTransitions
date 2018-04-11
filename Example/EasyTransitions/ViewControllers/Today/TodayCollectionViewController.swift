@@ -64,7 +64,7 @@ class TodayCollectionViewController: UICollectionViewController {
                                      with: .regular(.fromTop))
         
         detailViewController.transitioningDelegate = modalTransitionDelegate
-        detailViewController.modalPresentationStyle = .overFullScreen
+        detailViewController.modalPresentationStyle = .custom
         
         present(detailViewController, animated: true, completion: nil)
     }
