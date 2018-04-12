@@ -15,12 +15,14 @@ public class ShowAnimator: NavigationTransitionAnimator {
     // MARK: - NavigationTransitionAnimator
     public var auxAnimations: (Bool) -> [AuxAnimation] = { _ in [] }
     public var duration: TimeInterval {
-        return 2.0
+        return 0.7
     }
     
     public func layout(presenting: Bool, fromView: UIView,
                        toView: UIView, in container: UIView) {
         if presenting  {
+            toView.frame = toView.frame.offsetBy(dx: toView.frame.width,
+                                                 dy: 0)
             container.addSubview(toView)
         } else {
             container.insertSubview(toView, belowSubview: fromView)

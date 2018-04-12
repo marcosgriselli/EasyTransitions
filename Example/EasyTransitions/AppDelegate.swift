@@ -20,6 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Modal
         window?.rootViewController = TodayCollectionViewController()
+        // Navigation
+//        let navigation = UINavigationController(rootViewController: GalleryTableViewController())
+//        if #available(iOS 11.0, *) { navigation.navigationBar.prefersLargeTitles = true }
+//        window?.rootViewController = navigation
         window?.makeKeyAndVisible()
         return true
     }

@@ -55,7 +55,7 @@ public class NavigationTransitionConfigurator: NSObject, UIViewControllerAnimate
         let duration = transitionDuration(using: transitionContext)
         let auxAnimations = transitionAnimator.auxAnimations(isPush)
         
-        UIView.animateKeyframes(withDuration: duration, delay: 0.0, options: .calculationModeLinear, animations: {
+        UIView.animateKeyframes(withDuration: duration, delay: 0.0, options: [], animations: {
             
             UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 1, animations: {
                 self.transitionAnimator.animations(presenting: isPush,fromView: fromView,

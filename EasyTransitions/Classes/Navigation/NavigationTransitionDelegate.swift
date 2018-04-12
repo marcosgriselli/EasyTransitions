@@ -29,7 +29,7 @@ extension NavigationTransitionDelegate: UINavigationControllerDelegate {
     public func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
         // TODO: - Toggle supported operations.
-//        if operation == .pop {
+//        if operation == .push {
 //            return nil
 //        }
         
