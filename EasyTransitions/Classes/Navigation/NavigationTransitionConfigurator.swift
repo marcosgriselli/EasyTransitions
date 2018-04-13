@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class NavigationTransitionConfigurator: NSObject, UIViewControllerAnimatedTransitioning {
+public final class NavigationTransitionConfigurator: NSObject, UIViewControllerAnimatedTransitioning {
     
     private let transitionAnimator: NavigationTransitionAnimator
     

@@ -18,11 +18,9 @@
 		FB0548EE207F98CE00BC37C1 /* GalleryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB0548EC207F98CE00BC37C1 /* GalleryTableViewCell.xib */; };
 		FB0548F0207FA01B00BC37C1 /* GalleryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0548EF207FA01B00BC37C1 /* GalleryItem.swift */; };
 		FB0548F3207FA5BE00BC37C1 /* CGAffineTransform + Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0548F2207FA5BE00BC37C1 /* CGAffineTransform + Custom.swift */; };
-		FB0548F5207FA5D900BC37C1 /* GalleryCellLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0548F4207FA5D900BC37C1 /* GalleryCellLayout.swift */; };
 		FB0548F7207FA84700BC37C1 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0548F6207FA84700BC37C1 /* CollectionViewController.swift */; };
 		FB0548FA207FA85D00BC37C1 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0548F8207FA85D00BC37C1 /* ImageCollectionViewCell.swift */; };
 		FB0548FB207FA85D00BC37C1 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB0548F9207FA85D00BC37C1 /* ImageCollectionViewCell.xib */; };
-		FB0548FD207FA8A600BC37C1 /* ImageCellLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0548FC207FA8A600BC37C1 /* ImageCellLayout.swift */; };
 		FB29323F207A64DE00223747 /* UICollectionView + OrderedCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29323E207A64DE00223747 /* UICollectionView + OrderedCells.swift */; };
 		FB293244207A6C7A00223747 /* FunctionalEnumerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB293243207A6C7A00223747 /* FunctionalEnumerated.swift */; };
 		FB29324E207A8ECA00223747 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29324D207A8ECA00223747 /* CircularImageView.swift */; };
@@ -36,7 +34,6 @@
 		FB756F4E2078D43700C40C0A /* CardViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F4A2078D43700C40C0A /* CardViewDelegate.swift */; };
 		FB756F4F2078D43700C40C0A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F4B2078D43700C40C0A /* CardView.swift */; };
 		FB756F502078D43700C40C0A /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB756F4C2078D43700C40C0A /* CardView.xib */; };
-		FB756F512078D43700C40C0A /* CardViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F4D2078D43700C40C0A /* CardViewState.swift */; };
 		FB756F552078D44E00C40C0A /* TodayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB756F532078D44E00C40C0A /* TodayCollectionViewCell.xib */; };
 		FB756F562078D44E00C40C0A /* TodayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F542078D44E00C40C0A /* TodayCollectionViewCell.swift */; };
 		FB756F5B2078D46A00C40C0A /* UIView + ShadowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F592078D46A00C40C0A /* UIView + ShadowStyle.swift */; };
@@ -78,11 +75,9 @@
 		FB0548EC207F98CE00BC37C1 /* GalleryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryTableViewCell.xib; sourceTree = "<group>"; };
 		FB0548EF207FA01B00BC37C1 /* GalleryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryItem.swift; sourceTree = "<group>"; };
 		FB0548F2207FA5BE00BC37C1 /* CGAffineTransform + Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGAffineTransform + Custom.swift"; sourceTree = "<group>"; };
-		FB0548F4207FA5D900BC37C1 /* GalleryCellLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCellLayout.swift; sourceTree = "<group>"; };
 		FB0548F6207FA84700BC37C1 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		FB0548F8207FA85D00BC37C1 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		FB0548F9207FA85D00BC37C1 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
-		FB0548FC207FA8A600BC37C1 /* ImageCellLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCellLayout.swift; sourceTree = "<group>"; };
 		FB29323E207A64DE00223747 /* UICollectionView + OrderedCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + OrderedCells.swift"; sourceTree = "<group>"; };
 		FB293243207A6C7A00223747 /* FunctionalEnumerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalEnumerated.swift; sourceTree = "<group>"; };
 		FB29324D207A8ECA00223747 /* CircularImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
@@ -96,7 +91,6 @@
 		FB756F4A2078D43700C40C0A /* CardViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewDelegate.swift; sourceTree = "<group>"; };
 		FB756F4B2078D43700C40C0A /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FB756F4C2078D43700C40C0A /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
-		FB756F4D2078D43700C40C0A /* CardViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewState.swift; sourceTree = "<group>"; };
 		FB756F532078D44E00C40C0A /* TodayCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodayCollectionViewCell.xib; sourceTree = "<group>"; };
 		FB756F542078D44E00C40C0A /* TodayCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayCollectionViewCell.swift; sourceTree = "<group>"; };
 		FB756F592078D46A00C40C0A /* UIView + ShadowStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + ShadowStyle.swift"; sourceTree = "<group>"; };
@@ -298,7 +292,6 @@
 				FB756F4B2078D43700C40C0A /* CardView.swift */,
 				FB756F4C2078D43700C40C0A /* CardView.xib */,
 				FB756F4A2078D43700C40C0A /* CardViewDelegate.swift */,
-				FB756F4D2078D43700C40C0A /* CardViewState.swift */,
 			);
 			path = CardView;
 			sourceTree = "<group>";
@@ -310,10 +303,8 @@
 				FB756F532078D44E00C40C0A /* TodayCollectionViewCell.xib */,
 				FB0548EB207F98CE00BC37C1 /* GalleryTableViewCell.swift */,
 				FB0548EC207F98CE00BC37C1 /* GalleryTableViewCell.xib */,
-				FB0548F4207FA5D900BC37C1 /* GalleryCellLayout.swift */,
 				FB0548F8207FA85D00BC37C1 /* ImageCollectionViewCell.swift */,
 				FB0548F9207FA85D00BC37C1 /* ImageCollectionViewCell.xib */,
-				FB0548FC207FA8A600BC37C1 /* ImageCellLayout.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -572,7 +563,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB756F512078D43700C40C0A /* CardViewState.swift in Sources */,
 				FB0548FA207FA85D00BC37C1 /* ImageCollectionViewCell.swift in Sources */,
 				FB0548EA207F98B500BC37C1 /* GalleryTableViewController.swift in Sources */,
 				FB0548F0207FA01B00BC37C1 /* GalleryItem.swift in Sources */,
@@ -585,7 +575,6 @@
 				FB756F5C2078D46A00C40C0A /* ShadowStyle.swift in Sources */,
 				FB0548ED207F98CE00BC37C1 /* GalleryTableViewCell.swift in Sources */,
 				FB756F412078D40900C40C0A /* TodayCollectionViewController.swift in Sources */,
-				FB0548FD207FA8A600BC37C1 /* ImageCellLayout.swift in Sources */,
 				FB0548F7207FA84700BC37C1 /* CollectionViewController.swift in Sources */,
 				FB756F382078D3ED00C40C0A /* NibLoadbleView.swift in Sources */,
 				FB756F5B2078D46A00C40C0A /* UIView + ShadowStyle.swift in Sources */,
@@ -594,7 +583,6 @@
 				FB756F482078D42300C40C0A /* RoundCornersButton.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				FB29324E207A8ECA00223747 /* CircularImageView.swift in Sources */,
-				FB0548F5207FA5D900BC37C1 /* GalleryCellLayout.swift in Sources */,
 				FB756F4E2078D43700C40C0A /* CardViewDelegate.swift in Sources */,
 				FB756F4F2078D43700C40C0A /* CardView.swift in Sources */,
 				FB756F562078D44E00C40C0A /* TodayCollectionViewCell.swift in Sources */,

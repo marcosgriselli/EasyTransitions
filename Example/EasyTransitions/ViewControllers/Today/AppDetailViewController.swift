@@ -36,7 +36,7 @@ class AppDetailViewController: UIViewController {
     }
     
     func layout(presenting: Bool) {
-        let cardLayout: CardViewLayout = presenting ? .expanded : .collapsed
+        let cardLayout: CardView.Layout = presenting ? .expanded : .collapsed
         contentView.layer.cornerRadius = cardLayout.cornerRadius
         backView.layer.cornerRadius = cardLayout.cornerRadius
         cardView.set(layout: cardLayout)

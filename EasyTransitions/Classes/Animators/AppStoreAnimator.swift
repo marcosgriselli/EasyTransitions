@@ -52,11 +52,11 @@ public class AppStoreAnimator: ModalTransitionAnimator {
             self.edgeLayoutConstraints?.constants(to: 0)
             // self.edgeLayoutConstraints?.vertical(to: 0) with 0.16 offsetDelay
         } else {
-            self.blurView.effect = nil
-            self.edgeLayoutConstraints?.match(to: self.initialFrame,
+            blurView.effect = nil
+            edgeLayoutConstraints?.match(to: self.initialFrame,
                                               container: container)
         }
-        self.auxAnimation(presenting)
+        auxAnimation(presenting)
         modalView.layoutIfNeeded()
         container.layoutIfNeeded()
     }

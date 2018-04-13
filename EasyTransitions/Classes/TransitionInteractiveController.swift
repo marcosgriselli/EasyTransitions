@@ -7,7 +7,7 @@
 
 import UIKit
 
-public class TransitionInteractiveController: UIPercentDrivenInteractiveTransition {
+open class TransitionInteractiveController: UIPercentDrivenInteractiveTransition {
 
     // MARK: - Private
     private weak var viewController: UIViewController?
@@ -22,12 +22,12 @@ public class TransitionInteractiveController: UIPercentDrivenInteractiveTransiti
     // MARK: - Public
     
     /// enables/disables the entire interactor.
-    public var isEnabled = true {
+    open var isEnabled = true {
         didSet { gestureRecognizer?.isEnabled = isEnabled }
     }
-    public var interactionInProgress = false
-    public var completeOnPercentage: CGFloat = 0.5
-    public var navigationAction: (() -> Void) = {
+    open var interactionInProgress = false
+    open var completeOnPercentage: CGFloat = 0.5
+    open var navigationAction: (() -> Void) = {
         fatalError("Missing navigationAction (ex: navigation.dismiss) on TransitionInteractiveController")
     }
     
@@ -40,7 +40,7 @@ public class TransitionInteractiveController: UIPercentDrivenInteractiveTransiti
     /// Sets the viewController to be the one in charge of handling the swipe transition.
     ///
     /// - Parameter viewController: `UIViewController` in charge of the the transition.
-    public func wireTo(viewController: UIViewController, with pan: Pan) {
+    open func wireTo(viewController: UIViewController, with pan: Pan) {
         self.viewController = viewController
         gestureRecognizer = PanFactory.create(with: pan)
         gestureRecognizer?.addTarget(self, action: #selector(handle(_:)))
@@ -52,7 +52,7 @@ public class TransitionInteractiveController: UIPercentDrivenInteractiveTransiti
     /// Handles the swiping with progress
     ///
     /// - Parameter recognizer: `UIPanGestureRecognizer` in the current tab controller's view.
-    @objc func handle(_ recognizer: UIGestureRecognizer) {
+    @objc open func handle(_ recognizer: UIGestureRecognizer) {
         guard let panGesture = recognizer as? PanGesture else { return }
         let panVelocity = panGesture.velocityForPan()
         let panned = panGesture.percentagePanned()
@@ -84,7 +84,7 @@ public class TransitionInteractiveController: UIPercentDrivenInteractiveTransiti
 // MARK: - UIGestureRecognizerDelegate
 extension TransitionInteractiveController: UIGestureRecognizerDelegate {
     
-    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+    open func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return false
     }
 }
