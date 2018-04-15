@@ -9,7 +9,7 @@ import Foundation
 
 open class ModalTransitionDelegate: NSObject {
 
-    private var transitionAnimator: ModalTransitionAnimator? = .none
+    private var animators = [ModalOperation: ModalTransitionAnimator]()
     private let interactiveController = TransitionInteractiveController()
     
     open func wire(viewController: UIViewController, with pan: Pan) {
@@ -18,25 +18,30 @@ open class ModalTransitionDelegate: NSObject {
             viewController.dismiss(animated: true, completion: nil)
         }
     }
+
+    open func set(animator: ModalTransitionAnimator, for operation: ModalOperation) {
+        animators[operation] = animator
+    }
     
-    open func set(animator: ModalTransitionAnimator?) {
-        transitionAnimator = animator
+    open func removeAnimator(for operation: ModalOperation) {
+        animators.removeValue(forKey: operation)
+    }
+    
+    private func configurator(for operation: ModalOperation) -> ModalTransitionConfigurator? {
+        guard let animator = animators[operation] else {
+            return nil
+        }
+        return ModalTransitionConfigurator(transitionAnimator: animator)
     }
 }
 
 extension ModalTransitionDelegate: UIViewControllerTransitioningDelegate {
     open func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        guard let transitionAnimator = transitionAnimator else {
-            return nil
-        }
-        return ModalTransitionConfigurator(transitionAnimator: transitionAnimator)
+        return configurator(for: .present)
     }
     
     open func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        guard let transitionAnimator = transitionAnimator else {
-            return nil
-        }
-        return ModalTransitionConfigurator(transitionAnimator: transitionAnimator)
+        return configurator(for: .dismiss)
     }
     
     open func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {

@@ -25,6 +25,7 @@
 		FB293253207A914E00223747 /* ShowAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB293252207A914E00223747 /* ShowAnimator.swift */; };
 		FB756F302078D1C700C40C0A /* NSEdgeLayoutConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F2F2078D1C700C40C0A /* NSEdgeLayoutConstraints.swift */; };
 		FB756F322078D26A00C40C0A /* AppStoreAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F312078D26A00C40C0A /* AppStoreAnimator.swift */; };
+		FBA6ECA320841027001DF29C /* ModalOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA6ECA220841027001DF29C /* ModalOperation.swift */; };
 		FBD09B4D2078BBCF0029DAE1 /* TransitionInteractiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD09B4C2078BBCF0029DAE1 /* TransitionInteractiveController.swift */; };
 		FBD09B502078BC250029DAE1 /* Pan.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD09B4F2078BC250029DAE1 /* Pan.swift */; };
 		FBD09B522078BC370029DAE1 /* PanDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBD09B512078BC370029DAE1 /* PanDirection.swift */; };
@@ -88,6 +89,7 @@
 		FB293252207A914E00223747 /* ShowAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAnimator.swift; sourceTree = "<group>"; };
 		FB756F2F2078D1C700C40C0A /* NSEdgeLayoutConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSEdgeLayoutConstraints.swift; sourceTree = "<group>"; };
 		FB756F312078D26A00C40C0A /* AppStoreAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreAnimator.swift; sourceTree = "<group>"; };
+		FBA6ECA220841027001DF29C /* ModalOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalOperation.swift; sourceTree = "<group>"; };
 		FBD09B4C2078BBCF0029DAE1 /* TransitionInteractiveController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TransitionInteractiveController.swift; path = EasyTransitions/Classes/TransitionInteractiveController.swift; sourceTree = "<group>"; };
 		FBD09B4F2078BC250029DAE1 /* Pan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pan.swift; sourceTree = "<group>"; };
 		FBD09B512078BC370029DAE1 /* PanDirection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanDirection.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 				FB293233207A637500223747 /* ModalTransitionAnimator.swift */,
 				FB293234207A637500223747 /* ModalTransitionConfigurator.swift */,
 				FB293232207A637500223747 /* ModalTransitionDelegate.swift */,
+				FBA6ECA220841027001DF29C /* ModalOperation.swift */,
 			);
 			name = Modal;
 			path = EasyTransitions/Classes/Modal;
@@ -466,6 +469,7 @@
 				FB293237207A637500223747 /* ModalTransitionConfigurator.swift in Sources */,
 				FBD09B5B2078BF940029DAE1 /* TransitionPanGestureRecognizer.swift in Sources */,
 				FBD09B502078BC250029DAE1 /* Pan.swift in Sources */,
+				FBA6ECA320841027001DF29C /* ModalOperation.swift in Sources */,
 				FBD09B522078BC370029DAE1 /* PanDirection.swift in Sources */,
 				FB293253207A914E00223747 /* ShowAnimator.swift in Sources */,
 				FB756F302078D1C700C40C0A /* NSEdgeLayoutConstraints.swift in Sources */,
