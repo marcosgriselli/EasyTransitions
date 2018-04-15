@@ -59,7 +59,8 @@ class TodayCollectionViewController: UICollectionViewController {
         appStoreAnimator.onDismissed = { cell.isHidden = false }
         appStoreAnimator.auxAnimation = { detailViewController.layout(presenting: $0) }
     
-        modalTransitionDelegate.set(animator: appStoreAnimator)
+        modalTransitionDelegate.set(animator: appStoreAnimator, for: .present)
+        modalTransitionDelegate.set(animator: appStoreAnimator, for: .dismiss)
         modalTransitionDelegate.wire(viewController: detailViewController,
                                      with: .regular(.fromTop))
         
