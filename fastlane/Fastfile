@@ -2,16 +2,30 @@ default_platform(:ios)
 
 platform :ios do
 
+  podspec_name = "EasyTransitions.podspec"
+
   desc "Release a new version of the pod"
-  lane :release do
+  lane :patch do
     pod_lib_lint
-    version = version_bump_podspec(path: "EasyTransitions.podspec", 
+    version = version_bump_podspec(path: podspec_name, 
                                    bump_type: "patch")
-    git_add(path: "./EasyTransitions.podspec")
-    git_commit(path: ["./EasyTransitions.podspec"],
+    git_add(path: podspec_name)
+    git_commit(path: [podspec_name],
                message: "#{version} release")
     add_git_tag(tag: "#{version}")
     push_to_git_remote
     pod_push
   end
+
+  lane :minor do 
+    pod_lib_lint
+    version = version_bump_podspec(path: podspec_name, 
+                                   bump_type: "minor")
+    git_add(path: podspec_name)
+    git_commit(path: [podspec_name],
+               message: "#{version} release")
+    add_git_tag(tag: "#{version}")
+    push_to_git_remote
+    pod_push
+  end 
 end
