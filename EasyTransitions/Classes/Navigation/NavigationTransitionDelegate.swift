@@ -9,7 +9,7 @@ import Foundation
 
 open class NavigationTransitionDelegate: NSObject {
 
-    private var transitionAnimator: NavigationTransitionAnimator? = .none
+    private var animators = [UINavigationControllerOperation: NavigationTransitionAnimator]()
     private let interactiveController = TransitionInteractiveController()
     
     open func wire(viewController: UIViewController, with pan: Pan) {
@@ -19,24 +19,23 @@ open class NavigationTransitionDelegate: NSObject {
         }
     }
     
-    open func set(animator: NavigationTransitionAnimator?) {
-        transitionAnimator = animator
+    open func set(animator: NavigationTransitionAnimator,
+                  forOperation operation: UINavigationControllerOperation) {
+        animators[operation] = animator
+    }
+
+    open func removeAnimator(forOperation operation: UINavigationControllerOperation) {
+        animators.removeValue(forKey: operation)
     }
 }
 
 extension NavigationTransitionDelegate: UINavigationControllerDelegate {
     
     open func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        
-        // TODO: - Support operation configuration.
-//        if operation == .push {
-//            return nil
-//        }
-        
-        if let animator = transitionAnimator {
-            return NavigationTransitionConfigurator(transitionAnimator: animator)
+        guard let animator = animators[operation] else {
+            return nil
         }
-        return nil 
+        return NavigationTransitionConfigurator(transitionAnimator: animator)
     }
     
     open func navigationController(_ navigationController: UINavigationController, interactionControllerFor animationController: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
