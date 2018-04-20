@@ -46,10 +46,12 @@ class GalleryTableViewController: UITableViewController {
         showAnimator.auxAnimations = {
             return [self.animations(presenting: $0), viewController.animations(presenting: $0)].flatMap { $0 }
         }
-        navigationDelegate.set(animator: showAnimator, forOperation: .push)
-        navigationDelegate.set(animator: showAnimator, forOperation: .pop)
+        navigationDelegate.set(animator: showAnimator, for: .push)
+        navigationDelegate.set(animator: showAnimator, for: .pop)
         navigationDelegate.wire(viewController: viewController,
-                                with: .regular(.fromLeft))
+                                with: .regular(.fromTop), beginWhen: {
+                                    return viewController.collectionView!.contentOffset.y < 0
+        })
         navigationController?.pushViewController(viewController, animated: true)
     }
     
