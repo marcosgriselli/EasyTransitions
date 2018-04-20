@@ -12,19 +12,22 @@ open class NavigationTransitionDelegate: NSObject {
     private var animators = [UINavigationControllerOperation: NavigationTransitionAnimator]()
     private let interactiveController = TransitionInteractiveController()
     
-    open func wire(viewController: UIViewController, with pan: Pan) {
+    open func wire(viewController: UIViewController,
+                   with pan: Pan,
+                   beginWhen: @escaping (() -> Bool) = { return true }) {
         interactiveController.wireTo(viewController: viewController, with: pan)
         interactiveController.navigationAction = {
             viewController.navigationController?.popViewController(animated: true)
         }
+        interactiveController.shouldBeginTransition = beginWhen
     }
     
     open func set(animator: NavigationTransitionAnimator,
-                  forOperation operation: UINavigationControllerOperation) {
+                  for operation: UINavigationControllerOperation) {
         animators[operation] = animator
     }
 
-    open func removeAnimator(forOperation operation: UINavigationControllerOperation) {
+    open func removeAnimator(for operation: UINavigationControllerOperation) {
         animators.removeValue(forKey: operation)
     }
 }
