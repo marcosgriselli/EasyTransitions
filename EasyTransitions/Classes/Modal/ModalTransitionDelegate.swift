@@ -12,11 +12,14 @@ open class ModalTransitionDelegate: NSObject {
     private var animators = [ModalOperation: ModalTransitionAnimator]()
     private let interactiveController = TransitionInteractiveController()
     
-    open func wire(viewController: UIViewController, with pan: Pan) {
+    open func wire(viewController: UIViewController,
+                   with pan: Pan,
+                   beginWhen: @escaping (() -> Bool) = { return true }) {
         interactiveController.wireTo(viewController: viewController, with: pan)
         interactiveController.navigationAction = {
             viewController.dismiss(animated: true, completion: nil)
         }
+        interactiveController.shouldBeginTransition = beginWhen
     }
 
     open func set(animator: ModalTransitionAnimator, for operation: ModalOperation) {
