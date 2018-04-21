@@ -16,6 +16,7 @@
 		F5DDA58EB4DFC79E162CB38885349CC0 /* EasyTransitions-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC5293BA6EC4BA9F742ED5421CBD0C3D /* EasyTransitions-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F68C399C1F3451353AC81585F07DC718 /* Pods-EasyTransitions_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F174455D728F39D37604ECAAF89D5D31 /* Pods-EasyTransitions_Tests-dummy.m */; };
 		F7D8718042B106196A07F934A717203B /* Pods-EasyTransitions_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F84D5C3BDE2B8832E05172F79FA2EAD9 /* Pods-EasyTransitions_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB201312208BA55900549076 /* PresentationControllerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB201311208BA55900549076 /* PresentationControllerAnimator.swift */; };
 		FB293235207A637500223747 /* ModalTransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB293232207A637500223747 /* ModalTransitionDelegate.swift */; };
 		FB293236207A637500223747 /* ModalTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB293233207A637500223747 /* ModalTransitionAnimator.swift */; };
 		FB293237207A637500223747 /* ModalTransitionConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB293234207A637500223747 /* ModalTransitionConfigurator.swift */; };
@@ -80,6 +81,7 @@
 		F1D464A02CA3F4764717FAFA6340BB21 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4AA6392A19BCC41E88F09B516463D33 /* Pods-EasyTransitions_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyTransitions_Example-dummy.m"; sourceTree = "<group>"; };
 		F84D5C3BDE2B8832E05172F79FA2EAD9 /* Pods-EasyTransitions_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyTransitions_Example-umbrella.h"; sourceTree = "<group>"; };
+		FB201311208BA55900549076 /* PresentationControllerAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationControllerAnimator.swift; sourceTree = "<group>"; };
 		FB293232207A637500223747 /* ModalTransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalTransitionDelegate.swift; sourceTree = "<group>"; };
 		FB293233207A637500223747 /* ModalTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalTransitionAnimator.swift; sourceTree = "<group>"; };
 		FB293234207A637500223747 /* ModalTransitionConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalTransitionConfigurator.swift; sourceTree = "<group>"; };
@@ -334,6 +336,7 @@
 		FBD09B632078C4E30029DAE1 /* Animators */ = {
 			isa = PBXGroup;
 			children = (
+				FB201311208BA55900549076 /* PresentationControllerAnimator.swift */,
 				FB293252207A914E00223747 /* ShowAnimator.swift */,
 				FB756F312078D26A00C40C0A /* AppStoreAnimator.swift */,
 			);
@@ -463,6 +466,7 @@
 			files = (
 				FBD09B572078BEA20029DAE1 /* PanFactory.swift in Sources */,
 				FBD09B552078BC660029DAE1 /* PanGesture.swift in Sources */,
+				FB201312208BA55900549076 /* PresentationControllerAnimator.swift in Sources */,
 				FB756F322078D26A00C40C0A /* AppStoreAnimator.swift in Sources */,
 				FB29323D207A640300223747 /* NavigationTransitionDelegate.swift in Sources */,
 				FBD09B602078C2240029DAE1 /* NavigationTransitionConfigurator.swift in Sources */,

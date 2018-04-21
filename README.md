@@ -20,7 +20,7 @@ Given that `UIViewControllerAnimatedTransitioning` works differently for Modal p
 
 Each of them grabs the available views to perfrom the transition. As read in the docs I avoid grabbing the views directly from the `UIViewControllers` and access them via `UIViewControllerContextTransitioning`'s `view(forKey: UITransitionContextViewKey)`. 
 
-### Modal Transitions
+### Modal transitions
 <img src="https://cdn.rawgit.com/marcosgriselli/EasyTransitions/40b7070b/app_store_short.gif" width="200px"/>
 
 Designs from [Meng To](https://twitter.com/mengto)'s [Design+Code](https://designcode.io)
@@ -42,7 +42,7 @@ During a modal transition we should only manage the view that is being presented
 
 The `ModalTransitionAnimator` is a really straight forward protocol. Just layout the views ready to be animated on `layout` function and perform the animations on `animate`. You can check the [AppStoreAnimator](https://github.com/marcosgriselli/EasyTransitions/blob/master/EasyTransitions/Classes/Animators/AppStoreAnimator.swift) for a basic example. 
 
-### UINavigationController Transitions
+### UINavigationController transitions
 <img src="https://cdn.rawgit.com/marcosgriselli/EasyTransitions/d0d5b005/Resources/Gifs/navigation.gif" width="200px"/>
 
 `UINavigationController` have a slightly different approach. Both the _from_ and _to_ view are accessible using `view(forKey: UITransitionContextViewKey)` so we add them to the protocol functions. 
@@ -60,6 +60,11 @@ public protocol NavigationTransitionAnimator {
 ```
 
 I've added the auxiliary animations as part of the protocol but expect multiple changes in this area. 
+
+### UIPresentationController transitions
+<img src="presentationController.gif" width="200px"/>
+
+`UIPresentationController` follows the same approach as Modal presentations. The only thing you need to call is `func set(presentationController: UIPresentationController?)` on your `ModalTransitionDelegate` object. 
 
 ## Interaction
 

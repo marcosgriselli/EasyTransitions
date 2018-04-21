@@ -24,7 +24,6 @@
 		FB201308208B785300549076 /* BasePresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB201307208B785300549076 /* BasePresentationViewController.swift */; };
 		FB20130B208B786000549076 /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB201309208B786000549076 /* PresentationViewController.swift */; };
 		FB20130C208B786000549076 /* PresentationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB20130A208B786000549076 /* PresentationViewController.xib */; };
-		FB201310208B84E700549076 /* PresentationControllerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB20130F208B84E700549076 /* PresentationControllerAnimator.swift */; };
 		FB29323F207A64DE00223747 /* UICollectionView + OrderedCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29323E207A64DE00223747 /* UICollectionView + OrderedCells.swift */; };
 		FB293244207A6C7A00223747 /* FunctionalEnumerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB293243207A6C7A00223747 /* FunctionalEnumerated.swift */; };
 		FB29324E207A8ECA00223747 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29324D207A8ECA00223747 /* CircularImageView.swift */; };
@@ -85,7 +84,6 @@
 		FB201307208B785300549076 /* BasePresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresentationViewController.swift; sourceTree = "<group>"; };
 		FB201309208B786000549076 /* PresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
 		FB20130A208B786000549076 /* PresentationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresentationViewController.xib; sourceTree = "<group>"; };
-		FB20130F208B84E700549076 /* PresentationControllerAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationControllerAnimator.swift; sourceTree = "<group>"; };
 		FB29323E207A64DE00223747 /* UICollectionView + OrderedCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + OrderedCells.swift"; sourceTree = "<group>"; };
 		FB293243207A6C7A00223747 /* FunctionalEnumerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalEnumerated.swift; sourceTree = "<group>"; };
 		FB29324D207A8ECA00223747 /* CircularImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
@@ -244,7 +242,6 @@
 				FB201307208B785300549076 /* BasePresentationViewController.swift */,
 				FB201309208B786000549076 /* PresentationViewController.swift */,
 				FB20130A208B786000549076 /* PresentationViewController.xib */,
-				FB20130F208B84E700549076 /* PresentationControllerAnimator.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -588,7 +585,6 @@
 				FB0548EA207F98B500BC37C1 /* GalleryTableViewController.swift in Sources */,
 				FB0548F0207FA01B00BC37C1 /* GalleryItem.swift in Sources */,
 				FB756F622078D48100C40C0A /* UIWindow + SafeArea.swift in Sources */,
-				FB201310208B84E700549076 /* PresentationControllerAnimator.swift in Sources */,
 				FB756F612078D48100C40C0A /* NSLayoutConstraint + Multiplier.swift in Sources */,
 				FB20130B208B786000549076 /* PresentationViewController.swift in Sources */,
 				FB29323F207A64DE00223747 /* UICollectionView + OrderedCells.swift in Sources */,
