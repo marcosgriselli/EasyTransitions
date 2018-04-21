@@ -62,7 +62,7 @@ public protocol NavigationTransitionAnimator {
 I've added the auxiliary animations as part of the protocol but expect multiple changes in this area. 
 
 ### UIPresentationController transitions
-<img src="presentationController.gif" width="200px"/>
+<img src="https://cdn.rawgit.com/marcosgriselli/EasyTransitions/feature/UIPresentationController_support/presentationController.gif" width="200px"/>
 
 `UIPresentationController` follows the same approach as Modal presentations. The only thing you need to call is `func set(presentationController: UIPresentationController?)` on your `ModalTransitionDelegate` object. 
 
