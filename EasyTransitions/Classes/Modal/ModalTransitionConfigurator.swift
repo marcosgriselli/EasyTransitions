@@ -43,7 +43,7 @@ internal final class ModalTransitionConfigurator: NSObject, UIViewControllerAnim
         
         let duration = transitionDuration(using: transitionContext)
         
-        let animator = UIViewPropertyAnimator(duration: duration, dampingRatio: 0.7)
+        let animator = UIViewPropertyAnimator(duration: duration, dampingRatio: 0.8)
         animator.addAnimations {
             self.transitionAnimator.animate(presenting: isPresenting,
                                             modalView: modalView, in: containerView)
@@ -53,7 +53,7 @@ internal final class ModalTransitionConfigurator: NSObject, UIViewControllerAnim
             switch position {
             case .end:
                 if !isPresenting {
-                    self.transitionAnimator.onDismissed()
+                    self.transitionAnimator.onDismissed?()
                 }
                 transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
             default:

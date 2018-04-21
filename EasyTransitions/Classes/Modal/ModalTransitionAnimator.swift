@@ -9,7 +9,8 @@ import Foundation
 
 public protocol ModalTransitionAnimator {
     var duration: TimeInterval { get }
-    var onDismissed: () -> Void { get set }
+    var auxAnimation: ((Bool) -> Void)? { get set }
+    var onDismissed: (() -> Void)? { get set }
     func layout(presenting: Bool,
                 modalView: UIView,
                 in container: UIView)

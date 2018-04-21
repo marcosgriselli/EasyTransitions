@@ -11,6 +11,7 @@ open class ModalTransitionDelegate: NSObject {
 
     private var animators = [ModalOperation: ModalTransitionAnimator]()
     private let interactiveController = TransitionInteractiveController()
+    private var presentationController: UIPresentationController?
     
     open func wire(viewController: UIViewController,
                    with pan: Pan,
@@ -28,6 +29,10 @@ open class ModalTransitionDelegate: NSObject {
     
     open func removeAnimator(for operation: ModalOperation) {
         animators.removeValue(forKey: operation)
+    }
+    
+    open func set(presentationController: UIPresentationController?) {
+        self.presentationController = presentationController
     }
     
     private func configurator(for operation: ModalOperation) -> ModalTransitionConfigurator? {
@@ -49,5 +54,9 @@ extension ModalTransitionDelegate: UIViewControllerTransitioningDelegate {
     
     open func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
         return interactiveController.interactionInProgress ? interactiveController : nil
+    }
+    
+    public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        return presentationController
     }
 }
