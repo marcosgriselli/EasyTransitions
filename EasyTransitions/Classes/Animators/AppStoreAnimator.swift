@@ -13,10 +13,10 @@ public class AppStoreAnimator: ModalTransitionAnimator {
     private var edgeLayoutConstraints: NSEdgeLayoutConstraints?
     private let blurView = UIVisualEffectView(effect: nil)
     
-    public var auxAnimation: (Bool) -> Void = { _ in }
+    public var auxAnimation: ((Bool) -> Void)? = .none
     
     public var onReady: () -> Void = {}
-    public var onDismissed: () -> Void = {}
+    public var onDismissed: (() -> Void)? = .none
     
     public init(initialFrame: CGRect) {
         self.initialFrame = initialFrame
@@ -56,7 +56,7 @@ public class AppStoreAnimator: ModalTransitionAnimator {
             edgeLayoutConstraints?.match(to: self.initialFrame,
                                               container: container)
         }
-        auxAnimation(presenting)
+        auxAnimation?(presenting)
         modalView.layoutIfNeeded()
         container.layoutIfNeeded()
     }
