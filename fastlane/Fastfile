@@ -22,8 +22,9 @@ platform :ios do
     podspec_name = "EasyTransitions.podspec"
     version = version_bump_podspec(path: podspec_name, 
                                    bump_type: type)
-    git_add(path: podspec_name)
-    git_commit(path: [podspec_name],
+    cocoapods(podfile: "./Example")
+    git_add
+    git_commit(path: "",
                message: "#{version} release")
     add_git_tag(tag: "#{version}")
     push_to_git_remote
