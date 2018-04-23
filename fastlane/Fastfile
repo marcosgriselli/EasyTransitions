@@ -24,7 +24,7 @@ platform :ios do
                                    bump_type: type)
     cocoapods(podfile: "./Example")
     git_add
-    git_commit(path: "",
+    git_commit(path: ".",
                message: "#{version} release")
     add_git_tag(tag: "#{version}")
     push_to_git_remote
