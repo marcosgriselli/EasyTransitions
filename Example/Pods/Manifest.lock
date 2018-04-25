@@ -1,16 +1,16 @@
 PODS:
-  - EasyTransitions (0.4.1)
+  - EasyTransitions (0.4.2)
 
 DEPENDENCIES:
   - EasyTransitions (from `../`)
 
 EXTERNAL SOURCES:
   EasyTransitions:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  EasyTransitions: 3ad5397ef1d5d6001a25de7334ed722eec184bba
+  EasyTransitions: c13ed2eae849241d5a55fd1ed40b427d526adedc
 
 PODFILE CHECKSUM: aef2d3cc98822f36a4f684670427a18f2496d792
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0
