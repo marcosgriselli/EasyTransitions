@@ -40,9 +40,9 @@ class TodayCollectionViewController: UICollectionViewController {
         collectionView?.register(TodayCollectionViewCell.self)
     }
 
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        let vcWidth = self.view.frame.size.width - 20//20 is left margin
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        let vcWidth = size.width - 20//20 is left margin
         var width: CGFloat = 355 //335 is ideal size + 20 of right margin for each item
         let colums = round(vcWidth / width) //Aproximate times the ideal size fits the screen
         width = (vcWidth / colums) - 20 //we substract the right marging
