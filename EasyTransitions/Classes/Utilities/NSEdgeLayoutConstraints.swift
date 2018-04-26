@@ -16,6 +16,10 @@ public final class NSEdgeLayoutConstraints {
     }
     
     // MARK: - Init
+    public convenience init(view: UIView, container: UIView) {
+        self.init(view: view, container: container, frame: .zero)
+    }
+
     public init(view: UIView, container: UIView, frame: CGRect) {
         top = view.topAnchor.constraint(equalTo: container.topAnchor, constant: frame.minY)
         left = view.leftAnchor.constraint(equalTo: container.leftAnchor, constant: frame.minX)

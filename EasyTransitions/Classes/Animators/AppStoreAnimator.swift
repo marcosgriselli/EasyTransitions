@@ -9,7 +9,7 @@ import Foundation
 
 public class AppStoreAnimator: ModalTransitionAnimator {
     
-    private var initialFrame: CGRect
+    public var initialFrame: CGRect
     private var edgeLayoutConstraints: NSEdgeLayoutConstraints?
     private let blurView = UIVisualEffectView(effect: nil)
     
@@ -32,8 +32,13 @@ public class AppStoreAnimator: ModalTransitionAnimator {
             return
         }
         
-        blurView.frame = container.frame
+        blurView.translatesAutoresizingMaskIntoConstraints = false
+        blurView.frame = container.bounds
         container.addSubview(blurView)
+        let blurConstraints = NSEdgeLayoutConstraints(view: blurView, container: container)
+        blurConstraints.toggleConstraints(true)
+        blurConstraints.constants(to: 0)
+
         
         modalView.translatesAutoresizingMaskIntoConstraints = false
         container.addSubview(modalView)
