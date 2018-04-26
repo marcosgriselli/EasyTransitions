@@ -15,8 +15,7 @@ public final class CardView: UIView, NibOwnerLoadable {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var iconTopLayoutConstraint: NSLayoutConstraint!
-    @IBOutlet weak var imageViewAspectRatio: NSLayoutConstraint!
-    
+
     // Delegate
     weak var delegate: CardViewDelegate?
     
@@ -24,27 +23,23 @@ public final class CardView: UIView, NibOwnerLoadable {
     public struct Layout {
         
         // MARK: - Properties
-        public let aspectRatio: CGFloat
         public let cornerRadius: CGFloat
         public let topOffset: CGFloat
         public let closeButtonAlpha: CGFloat
         
         // MARK: - Init
-        private init(aspectRatio: CGFloat, cornerRadius: CGFloat, topOffset: CGFloat, closeButtonAlpha: CGFloat) {
-            self.aspectRatio = aspectRatio
+        private init(cornerRadius: CGFloat, topOffset: CGFloat, closeButtonAlpha: CGFloat) {
             self.cornerRadius = cornerRadius
             self.topOffset = topOffset
             self.closeButtonAlpha = closeButtonAlpha
         }
         
         // MARK: - Layouts
-        public static let collapsed = Layout(aspectRatio: 335/412,
-                                             cornerRadius: 13,
+        public static let collapsed = Layout(cornerRadius: 13,
                                              topOffset: 20,
                                              closeButtonAlpha: 0)
         
-        public static let expanded = Layout(aspectRatio: 375/492,
-                                            cornerRadius: 0,
+        public static let expanded = Layout(cornerRadius: 0,
                                             topOffset: 20 + UIWindow.safeAreaTopInset,
                                             closeButtonAlpha: 1)
     }
@@ -72,9 +67,9 @@ public final class CardView: UIView, NibOwnerLoadable {
     }
     
     public func set(layout: CardView.Layout) {
-        imageView.layer.cornerRadius = layout.cornerRadius
+        self.layer.cornerRadius = layout.cornerRadius
+        self.layer.masksToBounds = true
         iconTopLayoutConstraint.constant = layout.topOffset
-        imageViewAspectRatio = imageViewAspectRatio.setMultiplier(multiplier: layout.aspectRatio)
         closeButton.alpha = layout.closeButtonAlpha
     }
     
