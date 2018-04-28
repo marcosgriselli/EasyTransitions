@@ -17,6 +17,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		AEC652E5417A7CD20F019E20 /* Pods_EasyTransitions_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDB7DBBF3E916EFA4DC8DF1 /* Pods_EasyTransitions_Tests.framework */; };
+		E671CB073F0A1EE5E1E8890E /* Pods_EasyTransitionTVOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 601251CF72C9DBA5A0881BBD /* Pods_EasyTransitionTVOS.framework */; };
 		FB0548EA207F98B500BC37C1 /* GalleryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0548E9207F98B500BC37C1 /* GalleryTableViewController.swift */; };
 		FB0548ED207F98CE00BC37C1 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0548EB207F98CE00BC37C1 /* GalleryTableViewCell.swift */; };
 		FB0548EE207F98CE00BC37C1 /* GalleryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB0548EC207F98CE00BC37C1 /* GalleryTableViewCell.xib */; };
@@ -63,6 +64,7 @@
 		16A85F76532608850F963DC3 /* Pods-EasyTransitions_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTransitions_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTransitions_Example/Pods-EasyTransitions_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2C51D38B2F4A1002C181AB86 /* EasyTransitions.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = EasyTransitions.podspec; path = ../EasyTransitions.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		30DEC79CCF74534776C7743A /* Pods-EasyTransitions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTransitions_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTransitions_Tests/Pods-EasyTransitions_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		39D38C59D9D6365C92731574 /* Pods-EasyTransitionTVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTransitionTVOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTransitionTVOS/Pods-EasyTransitionTVOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3D2E4CA5EC483B251F6C0B21 /* Pods-EasyTransitions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTransitions_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTransitions_Tests/Pods-EasyTransitions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		435DF87A2094C87900E44793 /* EasyTransitionTVOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTransitionTVOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		435DF87C2094C87900E44793 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		435DF8832094C87C00E44793 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		435DF8852094C87C00E44793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		510C8401172A49E994AE894A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		601251CF72C9DBA5A0881BBD /* Pods_EasyTransitionTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTransitionTVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* EasyTransitions_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTransitions_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		65100B46AB43FDD270667D05 /* Pods_EasyTransitions_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTransitions_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6961D27C11E8A36C5028514E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7D2B78568DDE6CBFC64D87A3 /* Pods-EasyTransitionTVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTransitionTVOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTransitionTVOS/Pods-EasyTransitionTVOS.release.xcconfig"; sourceTree = "<group>"; };
 		9FDB7DBBF3E916EFA4DC8DF1 /* Pods_EasyTransitions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTransitions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C51D28049D62F8D6165D6379 /* Pods-EasyTransitions_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTransitions_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTransitions_Example/Pods-EasyTransitions_Example.release.xcconfig"; sourceTree = "<group>"; };
 		FB0548E9207F98B500BC37C1 /* GalleryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E671CB073F0A1EE5E1E8890E /* Pods_EasyTransitionTVOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +154,8 @@
 				C51D28049D62F8D6165D6379 /* Pods-EasyTransitions_Example.release.xcconfig */,
 				3D2E4CA5EC483B251F6C0B21 /* Pods-EasyTransitions_Tests.debug.xcconfig */,
 				30DEC79CCF74534776C7743A /* Pods-EasyTransitions_Tests.release.xcconfig */,
+				39D38C59D9D6365C92731574 /* Pods-EasyTransitionTVOS.debug.xcconfig */,
+				7D2B78568DDE6CBFC64D87A3 /* Pods-EasyTransitionTVOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -246,6 +253,7 @@
 			children = (
 				65100B46AB43FDD270667D05 /* Pods_EasyTransitions_Example.framework */,
 				9FDB7DBBF3E916EFA4DC8DF1 /* Pods_EasyTransitions_Tests.framework */,
+				601251CF72C9DBA5A0881BBD /* Pods_EasyTransitionTVOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -401,9 +409,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 435DF8882094C87C00E44793 /* Build configuration list for PBXNativeTarget "EasyTransitionTVOS" */;
 			buildPhases = (
+				07E5280EFF366C52D80998D5 /* [CP] Check Pods Manifest.lock */,
 				435DF8762094C87900E44793 /* Sources */,
 				435DF8772094C87900E44793 /* Frameworks */,
 				435DF8782094C87900E44793 /* Resources */,
+				90083963790CC304068CDF7C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -534,6 +544,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		07E5280EFF366C52D80998D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EasyTransitionTVOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		1A26149ACAC5029C1D80A325 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -559,7 +587,7 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-EasyTransitions_Example/Pods-EasyTransitions_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/EasyTransitions/EasyTransitions.framework",
+				"${BUILT_PRODUCTS_DIR}/EasyTransitions-iOS/EasyTransitions.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -586,6 +614,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90083963790CC304068CDF7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-EasyTransitionTVOS/Pods-EasyTransitionTVOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/EasyTransitions-tvOS/EasyTransitions.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EasyTransitions.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyTransitionTVOS/Pods-EasyTransitionTVOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -672,6 +718,7 @@
 /* Begin XCBuildConfiguration section */
 		435DF8862094C87C00E44793 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39D38C59D9D6365C92731574 /* Pods-EasyTransitionTVOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -698,6 +745,7 @@
 		};
 		435DF8872094C87C00E44793 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D2B78568DDE6CBFC64D87A3 /* Pods-EasyTransitionTVOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

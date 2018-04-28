@@ -1,5 +1,5 @@
 framework module EasyTransitions {
-  umbrella header "EasyTransitions-umbrella.h"
+  umbrella header "EasyTransitions-iOS-umbrella.h"
 
   export *
   module * { export * }
