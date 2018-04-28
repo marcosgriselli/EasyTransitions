@@ -12,13 +12,19 @@ public class AppStoreAnimator: ModalTransitionAnimator {
     public var initialFrame: CGRect
     private var edgeLayoutConstraints: NSEdgeLayoutConstraints?
     private let blurView = UIVisualEffectView(effect: nil)
-    
+    private var blurEffectStyle: UIBlurEffectStyle = .light
+
     public var auxAnimation: ((Bool) -> Void)? = .none
-    
+
     public var onReady: () -> Void = {}
     public var onDismissed: (() -> Void)? = .none
-    
+
     public init(initialFrame: CGRect) {
+        self.initialFrame = initialFrame
+    }
+
+    public init(initialFrame: CGRect, blurEffectStyle: UIBlurEffectStyle) {
+        self.blurEffectStyle = blurEffectStyle
         self.initialFrame = initialFrame
     }
     
@@ -53,7 +59,7 @@ public class AppStoreAnimator: ModalTransitionAnimator {
     public func animate(presenting: Bool,
                         modalView: UIView, in container: UIView) {
         if presenting {
-            self.blurView.effect = UIBlurEffect(style: .light)
+            self.blurView.effect = UIBlurEffect(style: self.blurEffectStyle)
             self.edgeLayoutConstraints?.constants(to: 0)
             // self.edgeLayoutConstraints?.vertical(to: 0) with 0.16 offsetDelay
         } else {
