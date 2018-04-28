@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EasyTransitions
 
 struct MovieData {
     let poster: UIImage
@@ -27,11 +28,12 @@ class MoviePosterCell: UICollectionViewCell {
     static let identifier = "MoviePosterCell"
 
     @IBOutlet weak var poster: UIImageView!
-    var movieData: MovieData!
-
-    func set(with movie: MovieData) {
-        movieData = movie
-        poster.image = movie.poster
+    var movieData: MovieData? {
+        didSet {
+            if let movie = movieData {
+                poster.image = movie.poster
+            }
+        }
     }
 
     //This is to keep focused cells from being stuck behind it's siblins
@@ -47,8 +49,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         movies = (1 ... 21).map({ MovieData(movieId: $0) })
+        definesPresentationContext = true
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -57,8 +59,34 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell: MoviePosterCell = collectionView.dequeueReusableCell(withReuseIdentifier: MoviePosterCell.identifier, for: indexPath) as! MoviePosterCell
-        cell.set(with: movies[indexPath.row])
+        cell.movieData = movies[indexPath.row]
         return cell
+    }
+
+    private var modalTransitionDelegate = ModalTransitionDelegate()
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let detailViewController = MovieDetailViewController()
+        detailViewController.movie = movies[indexPath.row]
+        guard let cell = collectionView.cellForItem(at: indexPath) as? MoviePosterCell else {
+        present(detailViewController, animated: true)
+            return
+        }
+
+        let cellFrame = view.convert(cell.poster.focusedFrameGuide.layoutFrame, from: cell)
+
+        let blurEffectStyle: UIBlurEffectStyle = traitCollection.userInterfaceStyle == .light ? .light : .extraDark
+
+        let appStoreAnimator = AppStoreAnimator(initialFrame: cellFrame, blurEffectStyle: blurEffectStyle)
+        appStoreAnimator.onReady = { cell.isHidden = true }
+        appStoreAnimator.onDismissed = { cell.isHidden = false }
+
+        modalTransitionDelegate.set(animator: appStoreAnimator, for: .present)
+        modalTransitionDelegate.set(animator: appStoreAnimator, for: .dismiss)
+
+        detailViewController.transitioningDelegate = modalTransitionDelegate
+        detailViewController.modalPresentationStyle = .custom
+
+        present(detailViewController, animated: true)
     }
 }
 

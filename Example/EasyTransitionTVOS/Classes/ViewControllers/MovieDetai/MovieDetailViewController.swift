@@ -7,29 +7,41 @@
 //
 
 import UIKit
+import EasyTransitions
 
 class MovieDetailViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    @IBOutlet var card: UIView!
+    @IBOutlet var poster: UIImageView!
+    @IBOutlet var movieTitle: UILabel!
+    @IBOutlet var movieDate: UILabel!
+    @IBOutlet var movieDescription: UILabel!
 
-        // Do any additional setup after loading the view.
+    var movie: MovieData? {
+        didSet {
+            if let movie = movie, view != nil {
+                poster.image = movie.poster
+                movieTitle.text = movie.name
+                movieDescription.text = movie.description
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateStyle = .long
+                movieDate.text = dateFormatter.string(from: movie.date)
+            }
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        if traitCollection.userInterfaceStyle == .dark {
+            card.backgroundColor = UIColor.darkGray
+            movieTitle.textColor = UIColor.white
+            movieDate.textColor = UIColor.lightGray
+            movieDescription.textColor = UIColor.white
+        }
+        else {
+            card.backgroundColor = UIColor.white
+            movieTitle.textColor = UIColor.black
+            movieDate.textColor = UIColor.darkGray
+            movieDescription.textColor = UIColor.black
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
