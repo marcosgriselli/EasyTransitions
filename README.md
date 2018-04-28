@@ -21,7 +21,7 @@
 
 **EasyTransitions** is a library that helps developers create custom interactive transitions using simple functions defined in a protocol and avoid handling with the mutiple transitions API's in UIKit.
 
-## ⚠️ This library is a work in progress (WIP) expect many changes until it reaches 1.0 ⚠️
+## ⚠️ This library is a Work In Progress expect many changes until it reaches 1.0 ⚠️
 
 The development roadmap will be documented using Github issues, milestones and project. Contributions are welcome! 
 
@@ -129,17 +129,21 @@ func showDetailViewController() {
 * iOS 10.0+
 * tvOS 9.0+
 
-### Contributing
-Feel free to collaborate with ideas 💭, issues ⁉️ and/or pull requests 🔃.
-
-If you use ViewAnimator in your app I'd love to hear about it and feature your animation here!
-
 ### Author
 
 Marcos Griselli | <a href="url"><img src="https://cdn.rawgit.com/marcosgriselli/ViewAnimator/cf065e96/Resources/twitterLogo.svg" height="17"></a> [@marcosgriselli](https://twitter.com/marcosgriselli)
 
 
 [![Twitter Follow](https://img.shields.io/twitter/follow/marcosgriselli.svg?style=social)](https://twitter.com/marcosgriselli)
+
+### Contributors
+<a href="https://twitter.com/santzdesign"><img src="Assets/santiago.png" width="60"></a>
+
+
+### Contributing
+Feel free to collaborate with ideas 💭, issues ⁉️ and/or pull requests 🔃.
+
+If you use ViewAnimator in your app I'd love to hear about it and feature your animation here!
 
 ### License
 
