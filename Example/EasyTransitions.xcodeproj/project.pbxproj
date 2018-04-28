@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		435DF87D2094C87900E44793 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF87C2094C87900E44793 /* AppDelegate.swift */; };
-		435DF87F2094C87900E44793 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF87E2094C87900E44793 /* ViewController.swift */; };
 		435DF8822094C87900E44793 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 435DF8802094C87900E44793 /* Main.storyboard */; };
 		435DF8842094C87C00E44793 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 435DF8832094C87C00E44793 /* Assets.xcassets */; };
 		435DF8B12094DB0300E44793 /* movie2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 435DF8AA2094DB0300E44793 /* movie2.jpg */; };
@@ -18,6 +16,10 @@
 		435DF8B52094DB0300E44793 /* movie5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 435DF8AE2094DB0300E44793 /* movie5.jpg */; };
 		435DF8B72094DB0300E44793 /* movie6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 435DF8B02094DB0300E44793 /* movie6.jpg */; };
 		435DF8B92094DFA500E44793 /* movie0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 435DF8B82094DFA500E44793 /* movie0.jpg */; };
+		435DF8C92094EC5D00E44793 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF8C52094EC5D00E44793 /* AppDelegate.swift */; };
+		435DF8CF2094EC8300E44793 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF8CB2094EC8300E44793 /* DashboardViewController.swift */; };
+		435DF8D02094EC8300E44793 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435DF8CD2094EC8300E44793 /* MovieDetailViewController.swift */; };
+		435DF8D12094EC8300E44793 /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 435DF8CE2094EC8300E44793 /* MovieDetailViewController.xib */; };
 		49A14481C8A8B276745490DA /* Pods_EasyTransitions_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65100B46AB43FDD270667D05 /* Pods_EasyTransitions_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -74,8 +76,6 @@
 		39D38C59D9D6365C92731574 /* Pods-EasyTransitionTVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTransitionTVOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTransitionTVOS/Pods-EasyTransitionTVOS.debug.xcconfig"; sourceTree = "<group>"; };
 		3D2E4CA5EC483B251F6C0B21 /* Pods-EasyTransitions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTransitions_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTransitions_Tests/Pods-EasyTransitions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		435DF87A2094C87900E44793 /* EasyTransitionTVOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTransitionTVOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		435DF87C2094C87900E44793 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		435DF87E2094C87900E44793 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		435DF8812094C87900E44793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		435DF8832094C87C00E44793 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		435DF8852094C87C00E44793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +86,10 @@
 		435DF8AE2094DB0300E44793 /* movie5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = movie5.jpg; sourceTree = "<group>"; };
 		435DF8B02094DB0300E44793 /* movie6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = movie6.jpg; sourceTree = "<group>"; };
 		435DF8B82094DFA500E44793 /* movie0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = movie0.jpg; sourceTree = "<group>"; };
+		435DF8C52094EC5D00E44793 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		435DF8CB2094EC8300E44793 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		435DF8CD2094EC8300E44793 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
+		435DF8CE2094EC8300E44793 /* MovieDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
 		510C8401172A49E994AE894A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		601251CF72C9DBA5A0881BBD /* Pods_EasyTransitionTVOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTransitionTVOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* EasyTransitions_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyTransitions_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,9 +181,8 @@
 		435DF87B2094C87900E44793 /* EasyTransitionTVOS */ = {
 			isa = PBXGroup;
 			children = (
+				435DF8BE2094EC5D00E44793 /* Classes */,
 				435DF8A82094DB0300E44793 /* resources */,
-				435DF87C2094C87900E44793 /* AppDelegate.swift */,
-				435DF87E2094C87900E44793 /* ViewController.swift */,
 				435DF8802094C87900E44793 /* Main.storyboard */,
 				435DF8832094C87C00E44793 /* Assets.xcassets */,
 				435DF8852094C87C00E44793 /* Info.plist */,
@@ -207,6 +210,41 @@
 				435DF8B02094DB0300E44793 /* movie6.jpg */,
 			);
 			path = movie_posters;
+			sourceTree = "<group>";
+		};
+		435DF8BE2094EC5D00E44793 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				435DF8C52094EC5D00E44793 /* AppDelegate.swift */,
+				435DF8BF2094EC5D00E44793 /* ViewControllers */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		435DF8BF2094EC5D00E44793 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				435DF8CA2094EC8300E44793 /* Dashboard */,
+				435DF8CC2094EC8300E44793 /* MovieDetai */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		435DF8CA2094EC8300E44793 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				435DF8CB2094EC8300E44793 /* DashboardViewController.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		435DF8CC2094EC8300E44793 /* MovieDetai */ = {
+			isa = PBXGroup;
+			children = (
+				435DF8CD2094EC8300E44793 /* MovieDetailViewController.swift */,
+				435DF8CE2094EC8300E44793 /* MovieDetailViewController.xib */,
+			);
+			path = MovieDetai;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -559,6 +597,7 @@
 				435DF8B32094DB0300E44793 /* movie1.jpg in Resources */,
 				435DF8B12094DB0300E44793 /* movie2.jpg in Resources */,
 				435DF8842094C87C00E44793 /* Assets.xcassets in Resources */,
+				435DF8D12094EC8300E44793 /* MovieDetailViewController.xib in Resources */,
 				435DF8822094C87900E44793 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -685,8 +724,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				435DF87F2094C87900E44793 /* ViewController.swift in Sources */,
-				435DF87D2094C87900E44793 /* AppDelegate.swift in Sources */,
+				435DF8C92094EC5D00E44793 /* AppDelegate.swift in Sources */,
+				435DF8D02094EC8300E44793 /* MovieDetailViewController.swift in Sources */,
+				435DF8CF2094EC8300E44793 /* DashboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
