@@ -9,5 +9,7 @@ import Foundation
 
 public enum Pan {
     case regular(PanDirection)
+    #if os(iOS)
     case edge(UIRectEdge)
+    #endif
 }

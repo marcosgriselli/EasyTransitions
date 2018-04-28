@@ -7,6 +7,7 @@
 
 import UIKit
 
+#if os(iOS)
 internal class TransitionEdgePanGestureRecognizer: UIScreenEdgePanGestureRecognizer, PanGesture {
     var pan: Pan
     required init(pan: Pan) {
@@ -14,3 +15,4 @@ internal class TransitionEdgePanGestureRecognizer: UIScreenEdgePanGestureRecogni
         super.init(target: nil, action: nil)
     }
 }
+#endif

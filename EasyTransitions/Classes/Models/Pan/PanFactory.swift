@@ -14,10 +14,12 @@ internal class PanFactory {
         switch pan {
         case .regular(_):
             gestureRecognizer = TransitionPanGestureRecognizer(pan: pan)
+            #if os(iOS)
         case .edge(let rectEdge):
             let edgeGestureRecognizer = TransitionEdgePanGestureRecognizer(pan: pan)
             edgeGestureRecognizer.edges = rectEdge
             gestureRecognizer = edgeGestureRecognizer
+            #endif
         }
         return gestureRecognizer
     }

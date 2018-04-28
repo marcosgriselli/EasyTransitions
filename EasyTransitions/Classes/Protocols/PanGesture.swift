@@ -34,6 +34,7 @@ extension PanGesture where Self: UIPanGestureRecognizer {
             case .fromRight:
                 return -translation.x / view.bounds.width
             }
+            #if os(iOS)
         case .edge(let rectEdge):
             switch rectEdge {
             case .top:
@@ -47,6 +48,7 @@ extension PanGesture where Self: UIPanGestureRecognizer {
             default:
                 return 0
             }
+            #endif
         }
     }
     
@@ -68,6 +70,7 @@ extension PanGesture where Self: UIPanGestureRecognizer {
             case .fromRight:
                 return -velocity.x
             }
+            #if os(iOS)
         case .edge(let rectEdge):
             switch rectEdge {
             case .top:
@@ -81,6 +84,7 @@ extension PanGesture where Self: UIPanGestureRecognizer {
             default:
                 return 0
             }
+            #endif
         }
     }
 }
