@@ -1,11 +1,25 @@
-<img src="https://cdn.rawgit.com/marcosgriselli/EasyTransitions/b614067c/banner.svg" width=100%/>
+<p align="center">
+	<img src="Assets/banner.svg"/>
+</p>
+
+<p align="center">
+    <img src="https://img.shields.io/badge/Swift-4.1-green.svg" />
+        <img src="https://img.shields.io/badge/iOS-10%2B-blue.svg?style=flat" />
+    <a href="https://cocoapods.org/pods/EasyTransitions">
+        <img src="https://img.shields.io/cocoapods/v/EasyTransitions.svg" alt="CocoaPods" />
+    </a>
+    <a href="https://github.com/Carthage/Carthage">
+        <img src="https://img.shields.io/badge/carthage-compatible-4BC51D.svg?style=flat" alt="Carthage" />
+    </a>
+    <a href="https://codebeat.co/projects/github-com-marcosgriselli-easytransitions-master">
+      <img src="https://codebeat.co/badges/633fb33d-66b6-4034-93c0-0f52c5d0e15c" alt="Codebeat" />
+    </a>
+    <a href="https://opensource.org/licenses/MIT">
+      <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License" />
+    </a>
+</p>
 
 **EasyTransitions** is a library that helps developers create custom interactive transitions using simple functions defined in a protocol and avoid handling with the mutiple transitions API's in UIKit.
-
-[![Version](https://img.shields.io/cocoapods/v/EasyTransitions.svg?style=flat)](http://cocoapods.org/pods/Transitions)
-![iOS 8+](https://img.shields.io/badge/iOS-10%2B-blue.svg?style=flat)
-![Swift 4](https://img.shields.io/badge/Swift-4-orange.svg?style=flat)
-[![codebeat badge](https://codebeat.co/badges/633fb33d-66b6-4034-93c0-0f52c5d0e15c)](https://codebeat.co/projects/github-com-marcosgriselli-easytransitions-master)
 
 ## ⚠️ This library is a work in progress (WIP) expect many changes until it reaches 1.0 ⚠️
 
@@ -110,9 +124,10 @@ func showDetailViewController() {
 ## Project Details
 
 ### Requirements
-* Swift 4.0
+* Swift 4.1
 * Xcode 9.0+
 * iOS 10.0+
+* tvOS 9.0+
 
 ### Contributing
 Feel free to collaborate with ideas 💭, issues ⁉️ and/or pull requests 🔃.
