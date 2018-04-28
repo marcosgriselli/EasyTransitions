@@ -5,7 +5,9 @@ target 'EasyTransitions_Example' do
 
   target 'EasyTransitions_Tests' do
     inherit! :search_paths
-
-    
   end
+end
+
+target 'EasyTransitionTVOS' do
+  pod 'EasyTransitions', :path => '../'
 end
