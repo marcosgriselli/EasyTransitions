@@ -137,6 +137,7 @@ Marcos Griselli | <a href="url"><img src="https://cdn.rawgit.com/marcosgriselli/
 [![Twitter Follow](https://img.shields.io/twitter/follow/marcosgriselli.svg?style=social)](https://twitter.com/marcosgriselli)
 
 ### Contributors
+<a href="https://twitter.com/dev_jac"><img src="Assets/julio.png" width="60"></a>
 <a href="https://twitter.com/santzdesign"><img src="Assets/santiago.png" width="60"></a>
 
 
