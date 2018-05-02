@@ -11,8 +11,15 @@ public class AppStoreAnimator: ModalTransitionAnimator {
     
     public var initialFrame: CGRect
     private var edgeLayoutConstraints: NSEdgeLayoutConstraints?
-    private let blurView = UIVisualEffectView(effect: nil)
-    private var blurEffectStyle: UIBlurEffectStyle = .light
+    private let blurView: UIVisualEffectView = UIVisualEffectView(effect: nil)
+
+    public var blurEffectStyle: UIBlurEffectStyle = .light {
+        didSet {
+            if blurView.effect != nil && oldValue != blurEffectStyle {
+                self.blurView.effect = UIBlurEffect(style: self.blurEffectStyle)
+            }
+        }
+    }
 
     public var auxAnimation: ((Bool) -> Void)? = .none
 

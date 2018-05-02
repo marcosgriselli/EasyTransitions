@@ -29,6 +29,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     }
 
     private var modalTransitionDelegate = ModalTransitionDelegate()
+    private var appStoreAnimator: AppStoreAnimator!
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let detailViewController = MovieDetailViewController()
         detailViewController.movie = movies[indexPath.row]
@@ -43,7 +44,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         //We would like the blur to match the current tvOS theme
         let blurEffectStyle: UIBlurEffectStyle = traitCollection.userInterfaceStyle == .light ? .light : .extraDark
 
-        let appStoreAnimator = AppStoreAnimator(initialFrame: cellFrame, blurEffectStyle: blurEffectStyle)
+        appStoreAnimator = AppStoreAnimator(initialFrame: cellFrame, blurEffectStyle: blurEffectStyle)
         appStoreAnimator.onReady = { cell.isHidden = true }//To improve the ilussion that the cell is moving and not that a new VC is taking it's place.
         appStoreAnimator.onDismissed = { cell.isHidden = false }
 
@@ -56,5 +57,14 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
 
         present(detailViewController, animated: true)
     }
-}
 
+    //We want the blur to always match the current tvOS theme.
+    override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+        if traitCollection.userInterfaceStyle == .light {
+            appStoreAnimator?.blurEffectStyle = .light
+        }
+        else {
+            appStoreAnimator?.blurEffectStyle = .extraDark
+        }
+    }
+}
