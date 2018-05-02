@@ -37,14 +37,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             return
         }
 
+        //We use "focusedFrameGuide" because we want the frame of the cell including the transformation due to the image being focused.
         let cellFrame = view.convert(cell.poster.focusedFrameGuide.layoutFrame, from: cell)
 
+        //We would like the blur to match the current tvOS theme
         let blurEffectStyle: UIBlurEffectStyle = traitCollection.userInterfaceStyle == .light ? .light : .extraDark
 
         let appStoreAnimator = AppStoreAnimator(initialFrame: cellFrame, blurEffectStyle: blurEffectStyle)
-        appStoreAnimator.onReady = { cell.isHidden = true }
+        appStoreAnimator.onReady = { cell.isHidden = true }//To improve the ilussion that the cell is moving and not that a new VC is taking it's place.
         appStoreAnimator.onDismissed = { cell.isHidden = false }
 
+        //In this example the same animator works for present and dismiss but we can change that if we want.
         modalTransitionDelegate.set(animator: appStoreAnimator, for: .present)
         modalTransitionDelegate.set(animator: appStoreAnimator, for: .dismiss)
 
