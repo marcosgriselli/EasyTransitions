@@ -23,7 +23,7 @@
 		2C52295E790CB2390DD98865B3984BBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D154F4805B9715F0E6D79B0363CE280 /* Foundation.framework */; };
 		2F5FF537DB7F71ED5728D1232B03D225 /* AppStoreAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C7F1BF8681237677F4681C25A0FACA /* AppStoreAnimator.swift */; };
 		38D6124B59F71027FFC8BACFBACEA186 /* PanGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = F913444A2958F466F5F9A81F95325E06 /* PanGesture.swift */; };
-		3A924D62852F10758A92C751F3EB0C70 /* EasyTransitions-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AEBEEC9FFD5635FE65B76598C4EB1326 /* EasyTransitions-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A924D62852F10758A92C751F3EB0C70 /* EasyTransitions-iOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 75E1DBA0E1286F3F8F15F3F6894D20B4 /* EasyTransitions-iOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B963A5D3FB87F0D2F33DD102A5A970B /* ModalOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AC607685718F6037162A453E5E6F5A /* ModalOperation.swift */; };
 		47546C7B295A714FD7FF5ED42A9AC699 /* NavigationTransitionConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BAE065DFECB9AF30C2ECA3FC405729 /* NavigationTransitionConfigurator.swift */; };
 		4C5404D4E22F527ECADDC42ECEE82742 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */; };
@@ -48,10 +48,10 @@
 		CAABB9C33EF9DC8D425FBDC64229E0AF /* PresentationControllerAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E36CEFC6B24320675AC711C9E4B6A1 /* PresentationControllerAnimator.swift */; };
 		CC4A2BA9565FCB012D01D205CF23B9EC /* NavigationTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B9804578FA3BE72C0C645D77FA8E9 /* NavigationTransitionAnimator.swift */; };
 		CFEDFD8B52E5404465DF4F285E1D2AC7 /* ModalTransitionConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D91C44751FC8545C58F5BA13A530C30 /* ModalTransitionConfigurator.swift */; };
-		D2DDFF315AABF68A32286ACC9AB1BFF4 /* EasyTransitions-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F7B12000F4412070A71F00108FD4347 /* EasyTransitions-tvOS-dummy.m */; };
+		D2DDFF315AABF68A32286ACC9AB1BFF4 /* EasyTransitions-tvOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3AEFB14CE001E1718017277A1EA51E8 /* EasyTransitions-tvOS-dummy.m */; };
 		D2E46FD7B6C1A0EB7A8BA8F085921957 /* TransitionInteractiveController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5670077C8CFB0371BD6CA663854D62BF /* TransitionInteractiveController.swift */; };
 		DC46433C8184B05F337D56DAC3D5115D /* ModalTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FBFE368460FEED09FFC6DBF85FCE94 /* ModalTransitionAnimator.swift */; };
-		DC8C4D3F782ACDC8B3E69EFAFCA36A76 /* EasyTransitions-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA4423AFC1DCAFF1C9A10FF4DC849DE /* EasyTransitions-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC8C4D3F782ACDC8B3E69EFAFCA36A76 /* EasyTransitions-tvOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F7BC8911A67BB50E2F4FD70EF83E23E /* EasyTransitions-tvOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E2DC70205E91B4C339C46EE84187E102 /* NavigationTransitionConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BAE065DFECB9AF30C2ECA3FC405729 /* NavigationTransitionConfigurator.swift */; };
 		E6A0E5D0D2907805E1E0A14574C942BD /* ModalTransitionConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D91C44751FC8545C58F5BA13A530C30 /* ModalTransitionConfigurator.swift */; };
 		E71298A98C433641ED22ED3F14A615E8 /* TransitionEdgePanGestureRecognier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A931B924234FACB2D0518797989EB3F /* TransitionEdgePanGestureRecognier.swift */; };
@@ -59,7 +59,7 @@
 		EF5F39C21DAAD12A1AE77D2899D44B73 /* ModalOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AC607685718F6037162A453E5E6F5A /* ModalOperation.swift */; };
 		F4AC5A8E13F73DF4AAE2EF30D3C87D3C /* TransitionPanGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EA0CBA57F7615ADFC3C5C039241507 /* TransitionPanGestureRecognizer.swift */; };
 		F582D5F657886304D428E9E8E539E750 /* Pods-EasyTransitionTVOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F799B5EA93D6B9BA314E78BB1F40B016 /* Pods-EasyTransitionTVOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FBC0D10E085013831F0F4D6DC54783F5 /* EasyTransitions-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C66964F3592C5D140E350270924C771D /* EasyTransitions-iOS-dummy.m */; };
+		FBC0D10E085013831F0F4D6DC54783F5 /* EasyTransitions-iOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02E6CC405AF0E85B9E2E2BD6AD8416F5 /* EasyTransitions-iOS-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,11 +87,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02E6CC405AF0E85B9E2E2BD6AD8416F5 /* EasyTransitions-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyTransitions-iOS-dummy.m"; sourceTree = "<group>"; };
 		0551163202BFB914732B2291303EB8CE /* Pods-EasyTransitions_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyTransitions_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		08E6A3CEAF63B7E6DC2D75E822464771 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		096C1CE7BB467E5F80CDF23D036DEAFF /* Pods-EasyTransitionTVOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyTransitionTVOS-dummy.m"; sourceTree = "<group>"; };
 		0B1E6516124426D8DEEDFE74AB735ABE /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = EasyTransitions/Classes/Configuration.swift; sourceTree = "<group>"; };
-		10F174592C9D6337F554BB5453F3B4EF /* EasyTransitions-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EasyTransitions-tvOS-prefix.pch"; path = "../EasyTransitions-tvOS/EasyTransitions-tvOS-prefix.pch"; sourceTree = "<group>"; };
 		18E7E2A2F6A000207D2CA1F1EE476A11 /* Pods-EasyTransitionTVOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyTransitionTVOS.debug.xcconfig"; sourceTree = "<group>"; };
 		1AEF7A2FEE38B5A1DAEE0CACF85837A8 /* Pods-EasyTransitionTVOS-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyTransitionTVOS-resources.sh"; sourceTree = "<group>"; };
 		1CD777576864FD7AC01E337F12745411 /* EasyTransitions.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = EasyTransitions.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -108,51 +108,51 @@
 		47C7F1BF8681237677F4681C25A0FACA /* AppStoreAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppStoreAnimator.swift; sourceTree = "<group>"; };
 		48FBFE368460FEED09FFC6DBF85FCE94 /* ModalTransitionAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModalTransitionAnimator.swift; sourceTree = "<group>"; };
 		526C5B2F1CA3100B9645085C62F43DA7 /* Pods-EasyTransitions_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyTransitions_Tests-resources.sh"; sourceTree = "<group>"; };
-		52E74CCD8796C11CFD38E887716BB186 /* EasyTransitions-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyTransitions-iOS-prefix.pch"; sourceTree = "<group>"; };
 		54BD409D57E91EC7F30767F033D2B08D /* PanFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PanFactory.swift; sourceTree = "<group>"; };
 		5670077C8CFB0371BD6CA663854D62BF /* TransitionInteractiveController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransitionInteractiveController.swift; path = EasyTransitions/Classes/TransitionInteractiveController.swift; sourceTree = "<group>"; };
 		572DBE63D5360AB71E5F80F979738FD0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS10.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5AAA7A65CD33839E34A82BF5E8B32BB4 /* Pods-EasyTransitions_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyTransitions_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		613FC53567E8208219F8A9AFC5989575 /* Pods_EasyTransitions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EasyTransitions_Tests.framework; path = "Pods-EasyTransitions_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		629F67EA1004729D22C509F144772BA4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		64E51572EDB72AB123502AA50A3163CA /* EasyTransitions-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "EasyTransitions-tvOS.modulemap"; path = "../EasyTransitions-tvOS/EasyTransitions-tvOS.modulemap"; sourceTree = "<group>"; };
 		6514E4DBF88A926777FA8B6E2F2C84E1 /* Pods-EasyTransitions_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EasyTransitions_Tests.modulemap"; sourceTree = "<group>"; };
+		6CF998BCABACA2F731970BA6AA4D2D50 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6D0B3C37AA495936EF6BC139C362FD0E /* ModalTransitionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModalTransitionDelegate.swift; sourceTree = "<group>"; };
 		70B5EB442BC70D24A7556979943B5356 /* Pods-EasyTransitionTVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyTransitionTVOS.release.xcconfig"; sourceTree = "<group>"; };
 		74EA0CBA57F7615ADFC3C5C039241507 /* TransitionPanGestureRecognizer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TransitionPanGestureRecognizer.swift; sourceTree = "<group>"; };
+		75E1DBA0E1286F3F8F15F3F6894D20B4 /* EasyTransitions-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyTransitions-iOS-umbrella.h"; sourceTree = "<group>"; };
+		7970F8FF927F2C92631263EC721925C1 /* EasyTransitions-tvOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "EasyTransitions-tvOS.modulemap"; path = "../EasyTransitions-tvOS/EasyTransitions-tvOS.modulemap"; sourceTree = "<group>"; };
 		7AA45F3F6618E570554D586716F5E3FD /* Pods-EasyTransitions_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyTransitions_Example-umbrella.h"; sourceTree = "<group>"; };
 		7D91C44751FC8545C58F5BA13A530C30 /* ModalTransitionConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ModalTransitionConfigurator.swift; sourceTree = "<group>"; };
 		7F5BFB844A9AD385C6BCE990B37E5A45 /* Pods-EasyTransitions_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyTransitions_Tests-umbrella.h"; sourceTree = "<group>"; };
+		7F7BC8911A67BB50E2F4FD70EF83E23E /* EasyTransitions-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EasyTransitions-tvOS-umbrella.h"; path = "../EasyTransitions-tvOS/EasyTransitions-tvOS-umbrella.h"; sourceTree = "<group>"; };
 		826A0C9EBD86BE7ACAAD00116CA1E2B8 /* EasyTransitions.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyTransitions.framework; path = "EasyTransitions-iOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8339F2DDEC911D8C0BAC31D11E0366C9 /* PanDirection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PanDirection.swift; sourceTree = "<group>"; };
 		84677F6590D38E858E7FB0B46B86529B /* Pods-EasyTransitionTVOS-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyTransitionTVOS-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8F7B12000F4412070A71F00108FD4347 /* EasyTransitions-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EasyTransitions-tvOS-dummy.m"; path = "../EasyTransitions-tvOS/EasyTransitions-tvOS-dummy.m"; sourceTree = "<group>"; };
 		912DE268386C3F454CD760A5C988631E /* Pods-EasyTransitions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyTransitions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		922519DBC212D355D93787050BCAE72A /* Pods-EasyTransitions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyTransitions_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9AFD859864E85F5E0B7D1F082F1A738D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BF4ABD3F14E2B35C3AA4465F4ACCE46 /* EasyTransitions-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "EasyTransitions-iOS.xcconfig"; sourceTree = "<group>"; };
+		9C88E08461430EA195C54C49814F619C /* EasyTransitions-tvOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EasyTransitions-tvOS-prefix.pch"; path = "../EasyTransitions-tvOS/EasyTransitions-tvOS-prefix.pch"; sourceTree = "<group>"; };
 		9D57F5C3AF074A7D11CDD6C4068B77CD /* ShowAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ShowAnimator.swift; sourceTree = "<group>"; };
+		9EB34F5DA7E7B00A1CB9F1D112898F48 /* EasyTransitions-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "EasyTransitions-iOS.modulemap"; sourceTree = "<group>"; };
 		9FB3EE5AAB2B47BD82F756D2B2463235 /* Pods_EasyTransitions_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EasyTransitions_Example.framework; path = "Pods-EasyTransitions_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A00DF6213EA9B6DFEF64B02830DC26F0 /* EasyTransitions-tvOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "EasyTransitions-tvOS.xcconfig"; path = "../EasyTransitions-tvOS/EasyTransitions-tvOS.xcconfig"; sourceTree = "<group>"; };
 		A3BAE065DFECB9AF30C2ECA3FC405729 /* NavigationTransitionConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NavigationTransitionConfigurator.swift; sourceTree = "<group>"; };
 		ABD375C4C2317B991FD409412F0FC2ED /* Pods-EasyTransitions_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EasyTransitions_Example.modulemap"; sourceTree = "<group>"; };
-		AEBEEC9FFD5635FE65B76598C4EB1326 /* EasyTransitions-iOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyTransitions-iOS-umbrella.h"; sourceTree = "<group>"; };
 		B2694ADBE160FF551D9D793536C4247E /* Pods-EasyTransitionTVOS-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyTransitionTVOS-frameworks.sh"; sourceTree = "<group>"; };
-		BEA4423AFC1DCAFF1C9A10FF4DC849DE /* EasyTransitions-tvOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EasyTransitions-tvOS-umbrella.h"; path = "../EasyTransitions-tvOS/EasyTransitions-tvOS-umbrella.h"; sourceTree = "<group>"; };
-		C66964F3592C5D140E350270924C771D /* EasyTransitions-iOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyTransitions-iOS-dummy.m"; sourceTree = "<group>"; };
+		C3AEFB14CE001E1718017277A1EA51E8 /* EasyTransitions-tvOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EasyTransitions-tvOS-dummy.m"; path = "../EasyTransitions-tvOS/EasyTransitions-tvOS-dummy.m"; sourceTree = "<group>"; };
 		CA90B0D65A67254B4D73770ED201878C /* Pan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Pan.swift; sourceTree = "<group>"; };
 		CA9B6EC7EA83E4C262F0F9D3A43ED02D /* Pods-EasyTransitions_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyTransitions_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CCB8C0DE30037ACF62E98B9052DD9B04 /* EasyTransitions-iOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "EasyTransitions-iOS.xcconfig"; sourceTree = "<group>"; };
 		D437E56F61949DDBB30BDA734F96918E /* Pods-EasyTransitions_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyTransitions_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		D573B63E68FFDE78D709539FF9F00E0A /* Pods-EasyTransitions_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyTransitions_Example-dummy.m"; sourceTree = "<group>"; };
-		D8545E86304AFFC0214F6E3D066F241F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../EasyTransitions-tvOS/Info.plist"; sourceTree = "<group>"; };
+		E00EA33F4E56E883E920410ADBD74CB8 /* EasyTransitions-tvOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "EasyTransitions-tvOS.xcconfig"; path = "../EasyTransitions-tvOS/EasyTransitions-tvOS.xcconfig"; sourceTree = "<group>"; };
 		E1E36CEFC6B24320675AC711C9E4B6A1 /* PresentationControllerAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PresentationControllerAnimator.swift; sourceTree = "<group>"; };
-		E35CD6F2710E14B64189F975FC4B7605 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4E759DE40E0EC30E46D8F7D5177BCA3 /* Pods-EasyTransitions_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyTransitions_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E6D6C1F1294786166D1EF7EE1E4735DF /* Pods-EasyTransitions_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyTransitions_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E7E694ED0B15005F95C7E8997F8BD2D5 /* EasyTransitions-iOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyTransitions-iOS-prefix.pch"; sourceTree = "<group>"; };
 		E9D64BCDCB335D7E173BF1562B7D00BB /* Pods-EasyTransitions_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyTransitions_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EEEE2737BBE16F41A3C35B949FB956AD /* EasyTransitions-iOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "EasyTransitions-iOS.modulemap"; sourceTree = "<group>"; };
 		F1E4B47AA6D1C16A5E7BB6FDC9C0BD2E /* Pods-EasyTransitionTVOS-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyTransitionTVOS-acknowledgements.plist"; sourceTree = "<group>"; };
+		F4DE14F2078C865B5864F94BF575BE62 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../EasyTransitions-tvOS/Info.plist"; sourceTree = "<group>"; };
 		F799B5EA93D6B9BA314E78BB1F40B016 /* Pods-EasyTransitionTVOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyTransitionTVOS-umbrella.h"; sourceTree = "<group>"; };
 		F7E19E20D419E69DA3F2DC566255CA76 /* NavigationTransitionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = NavigationTransitionDelegate.swift; sourceTree = "<group>"; };
 		F913444A2958F466F5F9A81F95325E06 /* PanGesture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PanGesture.swift; sourceTree = "<group>"; };
@@ -233,6 +233,26 @@
 			);
 			name = Modal;
 			path = EasyTransitions/Classes/Modal;
+			sourceTree = "<group>";
+		};
+		194C138664CB4B84AE90C9A3928D15EF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EB34F5DA7E7B00A1CB9F1D112898F48 /* EasyTransitions-iOS.modulemap */,
+				9BF4ABD3F14E2B35C3AA4465F4ACCE46 /* EasyTransitions-iOS.xcconfig */,
+				02E6CC405AF0E85B9E2E2BD6AD8416F5 /* EasyTransitions-iOS-dummy.m */,
+				E7E694ED0B15005F95C7E8997F8BD2D5 /* EasyTransitions-iOS-prefix.pch */,
+				75E1DBA0E1286F3F8F15F3F6894D20B4 /* EasyTransitions-iOS-umbrella.h */,
+				7970F8FF927F2C92631263EC721925C1 /* EasyTransitions-tvOS.modulemap */,
+				E00EA33F4E56E883E920410ADBD74CB8 /* EasyTransitions-tvOS.xcconfig */,
+				C3AEFB14CE001E1718017277A1EA51E8 /* EasyTransitions-tvOS-dummy.m */,
+				9C88E08461430EA195C54C49814F619C /* EasyTransitions-tvOS-prefix.pch */,
+				7F7BC8911A67BB50E2F4FD70EF83E23E /* EasyTransitions-tvOS-umbrella.h */,
+				6CF998BCABACA2F731970BA6AA4D2D50 /* Info.plist */,
+				F4DE14F2078C865B5864F94BF575BE62 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/EasyTransitions-iOS";
 			sourceTree = "<group>";
 		};
 		20F731AE46C73F232AF0C168DC383CF9 /* tvOS */ = {
@@ -353,7 +373,7 @@
 				82714187BF06D72D635B3D1BFB167B39 /* Navigation */,
 				9DF1EFEF5CE7E3794975A7BD4091349A /* Pod */,
 				5A61F04FCEA5391826E53D7CF0BE6EA3 /* Protocols */,
-				CACDDDA388831DBCD4F36B2388D8C095 /* Support Files */,
+				194C138664CB4B84AE90C9A3928D15EF /* Support Files */,
 				53320DCA72761983ED1F2EA959577D6B /* Utilities */,
 			);
 			name = EasyTransitions;
@@ -416,26 +436,6 @@
 			);
 			name = "Pods-EasyTransitions_Tests";
 			path = "Target Support Files/Pods-EasyTransitions_Tests";
-			sourceTree = "<group>";
-		};
-		CACDDDA388831DBCD4F36B2388D8C095 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				EEEE2737BBE16F41A3C35B949FB956AD /* EasyTransitions-iOS.modulemap */,
-				CCB8C0DE30037ACF62E98B9052DD9B04 /* EasyTransitions-iOS.xcconfig */,
-				C66964F3592C5D140E350270924C771D /* EasyTransitions-iOS-dummy.m */,
-				52E74CCD8796C11CFD38E887716BB186 /* EasyTransitions-iOS-prefix.pch */,
-				AEBEEC9FFD5635FE65B76598C4EB1326 /* EasyTransitions-iOS-umbrella.h */,
-				64E51572EDB72AB123502AA50A3163CA /* EasyTransitions-tvOS.modulemap */,
-				A00DF6213EA9B6DFEF64B02830DC26F0 /* EasyTransitions-tvOS.xcconfig */,
-				8F7B12000F4412070A71F00108FD4347 /* EasyTransitions-tvOS-dummy.m */,
-				10F174592C9D6337F554BB5453F3B4EF /* EasyTransitions-tvOS-prefix.pch */,
-				BEA4423AFC1DCAFF1C9A10FF4DC849DE /* EasyTransitions-tvOS-umbrella.h */,
-				D8545E86304AFFC0214F6E3D066F241F /* Info.plist */,
-				E35CD6F2710E14B64189F975FC4B7605 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/EasyTransitions-iOS";
 			sourceTree = "<group>";
 		};
 		F0375B64A4AEC4C1D52147EE6C14B737 /* Pods-EasyTransitions_Example */ = {
@@ -819,7 +819,7 @@
 		};
 		35EC384EB7F2A43EF0522441035BC674 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A00DF6213EA9B6DFEF64B02830DC26F0 /* EasyTransitions-tvOS.xcconfig */;
+			baseConfigurationReference = E00EA33F4E56E883E920410ADBD74CB8 /* EasyTransitions-tvOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -886,7 +886,7 @@
 		};
 		54AB53B41DEF48B806459E683377A2AF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCB8C0DE30037ACF62E98B9052DD9B04 /* EasyTransitions-iOS.xcconfig */;
+			baseConfigurationReference = 9BF4ABD3F14E2B35C3AA4465F4ACCE46 /* EasyTransitions-iOS.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1027,7 +1027,7 @@
 		};
 		B45CE1141414E8E2B728289B0E6640E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A00DF6213EA9B6DFEF64B02830DC26F0 /* EasyTransitions-tvOS.xcconfig */;
+			baseConfigurationReference = E00EA33F4E56E883E920410ADBD74CB8 /* EasyTransitions-tvOS.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1158,7 +1158,7 @@
 		};
 		DE5A1914B82FE292C19639CFF2A83D0F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CCB8C0DE30037ACF62E98B9052DD9B04 /* EasyTransitions-iOS.xcconfig */;
+			baseConfigurationReference = 9BF4ABD3F14E2B35C3AA4465F4ACCE46 /* EasyTransitions-iOS.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
