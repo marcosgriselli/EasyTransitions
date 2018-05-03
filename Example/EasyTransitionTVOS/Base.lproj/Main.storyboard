@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="14109" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EasyTransitionTVOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="IWA-OJ-qXW">
+                                <rect key="frame" x="90" y="60" width="1740" height="960"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="20" id="IP5-uC-lUu">
+                                    <size key="itemSize" width="267" height="400"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MoviePosterCell" id="9ba-wd-NCc" customClass="MoviePosterCell" customModule="EasyTransitionTVOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="267" height="400"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="267" height="400"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="movie4" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="A48-KX-7lz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="267" height="399"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="A48-KX-7lz" firstAttribute="leading" secondItem="9ba-wd-NCc" secondAttribute="leading" id="H5L-xq-8aY"/>
+                                            <constraint firstAttribute="bottom" secondItem="A48-KX-7lz" secondAttribute="bottom" id="Nsr-n9-Yig"/>
+                                            <constraint firstItem="A48-KX-7lz" firstAttribute="top" secondItem="9ba-wd-NCc" secondAttribute="top" id="VTf-ce-YeS"/>
+                                            <constraint firstAttribute="trailing" secondItem="A48-KX-7lz" secondAttribute="trailing" id="z01-Jm-9DN"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="poster" destination="A48-KX-7lz" id="uzm-YI-iFw"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Aoi-w3-z6j"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Lkq-dE-xmz"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IWA-OJ-qXW" firstAttribute="leading" secondItem="wu6-TO-1qx" secondAttribute="leading" id="I4Q-U0-YeQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IWA-OJ-qXW" secondAttribute="bottom" id="LHO-R5-5xy"/>
+                            <constraint firstItem="wu6-TO-1qx" firstAttribute="trailing" secondItem="IWA-OJ-qXW" secondAttribute="trailing" id="Uks-oF-ZIR"/>
+                            <constraint firstItem="IWA-OJ-qXW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="m2X-e0-Yoz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="movie4" width="428" height="600"/>
+    </resources>
+</document>
