@@ -4,7 +4,7 @@
 
 <p align="center">
     <img src="https://img.shields.io/badge/Swift-4.1-green.svg" />
-        <img src="https://img.shields.io/badge/iOS-10%2B-blue.svg?style=flat" />
+        <img src="https://img.shields.io/badge/Platforms-iOS%20%7C%20tvOS-blue.svg?style=flat" />
     <a href="https://cocoapods.org/pods/EasyTransitions">
         <img src="https://img.shields.io/cocoapods/v/EasyTransitions.svg" alt="CocoaPods" />
     </a>
