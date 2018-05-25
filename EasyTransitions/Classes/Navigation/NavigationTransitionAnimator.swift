@@ -5,6 +5,7 @@
 //  Created by Marcos Griselli on 07/04/2018.
 //
 
+import UIKit
 
 public protocol NavigationTransitionAnimator {
     var duration: TimeInterval { get }

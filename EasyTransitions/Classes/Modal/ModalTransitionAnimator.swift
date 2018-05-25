@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 public protocol ModalTransitionAnimator {
     var duration: TimeInterval { get }

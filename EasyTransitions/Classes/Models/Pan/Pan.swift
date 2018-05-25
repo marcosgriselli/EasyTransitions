@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 public enum Pan {
     case regular(PanDirection)
