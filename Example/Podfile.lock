@@ -1,5 +1,5 @@
 PODS:
-  - EasyTransitions (0.5.1)
+  - EasyTransitions (0.5.2)
 
 DEPENDENCIES:
   - EasyTransitions (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  EasyTransitions: e79544eaafd7b87634d7e4e9298eee9459405612
+  EasyTransitions: ba7115268ea2a6acebe0bced75a409fb3c1f7226
 
 PODFILE CHECKSUM: 106f8dc62aa8f448e21796dd71b85ec49d779d71
 
