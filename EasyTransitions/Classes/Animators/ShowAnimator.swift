@@ -8,14 +8,14 @@
 import Foundation
 import UIKit
 
-public class ShowAnimator: NavigationTransitionAnimator {
+open class ShowAnimator: NavigationTransitionAnimator {
 
     // MARK: - Init
     public init() {}
 
     // MARK: - NavigationTransitionAnimator
     public var auxAnimations: (Bool) -> [AuxAnimation] = { _ in [] }
-    public var duration: TimeInterval {
+    open var duration: TimeInterval {
         return 0.7
     }
     
