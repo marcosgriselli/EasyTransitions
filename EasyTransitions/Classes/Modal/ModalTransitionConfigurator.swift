@@ -7,12 +7,11 @@
 
 import UIKit
 
-@available(iOS 10.0, *)
-internal final class ModalTransitionConfigurator: NSObject, UIViewControllerAnimatedTransitioning {
+internal class ModalTransitionConfigurator: NSObject, UIViewControllerAnimatedTransitioning {
 
-    private let transitionAnimator: ModalTransitionAnimator
+    private let transitionAnimator: BaseAnimator
 
-    public init(transitionAnimator: ModalTransitionAnimator) {
+    public init(transitionAnimator: BaseAnimator) {
         self.transitionAnimator = transitionAnimator
     }
     
@@ -24,48 +23,8 @@ internal final class ModalTransitionConfigurator: NSObject, UIViewControllerAnim
         transitionAnimator(using: transitionContext).startAnimation()
     }
     
-     private func transitionAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {
-        let fromViewController = transitionContext.viewController(forKey: .from)!
-        let toViewController = transitionContext.viewController(forKey: .to)!
-        
-        let containerView = transitionContext.containerView
-        let isPresenting = (toViewController.presentingViewController === fromViewController)
-
-        let modalView: UIView
-        if transitionContext.responds(to: #selector(UIViewControllerContextTransitioning.view(forKey:))) {
-            let key: UITransitionContextViewKey = isPresenting ? .to : .from
-            modalView = transitionContext.view(forKey: key)!
-        } else {
-            modalView = isPresenting ? toViewController.view : fromViewController.view
-        }
-
-        transitionAnimator.layout(presenting: isPresenting, modalView: modalView, in: containerView)
-        
-        let duration = transitionDuration(using: transitionContext)
-        
-        let animator = UIViewPropertyAnimator(duration: duration, dampingRatio: 0.8)
-        animator.addAnimations {
-            self.transitionAnimator.animate(presenting: isPresenting,
-                                            modalView: modalView, in: containerView)
-        }
-
-        animator.addCompletion { position in
-            switch position {
-            case .end:
-                if !isPresenting {
-                    self.transitionAnimator.onDismissed?()
-                }
-                transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
-            default:
-                self.transitionAnimator.animate(presenting: !isPresenting,
-                                                modalView: modalView,
-                                                in: containerView)
-                transitionContext.completeTransition(false)
-            }
-        }
-        animator.isUserInteractionEnabled = true
-        
-        return animator
+    internal func transitionAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {
+        return transitionAnimator.animate(with: transitionContext)
     }
     
     public func interruptibleAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {

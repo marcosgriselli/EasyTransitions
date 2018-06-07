@@ -8,6 +8,6 @@ target 'EasyTransitions_Example' do
   end
 end
 
-target 'EasyTransitionTVOS' do
-  pod 'EasyTransitions', :path => '../'
-end
+#target 'EasyTransitionTVOS' do
+#  pod 'EasyTransitions', :path => '../'
+#end

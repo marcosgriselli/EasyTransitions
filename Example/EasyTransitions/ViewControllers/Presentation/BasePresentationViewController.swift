@@ -32,8 +32,20 @@ class BasePresentationViewController: UIViewController {
         let presentationController = P(presentedViewController: controller, presenting: self)
         modalTransitionDelegate.set(presentationController: presentationController)
 
-        let presentAnimator = PresentationControllerAnimator(finalFrame: presentationController.frameOfPresentedViewInContainerView)
-        presentAnimator.auxAnimation = { controller.animations(presenting: $0) }
+        let presentAnimator = PresentAnimator(finalFrame: presentationController.frameOfPresentedViewInContainerView)
+        
+        let shadowView = UIView()
+        shadowView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
+        shadowView.frame = view.frame
+        shadowView.alpha = 0
+        view.addSubview(shadowView)
+        
+        presentAnimator.auxAnimationsFor = {
+            let presenting = $0 == .present
+            controller.animations(presenting: presenting)
+            let shadowAlpha: CGFloat = presenting ? 1.0 : 0.0
+            shadowView.alpha = shadowAlpha
+        }
         modalTransitionDelegate.set(animator: presentAnimator, for: .present)
         modalTransitionDelegate.set(animator: presentAnimator, for: .dismiss)
         modalTransitionDelegate.wire(viewController: controller,

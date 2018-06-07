@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     s.social_media_url = 'https://twitter.com/marcosgriselli'
 
     s.ios.deployment_target = '10.0'
-    s.tvos.deployment_target = '10.0'
+    #s.tvos.deployment_target = '10.0'
     s.source_files = 'EasyTransitions/Classes/**/*'
-    s.swift_version = '4.0'
+    s.swift_version = '4.1'
 end

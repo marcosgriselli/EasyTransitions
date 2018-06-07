@@ -10,7 +10,7 @@ import UIKit
 
 open class ModalTransitionDelegate: NSObject {
 
-    private var animators = [ModalOperation: ModalTransitionAnimator]()
+    private var animators = [ModalOperation: BaseAnimator]()
     private let interactiveController = TransitionInteractiveController()
     private var presentationController: UIPresentationController?
     
@@ -24,7 +24,7 @@ open class ModalTransitionDelegate: NSObject {
         interactiveController.shouldBeginTransition = beginWhen
     }
 
-    open func set(animator: ModalTransitionAnimator, for operation: ModalOperation) {
+    open func set(animator: BaseAnimator, for operation: ModalOperation) {
         animators[operation] = animator
     }
     
@@ -40,6 +40,7 @@ open class ModalTransitionDelegate: NSObject {
         guard let animator = animators[operation] else {
             return nil
         }
+
         return ModalTransitionConfigurator(transitionAnimator: animator)
     }
 }
