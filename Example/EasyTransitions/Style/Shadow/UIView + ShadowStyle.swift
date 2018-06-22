@@ -9,7 +9,6 @@
 import UIKit
 
 public extension UIView {
-
     func set(shadowStyle style: ShadowStyle) {
         layer.shadowColor = style.color
         layer.shadowOpacity = style.opacity

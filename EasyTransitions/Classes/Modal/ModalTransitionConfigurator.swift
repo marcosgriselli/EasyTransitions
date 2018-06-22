@@ -10,6 +10,7 @@ import UIKit
 internal class ModalTransitionConfigurator: NSObject, UIViewControllerAnimatedTransitioning {
 
     private let transitionAnimator: BaseAnimator
+    private var a: UIViewImplicitlyAnimating?
 
     public init(transitionAnimator: BaseAnimator) {
         self.transitionAnimator = transitionAnimator
@@ -24,7 +25,11 @@ internal class ModalTransitionConfigurator: NSObject, UIViewControllerAnimatedTr
     }
     
     internal func transitionAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {
-        return transitionAnimator.animate(with: transitionContext)
+        guard let b = a else {
+            a = transitionAnimator.animate(with: transitionContext)
+            return a!
+        }
+        return b
     }
     
     public func interruptibleAnimator(using transitionContext: UIViewControllerContextTransitioning) -> UIViewImplicitlyAnimating {

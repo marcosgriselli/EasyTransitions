@@ -13,23 +13,14 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		AEC652E5417A7CD20F019E20 /* Pods_EasyTransitions_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDB7DBBF3E916EFA4DC8DF1 /* Pods_EasyTransitions_Tests.framework */; };
-		FB0548ED207F98CE00BC37C1 /* GalleryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0548EB207F98CE00BC37C1 /* GalleryTableViewCell.swift */; };
-		FB0548EE207F98CE00BC37C1 /* GalleryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB0548EC207F98CE00BC37C1 /* GalleryTableViewCell.xib */; };
-		FB0548F0207FA01B00BC37C1 /* GalleryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0548EF207FA01B00BC37C1 /* GalleryItem.swift */; };
-		FB0548F3207FA5BE00BC37C1 /* CGAffineTransform + Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0548F2207FA5BE00BC37C1 /* CGAffineTransform + Custom.swift */; };
-		FB0548FA207FA85D00BC37C1 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0548F8207FA85D00BC37C1 /* ImageCollectionViewCell.swift */; };
-		FB0548FB207FA85D00BC37C1 /* ImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB0548F9207FA85D00BC37C1 /* ImageCollectionViewCell.xib */; };
 		FB201308208B785300549076 /* BasePresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB201307208B785300549076 /* BasePresentationViewController.swift */; };
 		FB20130B208B786000549076 /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB201309208B786000549076 /* PresentationViewController.swift */; };
 		FB20130C208B786000549076 /* PresentationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB20130A208B786000549076 /* PresentationViewController.xib */; };
 		FB29323F207A64DE00223747 /* UICollectionView + OrderedCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29323E207A64DE00223747 /* UICollectionView + OrderedCells.swift */; };
-		FB293244207A6C7A00223747 /* FunctionalEnumerated.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB293243207A6C7A00223747 /* FunctionalEnumerated.swift */; };
-		FB29324E207A8ECA00223747 /* CircularImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29324D207A8ECA00223747 /* CircularImageView.swift */; };
 		FB756F372078D3ED00C40C0A /* ReusableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F352078D3ED00C40C0A /* ReusableCells.swift */; };
 		FB756F382078D3ED00C40C0A /* NibLoadbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F362078D3ED00C40C0A /* NibLoadbleView.swift */; };
 		FB756F472078D42300C40C0A /* iOSIconImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F452078D42200C40C0A /* iOSIconImageView.swift */; };
 		FB756F482078D42300C40C0A /* RoundCornersButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F462078D42300C40C0A /* RoundCornersButton.swift */; };
-		FB756F4E2078D43700C40C0A /* CardViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F4A2078D43700C40C0A /* CardViewDelegate.swift */; };
 		FB756F4F2078D43700C40C0A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F4B2078D43700C40C0A /* CardView.swift */; };
 		FB756F502078D43700C40C0A /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB756F4C2078D43700C40C0A /* CardView.xib */; };
 		FB756F552078D44E00C40C0A /* TodayCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB756F532078D44E00C40C0A /* TodayCollectionViewCell.xib */; };
@@ -38,7 +29,18 @@
 		FB756F5C2078D46A00C40C0A /* ShadowStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F5A2078D46A00C40C0A /* ShadowStyle.swift */; };
 		FB756F612078D48100C40C0A /* NSLayoutConstraint + Multiplier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F5F2078D48100C40C0A /* NSLayoutConstraint + Multiplier.swift */; };
 		FB756F622078D48100C40C0A /* UIWindow + SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F602078D48100C40C0A /* UIWindow + SafeArea.swift */; };
+		FBDEF5F120D9A8EE00987BB7 /* AppDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDEF5F020D9A8EE00987BB7 /* AppDetailView.swift */; };
+		FBDEF5FC20D9B96400987BB7 /* TinyConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDEF5F620D9B96400987BB7 /* TinyConstraints.swift */; };
+		FBDEF5FD20D9B96400987BB7 /* TinyConstraints+superview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDEF5F720D9B96400987BB7 /* TinyConstraints+superview.swift */; };
+		FBDEF5FE20D9B96400987BB7 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDEF5F820D9B96400987BB7 /* Stack.swift */; };
+		FBDEF5FF20D9B96400987BB7 /* Abstraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDEF5F920D9B96400987BB7 /* Abstraction.swift */; };
+		FBDEF60020D9B96400987BB7 /* Constrainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDEF5FA20D9B96400987BB7 /* Constrainable.swift */; };
+		FBDEF60120D9B96400987BB7 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDEF5FB20D9B96400987BB7 /* Constraints.swift */; };
 		FBF4F1D120C9553F00737BD2 /* PresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF4F1D020C9553F00737BD2 /* PresentAnimator.swift */; };
+		FBF4F1E420C9729200737BD2 /* TodayCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF4F1E120C9729100737BD2 /* TodayCollectionViewController.swift */; };
+		FBF4F1E520C9729200737BD2 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF4F1E220C9729100737BD2 /* AppDetailViewController.swift */; };
+		FBF4F1E620C9729200737BD2 /* AppDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBF4F1E320C9729200737BD2 /* AppDetailViewController.xib */; };
+		FBF4F1E820C972A500737BD2 /* AppStoreAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF4F1E720C972A500737BD2 /* AppStoreAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,23 +74,14 @@
 		7D2B78568DDE6CBFC64D87A3 /* Pods-EasyTransitionTVOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTransitionTVOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTransitionTVOS/Pods-EasyTransitionTVOS.release.xcconfig"; sourceTree = "<group>"; };
 		9FDB7DBBF3E916EFA4DC8DF1 /* Pods_EasyTransitions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyTransitions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C51D28049D62F8D6165D6379 /* Pods-EasyTransitions_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyTransitions_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyTransitions_Example/Pods-EasyTransitions_Example.release.xcconfig"; sourceTree = "<group>"; };
-		FB0548EB207F98CE00BC37C1 /* GalleryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryTableViewCell.swift; sourceTree = "<group>"; };
-		FB0548EC207F98CE00BC37C1 /* GalleryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryTableViewCell.xib; sourceTree = "<group>"; };
-		FB0548EF207FA01B00BC37C1 /* GalleryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryItem.swift; sourceTree = "<group>"; };
-		FB0548F2207FA5BE00BC37C1 /* CGAffineTransform + Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGAffineTransform + Custom.swift"; sourceTree = "<group>"; };
-		FB0548F8207FA85D00BC37C1 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
-		FB0548F9207FA85D00BC37C1 /* ImageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionViewCell.xib; sourceTree = "<group>"; };
 		FB201307208B785300549076 /* BasePresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresentationViewController.swift; sourceTree = "<group>"; };
 		FB201309208B786000549076 /* PresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
 		FB20130A208B786000549076 /* PresentationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresentationViewController.xib; sourceTree = "<group>"; };
 		FB29323E207A64DE00223747 /* UICollectionView + OrderedCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + OrderedCells.swift"; sourceTree = "<group>"; };
-		FB293243207A6C7A00223747 /* FunctionalEnumerated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionalEnumerated.swift; sourceTree = "<group>"; };
-		FB29324D207A8ECA00223747 /* CircularImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularImageView.swift; sourceTree = "<group>"; };
 		FB756F352078D3ED00C40C0A /* ReusableCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCells.swift; sourceTree = "<group>"; };
 		FB756F362078D3ED00C40C0A /* NibLoadbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadbleView.swift; sourceTree = "<group>"; };
 		FB756F452078D42200C40C0A /* iOSIconImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSIconImageView.swift; sourceTree = "<group>"; };
 		FB756F462078D42300C40C0A /* RoundCornersButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCornersButton.swift; sourceTree = "<group>"; };
-		FB756F4A2078D43700C40C0A /* CardViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewDelegate.swift; sourceTree = "<group>"; };
 		FB756F4B2078D43700C40C0A /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FB756F4C2078D43700C40C0A /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		FB756F532078D44E00C40C0A /* TodayCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodayCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -97,7 +90,18 @@
 		FB756F5A2078D46A00C40C0A /* ShadowStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowStyle.swift; sourceTree = "<group>"; };
 		FB756F5F2078D48100C40C0A /* NSLayoutConstraint + Multiplier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint + Multiplier.swift"; sourceTree = "<group>"; };
 		FB756F602078D48100C40C0A /* UIWindow + SafeArea.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow + SafeArea.swift"; sourceTree = "<group>"; };
+		FBDEF5F020D9A8EE00987BB7 /* AppDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailView.swift; sourceTree = "<group>"; };
+		FBDEF5F620D9B96400987BB7 /* TinyConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinyConstraints.swift; sourceTree = "<group>"; };
+		FBDEF5F720D9B96400987BB7 /* TinyConstraints+superview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TinyConstraints+superview.swift"; sourceTree = "<group>"; };
+		FBDEF5F820D9B96400987BB7 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		FBDEF5F920D9B96400987BB7 /* Abstraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Abstraction.swift; sourceTree = "<group>"; };
+		FBDEF5FA20D9B96400987BB7 /* Constrainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constrainable.swift; sourceTree = "<group>"; };
+		FBDEF5FB20D9B96400987BB7 /* Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
 		FBF4F1D020C9553F00737BD2 /* PresentAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentAnimator.swift; sourceTree = "<group>"; };
+		FBF4F1E120C9729100737BD2 /* TodayCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayCollectionViewController.swift; sourceTree = "<group>"; };
+		FBF4F1E220C9729100737BD2 /* AppDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
+		FBF4F1E320C9729200737BD2 /* AppDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppDetailViewController.xib; sourceTree = "<group>"; };
+		FBF4F1E720C972A500737BD2 /* AppStoreAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,11 +161,9 @@
 		607FACD21AFB9204008FA782 /* Example for EasyTransitions */ = {
 			isa = PBXGroup;
 			children = (
-				FB29324F207A8F1500223747 /* Models */,
+				FBDEF5F420D9B94300987BB7 /* App */,
 				FB756F5D2078D47300C40C0A /* Extensions */,
 				FB756F572078D45800C40C0A /* Style */,
-				FB756F442078D41900C40C0A /* Views */,
-				FB756F392078D3FD00C40C0A /* ViewControllers */,
 				FB756F342078D3E000C40C0A /* Utilities */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
@@ -217,14 +219,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FB0548F1207FA5B000BC37C1 /* CoreGraphics */ = {
-			isa = PBXGroup;
-			children = (
-				FB0548F2207FA5BE00BC37C1 /* CGAffineTransform + Custom.swift */,
-			);
-			path = CoreGraphics;
-			sourceTree = "<group>";
-		};
 		FB201306208B783400549076 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,49 +230,14 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		FB293242207A6C5B00223747 /* Foundation */ = {
-			isa = PBXGroup;
-			children = (
-				FB293243207A6C7A00223747 /* FunctionalEnumerated.swift */,
-			);
-			path = Foundation;
-			sourceTree = "<group>";
-		};
-		FB29324F207A8F1500223747 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				FB0548EF207FA01B00BC37C1 /* GalleryItem.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		FB756F342078D3E000C40C0A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				FBDEF5F520D9B95600987BB7 /* TinyConstraints */,
 				FB756F362078D3ED00C40C0A /* NibLoadbleView.swift */,
 				FB756F352078D3ED00C40C0A /* ReusableCells.swift */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		FB756F392078D3FD00C40C0A /* ViewControllers */ = {
-			isa = PBXGroup;
-			children = (
-				FB201306208B783400549076 /* Presentation */,
-			);
-			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		FB756F442078D41900C40C0A /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				FB756F492078D42E00C40C0A /* CardView */,
-				FB756F522078D44200C40C0A /* Cells */,
-				FB756F452078D42200C40C0A /* iOSIconImageView.swift */,
-				FB29324D207A8ECA00223747 /* CircularImageView.swift */,
-				FB756F462078D42300C40C0A /* RoundCornersButton.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		FB756F492078D42E00C40C0A /* CardView */ = {
@@ -286,22 +245,8 @@
 			children = (
 				FB756F4B2078D43700C40C0A /* CardView.swift */,
 				FB756F4C2078D43700C40C0A /* CardView.xib */,
-				FB756F4A2078D43700C40C0A /* CardViewDelegate.swift */,
 			);
 			path = CardView;
-			sourceTree = "<group>";
-		};
-		FB756F522078D44200C40C0A /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				FB756F542078D44E00C40C0A /* TodayCollectionViewCell.swift */,
-				FB756F532078D44E00C40C0A /* TodayCollectionViewCell.xib */,
-				FB0548EB207F98CE00BC37C1 /* GalleryTableViewCell.swift */,
-				FB0548EC207F98CE00BC37C1 /* GalleryTableViewCell.xib */,
-				FB0548F8207FA85D00BC37C1 /* ImageCollectionViewCell.swift */,
-				FB0548F9207FA85D00BC37C1 /* ImageCollectionViewCell.xib */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		FB756F572078D45800C40C0A /* Style */ = {
@@ -324,8 +269,6 @@
 		FB756F5D2078D47300C40C0A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				FB0548F1207FA5B000BC37C1 /* CoreGraphics */,
-				FB293242207A6C5B00223747 /* Foundation */,
 				FB756F5E2078D47800C40C0A /* UIKit */,
 			);
 			path = Extensions;
@@ -339,6 +282,77 @@
 				FB29323E207A64DE00223747 /* UICollectionView + OrderedCells.swift */,
 			);
 			path = UIKit;
+			sourceTree = "<group>";
+		};
+		FBDEF5F420D9B94300987BB7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FB201306208B783400549076 /* Presentation */,
+				FBF4F1E020C9726B00737BD2 /* Today */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FBDEF5F520D9B95600987BB7 /* TinyConstraints */ = {
+			isa = PBXGroup;
+			children = (
+				FBDEF5F920D9B96400987BB7 /* Abstraction.swift */,
+				FBDEF5FA20D9B96400987BB7 /* Constrainable.swift */,
+				FBDEF5FB20D9B96400987BB7 /* Constraints.swift */,
+				FBDEF5F820D9B96400987BB7 /* Stack.swift */,
+				FBDEF5F620D9B96400987BB7 /* TinyConstraints.swift */,
+				FBDEF5F720D9B96400987BB7 /* TinyConstraints+superview.swift */,
+			);
+			path = TinyConstraints;
+			sourceTree = "<group>";
+		};
+		FBDEF60220D9B97200987BB7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FBDEF5F020D9A8EE00987BB7 /* AppDetailView.swift */,
+				FB756F492078D42E00C40C0A /* CardView */,
+				FBDEF60320D9B97600987BB7 /* Cells */,
+				FBDEF60520D9B9CB00987BB7 /* UIControls */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FBDEF60320D9B97600987BB7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FB756F542078D44E00C40C0A /* TodayCollectionViewCell.swift */,
+				FB756F532078D44E00C40C0A /* TodayCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FBDEF60420D9B99D00987BB7 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FBF4F1E220C9729100737BD2 /* AppDetailViewController.swift */,
+				FBF4F1E320C9729200737BD2 /* AppDetailViewController.xib */,
+				FBF4F1E120C9729100737BD2 /* TodayCollectionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FBDEF60520D9B9CB00987BB7 /* UIControls */ = {
+			isa = PBXGroup;
+			children = (
+				FB756F452078D42200C40C0A /* iOSIconImageView.swift */,
+				FB756F462078D42300C40C0A /* RoundCornersButton.swift */,
+			);
+			path = UIControls;
+			sourceTree = "<group>";
+		};
+		FBF4F1E020C9726B00737BD2 /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				FBDEF60220D9B97200987BB7 /* Views */,
+				FBDEF60420D9B99D00987BB7 /* ViewControllers */,
+				FBF4F1E720C972A500737BD2 /* AppStoreAnimator.swift */,
+			);
+			path = Today;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -433,9 +447,8 @@
 				FB756F502078D43700C40C0A /* CardView.xib in Resources */,
 				FB20130C208B786000549076 /* PresentationViewController.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-				FB0548FB207FA85D00BC37C1 /* ImageCollectionViewCell.xib in Resources */,
 				FB756F552078D44E00C40C0A /* TodayCollectionViewCell.xib in Resources */,
-				FB0548EE207F98CE00BC37C1 /* GalleryTableViewCell.xib in Resources */,
+				FBF4F1E620C9729200737BD2 /* AppDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,25 +523,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB0548FA207FA85D00BC37C1 /* ImageCollectionViewCell.swift in Sources */,
-				FB0548F0207FA01B00BC37C1 /* GalleryItem.swift in Sources */,
 				FB756F622078D48100C40C0A /* UIWindow + SafeArea.swift in Sources */,
+				FBDEF5FD20D9B96400987BB7 /* TinyConstraints+superview.swift in Sources */,
+				FBF4F1E520C9729200737BD2 /* AppDetailViewController.swift in Sources */,
 				FB756F612078D48100C40C0A /* NSLayoutConstraint + Multiplier.swift in Sources */,
 				FB20130B208B786000549076 /* PresentationViewController.swift in Sources */,
 				FB29323F207A64DE00223747 /* UICollectionView + OrderedCells.swift in Sources */,
 				FB756F372078D3ED00C40C0A /* ReusableCells.swift in Sources */,
-				FB293244207A6C7A00223747 /* FunctionalEnumerated.swift in Sources */,
-				FB0548F3207FA5BE00BC37C1 /* CGAffineTransform + Custom.swift in Sources */,
+				FBF4F1E820C972A500737BD2 /* AppStoreAnimator.swift in Sources */,
 				FBF4F1D120C9553F00737BD2 /* PresentAnimator.swift in Sources */,
 				FB756F5C2078D46A00C40C0A /* ShadowStyle.swift in Sources */,
-				FB0548ED207F98CE00BC37C1 /* GalleryTableViewCell.swift in Sources */,
+				FBDEF5FE20D9B96400987BB7 /* Stack.swift in Sources */,
 				FB756F382078D3ED00C40C0A /* NibLoadbleView.swift in Sources */,
 				FB756F5B2078D46A00C40C0A /* UIView + ShadowStyle.swift in Sources */,
+				FBF4F1E420C9729200737BD2 /* TodayCollectionViewController.swift in Sources */,
+				FBDEF60020D9B96400987BB7 /* Constrainable.swift in Sources */,
+				FBDEF5FF20D9B96400987BB7 /* Abstraction.swift in Sources */,
 				FB756F472078D42300C40C0A /* iOSIconImageView.swift in Sources */,
 				FB756F482078D42300C40C0A /* RoundCornersButton.swift in Sources */,
+				FBDEF60120D9B96400987BB7 /* Constraints.swift in Sources */,
+				FBDEF5F120D9A8EE00987BB7 /* AppDetailView.swift in Sources */,
+				FBDEF5FC20D9B96400987BB7 /* TinyConstraints.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				FB29324E207A8ECA00223747 /* CircularImageView.swift in Sources */,
-				FB756F4E2078D43700C40C0A /* CardViewDelegate.swift in Sources */,
 				FB201308208B785300549076 /* BasePresentationViewController.swift in Sources */,
 				FB756F4F2078D43700C40C0A /* CardView.swift in Sources */,
 				FB756F562078D44E00C40C0A /* TodayCollectionViewCell.swift in Sources */,

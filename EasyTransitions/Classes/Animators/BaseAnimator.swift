@@ -46,6 +46,7 @@ open class BaseAnimator {
         animator.addAnimations { [weak self] in
             self?.auxAnimationsFor(operation)
         }
+
         animator.addCompletion { [weak self] _ in
             self?.onFinish(operation)
         }

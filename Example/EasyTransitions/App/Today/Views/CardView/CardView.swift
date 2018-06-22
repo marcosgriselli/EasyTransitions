@@ -16,8 +16,8 @@ public final class CardView: UIView, NibOwnerLoadable {
     @IBOutlet weak var closeButton: UIButton!
     @IBOutlet weak var iconTopLayoutConstraint: NSLayoutConstraint!
 
-    // Delegate
-    weak var delegate: CardViewDelegate?
+    // Action
+    var onClose: (() -> Void) = { }
     
     // Layout
     public struct Layout {
@@ -45,13 +45,19 @@ public final class CardView: UIView, NibOwnerLoadable {
     }
     
     // MARK: - Init
+    public override init(frame: CGRect) {
+        super.init(frame: frame)
+        loadNibContent()
+        setup()
+    }
+    
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         loadNibContent()
+        setup()
     }
-
-    override public func awakeFromNib() {
-        super.awakeFromNib()
+    
+    private func setup() {
         set(title: "APP OF THE DAY")
         set(layout: .collapsed)
     }
@@ -74,6 +80,6 @@ public final class CardView: UIView, NibOwnerLoadable {
     }
     
     @IBAction func closeTapped(_ sender: UIButton) {
-        delegate?.closeCardView()
+        onClose()
     }
 }

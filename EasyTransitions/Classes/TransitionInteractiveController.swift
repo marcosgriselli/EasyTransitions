@@ -65,15 +65,16 @@ open class TransitionInteractiveController: UIPercentDrivenInteractiveTransition
             }
         case .changed:
             if interactionInProgress {
-                let fraction = min(max(panned, 0.0), 0.99)
+                let fraction = min(max(panned, 0.0), 0.999)
                 update(fraction)
             }
         case .ended, .cancelled:
             if interactionInProgress {
                 interactionInProgress = false
-                // TODO: - Support completion speed.
                 shouldCompleteTransition = (panned > completeOnPercentage ||                panVelocity > InteractionConstants.velocityForComplete) &&
                     panVelocity > InteractionConstants.velocityForCancel
+                // TODO: - Calculate correctly.
+                completionSpeed = abs(panVelocity / 1000) + 1.0
                 shouldCompleteTransition ? finish() : cancel()
             }
             
@@ -85,8 +86,19 @@ open class TransitionInteractiveController: UIPercentDrivenInteractiveTransition
 // MARK: - UIGestureRecognizerDelegate
 extension TransitionInteractiveController: UIGestureRecognizerDelegate {
     
-    open func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
-        // TODO: - Handle shared gesture action. 
+    public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+        guard let panGesture = gestureRecognizer as? PanGesture else {
+            return false
+        }
+        let panVelocity = panGesture.velocityForPan()
+        return panVelocity > 0 && shouldBeginTransition()
+    }
+    
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }
+    
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
         return true
     }
 }

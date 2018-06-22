@@ -15,7 +15,7 @@ extension NSLayoutConstraint {
      - parameter multiplier: CGFloat
      - returns: NSLayoutConstraint
      */
-    func setMultiplier(multiplier:CGFloat) -> NSLayoutConstraint {
+    func setMultiplier(multiplier: CGFloat) -> NSLayoutConstraint {
         guard let firstItem = firstItem else {
             fatalError("First Item missing on: \(self) while trying to change it's multiplier")
         }

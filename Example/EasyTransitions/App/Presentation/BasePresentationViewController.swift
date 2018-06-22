@@ -40,14 +40,20 @@ class BasePresentationViewController: UIViewController {
         shadowView.alpha = 0
         view.addSubview(shadowView)
         
+        // Aux for different animators? 
         presentAnimator.auxAnimationsFor = {
             let presenting = $0 == .present
             controller.animations(presenting: presenting)
             let shadowAlpha: CGFloat = presenting ? 1.0 : 0.0
             shadowView.alpha = shadowAlpha
         }
+        
+        presentAnimator.onFinish = {
+            if $0 == .dismiss { shadowView.removeFromSuperview() }
+        }
+        
         modalTransitionDelegate.set(animator: presentAnimator, for: .present)
-        modalTransitionDelegate.set(animator: presentAnimator, for: .dismiss)
+        modalTransitionDelegate.set(animator: BAnimator(), for: .dismiss)
         modalTransitionDelegate.wire(viewController: controller,
                                      with: .regular(.fromTop))
         
