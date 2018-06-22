@@ -23,7 +23,7 @@ open class BaseAnimator {
     }
     
     open var onFinish: ((ModalOperation) -> Void) = { _ in }
-    open var auxAnimationsFor: ((ModalOperation) -> Void) = { _ in }
+    open var auxAnimation: AuxAnimation?
     
     internal func animate(with transitionContext: UIViewControllerContextTransitioning) -> UIViewPropertyAnimator {
         context = transitionContext
@@ -42,10 +42,17 @@ open class BaseAnimator {
                 in: transitionContext.containerView
             )
         }
-        
-        animator.addAnimations { [weak self] in
-            self?.auxAnimationsFor(operation)
+    
+        if let auxAnimation = auxAnimation {
+            animator.addAnimations(
+                { auxAnimation.animationBlock(operation) },
+                delayFactor: auxAnimation.delayOffset
+            )
         }
+//        animator.addAnimations { [weak self] in
+//            self?.auxAnimation?.animationBlock()
+
+//        }, del
 
         animator.addCompletion { [weak self] _ in
             self?.onFinish(operation)

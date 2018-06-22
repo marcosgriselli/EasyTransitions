@@ -17,6 +17,7 @@
 		FB20130B208B786000549076 /* PresentationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB201309208B786000549076 /* PresentationViewController.swift */; };
 		FB20130C208B786000549076 /* PresentationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB20130A208B786000549076 /* PresentationViewController.xib */; };
 		FB29323F207A64DE00223747 /* UICollectionView + OrderedCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB29323E207A64DE00223747 /* UICollectionView + OrderedCells.swift */; };
+		FB3B671F20DDA3FC00241269 /* CGRect + KeyPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B671E20DDA3FC00241269 /* CGRect + KeyPaths.swift */; };
 		FB756F372078D3ED00C40C0A /* ReusableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F352078D3ED00C40C0A /* ReusableCells.swift */; };
 		FB756F382078D3ED00C40C0A /* NibLoadbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F362078D3ED00C40C0A /* NibLoadbleView.swift */; };
 		FB756F472078D42300C40C0A /* iOSIconImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB756F452078D42200C40C0A /* iOSIconImageView.swift */; };
@@ -78,6 +79,7 @@
 		FB201309208B786000549076 /* PresentationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationViewController.swift; sourceTree = "<group>"; };
 		FB20130A208B786000549076 /* PresentationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresentationViewController.xib; sourceTree = "<group>"; };
 		FB29323E207A64DE00223747 /* UICollectionView + OrderedCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + OrderedCells.swift"; sourceTree = "<group>"; };
+		FB3B671E20DDA3FC00241269 /* CGRect + KeyPaths.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect + KeyPaths.swift"; sourceTree = "<group>"; };
 		FB756F352078D3ED00C40C0A /* ReusableCells.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableCells.swift; sourceTree = "<group>"; };
 		FB756F362078D3ED00C40C0A /* NibLoadbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadbleView.swift; sourceTree = "<group>"; };
 		FB756F452078D42200C40C0A /* iOSIconImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iOSIconImageView.swift; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 				FB756F5F2078D48100C40C0A /* NSLayoutConstraint + Multiplier.swift */,
 				FB756F602078D48100C40C0A /* UIWindow + SafeArea.swift */,
 				FB29323E207A64DE00223747 /* UICollectionView + OrderedCells.swift */,
+				FB3B671E20DDA3FC00241269 /* CGRect + KeyPaths.swift */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 				FBF4F1E420C9729200737BD2 /* TodayCollectionViewController.swift in Sources */,
 				FBDEF60020D9B96400987BB7 /* Constrainable.swift in Sources */,
 				FBDEF5FF20D9B96400987BB7 /* Abstraction.swift in Sources */,
+				FB3B671F20DDA3FC00241269 /* CGRect + KeyPaths.swift in Sources */,
 				FB756F472078D42300C40C0A /* iOSIconImageView.swift in Sources */,
 				FB756F482078D42300C40C0A /* RoundCornersButton.swift in Sources */,
 				FBDEF60120D9B96400987BB7 /* Constraints.swift in Sources */,

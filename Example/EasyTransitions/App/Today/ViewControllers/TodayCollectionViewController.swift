@@ -110,11 +110,11 @@ class TodayCollectionViewController: UICollectionViewController {
             }
         }
         
-        appStoreAnimator.auxAnimationsFor = {
-            let presenting = $0 == .present
-            detailViewController.layout(presenting: presenting)
-            blurEffectView.effect = presenting ? blurEffect : nil
-        }
+        appStoreAnimator.auxAnimation = (animationBlock: {
+                let presenting = $0 == .present
+                detailViewController.layout(presenting: presenting)
+                blurEffectView.effect = presenting ? blurEffect : nil
+        }, delayOffset: 0.1)
     
         modalTransitionDelegate.set(animator: appStoreAnimator, for: .present)
         modalTransitionDelegate.set(animator: appStoreAnimator, for: .dismiss)

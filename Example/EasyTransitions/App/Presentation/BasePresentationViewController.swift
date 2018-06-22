@@ -44,12 +44,12 @@ class BasePresentationViewController: UIViewController {
         view.addSubview(shadowView)
         
         // Aux for different animators? 
-        presentAnimator.auxAnimationsFor = {
+        presentAnimator.auxAnimation = (animationBlock: {
             let presenting = $0 == .present
             controller.animations(presenting: presenting)
             let shadowAlpha: CGFloat = presenting ? 1.0 : 0.0
             shadowView.alpha = shadowAlpha
-        }
+        }, delayOffset: 0)
         
         presentAnimator.onFinish = {
             if $0 == .dismiss { shadowView.removeFromSuperview() }

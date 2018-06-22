@@ -7,4 +7,5 @@
 
 import Foundation
 
-public typealias AuxAnimation = (block: () -> Void, delayOffset: Double)
+//public typealias AuxAnimation = (block: () -> Void, delayOffset: Double)
+public typealias AuxAnimation = (animationBlock: (ModalOperation) -> Void, delayOffset: CGFloat)
