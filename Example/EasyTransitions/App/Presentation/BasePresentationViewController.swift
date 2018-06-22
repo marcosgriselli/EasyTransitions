@@ -29,7 +29,10 @@ class BasePresentationViewController: UIViewController {
     
     @objc func run() {
         let controller = PresentationViewController()
-        let presentationController = P(presentedViewController: controller, presenting: self)
+        let presentationController = FramePresentationController(
+            presentedViewController: controller,
+            presenting: self
+        )
         modalTransitionDelegate.set(presentationController: presentationController)
 
         let presentAnimator = PresentAnimator(finalFrame: presentationController.frameOfPresentedViewInContainerView)
@@ -53,7 +56,7 @@ class BasePresentationViewController: UIViewController {
         }
         
         modalTransitionDelegate.set(animator: presentAnimator, for: .present)
-        modalTransitionDelegate.set(animator: BAnimator(), for: .dismiss)
+        modalTransitionDelegate.set(animator: presentAnimator, for: .dismiss)
         modalTransitionDelegate.wire(viewController: controller,
                                      with: .regular(.fromTop))
         

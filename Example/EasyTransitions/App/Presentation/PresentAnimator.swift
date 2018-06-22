@@ -9,15 +9,6 @@
 import UIKit
 import EasyTransitions
 
-class BAnimator: BaseAnimator {
-    override func animateDismiss(modalView: UIView, in container: UIView) -> UIViewPropertyAnimator {
-        return UIViewPropertyAnimator(duration: duration, curve: .easeIn) {
-            modalView.frame = modalView.frame.offsetBy(dx: container.frame.width,
-                                                       dy: 0)
-        }
-    }
-}
-
 class PresentAnimator: BaseAnimator {
     
     private var finalFrame: CGRect

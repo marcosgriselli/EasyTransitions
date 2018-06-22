@@ -8,7 +8,7 @@
 
 import UIKit
 
-class P: UIPresentationController {
+class FramePresentationController: UIPresentationController {
     override var frameOfPresentedViewInContainerView: CGRect {
         return CGRect(x: 10,
                       y: presentingViewController.view.bounds.height - 380,
