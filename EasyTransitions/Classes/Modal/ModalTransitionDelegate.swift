@@ -16,11 +16,10 @@ open class ModalTransitionDelegate: NSObject {
     
     open func wire(viewController: UIViewController,
                    with pan: Pan,
+                   navigationAction: @escaping () -> Void,
                    beginWhen: @escaping (() -> Bool) = { return true }) {
         interactiveController.wireTo(viewController: viewController, with: pan)
-        interactiveController.navigationAction = {
-            viewController.dismiss(animated: true, completion: nil)
-        }
+        interactiveController.navigationAction = navigationAction
         interactiveController.shouldBeginTransition = beginWhen
     }
 
@@ -53,11 +52,15 @@ extension ModalTransitionDelegate: UIViewControllerTransitioningDelegate {
         return configurator(for: .dismiss)
     }
     
+    open func interactionControllerForPresentation(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+        return interactiveController.interactionInProgress ? interactiveController : nil
+    }
+    
     open func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
         return interactiveController.interactionInProgress ? interactiveController : nil
     }
     
-    public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+    open func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
         return presentationController
     }
 }

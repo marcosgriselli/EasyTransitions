@@ -102,8 +102,12 @@ class TodayCollectionViewController: UICollectionViewController {
     
         modalTransitionDelegate.set(animator: appStoreAnimator, for: .present)
         modalTransitionDelegate.set(animator: appStoreAnimator, for: .dismiss)
-        modalTransitionDelegate.wire(viewController: detailViewController,
-                                     with: .regular(.fromTop))
+        modalTransitionDelegate.wire(
+            viewController: detailViewController,
+            with: .regular(.fromTop),
+            navigationAction: {
+                detailViewController.dismiss(animated: true, completion: nil)       
+        })
         
         detailViewController.transitioningDelegate = modalTransitionDelegate
         detailViewController.modalPresentationStyle = .custom

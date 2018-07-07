@@ -42,7 +42,8 @@ Designs from [Meng To](https://twitter.com/mengto)'s [Design+Code](https://desig
 ```swift 
 public protocol ModalTransitionAnimator {
     var duration: TimeInterval { get }
-    var onDismissed: () -> Void { get set }
+    var onDismissed: (() -> Void)? { get set }
+    var onPresented: (() -> Void)? { get set }
     func layout(presenting: Bool,
                 modalView: UIView,
                 in container: UIView)

@@ -15,6 +15,7 @@ open class PresentationControllerAnimator: ModalTransitionAnimator {
     private var shadowView = UIView()
     public var auxAnimation: ((Bool) -> Void)?
     public var onDismissed: (() -> Void)?
+    public var onPresented: (() -> Void)?
 
     // TODO: Add configuration.
     public init(finalFrame: CGRect) {

@@ -26,6 +26,7 @@ public class AppStoreAnimator: ModalTransitionAnimator {
 
     public var onReady: () -> Void = {}
     public var onDismissed: (() -> Void)? = .none
+    public var onPresented: (() -> Void)? = .none
 
     public init(initialFrame: CGRect) {
         self.initialFrame = initialFrame

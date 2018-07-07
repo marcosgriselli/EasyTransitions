@@ -50,4 +50,12 @@ class PresentationViewController: UIViewController {
         imageView.transform = layout.transform
         imageView.alpha = layout.alpha
     }
+    
+    @IBAction func closeTapped(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+
+    @IBAction func connectTapped(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
 }

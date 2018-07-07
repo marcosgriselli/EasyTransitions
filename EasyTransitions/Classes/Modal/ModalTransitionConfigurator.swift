@@ -52,10 +52,12 @@ internal final class ModalTransitionConfigurator: NSObject, UIViewControllerAnim
         animator.addCompletion { position in
             switch position {
             case .end:
-                if !isPresenting {
+                transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
+                if isPresenting {
+                    self.transitionAnimator.onPresented?()
+                } else {
                     self.transitionAnimator.onDismissed?()
                 }
-                transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
             default:
                 self.transitionAnimator.animate(presenting: !isPresenting,
                                                 modalView: modalView,

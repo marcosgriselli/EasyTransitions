@@ -11,8 +11,6 @@ import EasyTransitions
 
 class BasePresentationViewController: UIViewController {
     
-    let modalTransitionDelegate = ModalTransitionDelegate()
-    
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
@@ -22,26 +20,38 @@ class BasePresentationViewController: UIViewController {
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 375, height: 812))
         imageView.image = UIImage(named: "home")
         view.addSubview(imageView)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-            self.run()
-        }
+        
+        /// Swipe from the bottom to trigger transition.
+        prepareInteractivePresentation()
     }
     
-    @objc func run() {
+    func prepareInteractivePresentation() {
+        let modalTransitionDelegate = ModalTransitionDelegate()
         let controller = PresentationViewController()
         let presentationController = P(presentedViewController: controller, presenting: self)
         modalTransitionDelegate.set(presentationController: presentationController)
-
+        
         let presentAnimator = PresentationControllerAnimator(finalFrame: presentationController.frameOfPresentedViewInContainerView)
         presentAnimator.auxAnimation = { controller.animations(presenting: $0) }
         modalTransitionDelegate.set(animator: presentAnimator, for: .present)
         modalTransitionDelegate.set(animator: presentAnimator, for: .dismiss)
-        modalTransitionDelegate.wire(viewController: controller,
-                                     with: .regular(.fromTop))
         
+        modalTransitionDelegate.wire(
+            viewController: self,
+            with: .regular(.fromBottom),
+            navigationAction: { self.present(controller, animated: true, completion: nil) }
+        )
+        
+        presentAnimator.onDismissed = prepareInteractivePresentation
+        presentAnimator.onPresented = {
+            modalTransitionDelegate.wire(
+                viewController: controller,
+                with: .regular(.fromTop),
+                navigationAction: {
+                    controller.dismiss(animated: true, completion: nil)
+            })
+        }
         controller.transitioningDelegate = modalTransitionDelegate
         controller.modalPresentationStyle = .custom
-        
-        present(controller, animated: true, completion: nil)
     }
 }
