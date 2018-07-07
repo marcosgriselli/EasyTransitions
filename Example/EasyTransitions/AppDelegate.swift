@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         
         // Modal
-//        window?.rootViewController = TodayCollectionViewController()
+        window?.rootViewController = TodayCollectionViewController()
         
         // Navigation
 //        let navigation = UINavigationController(rootViewController: GalleryTableViewController())
@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        window?.rootViewController = navigation
         
         // Presentation
-        window?.rootViewController = BasePresentationViewController()
+//        window?.rootViewController = BasePresentationViewController()
         window?.makeKeyAndVisible()
         return true
     }
