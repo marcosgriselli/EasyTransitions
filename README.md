@@ -134,38 +134,42 @@ func showDetailViewController() {
 
 Marcos Griselli | <a href="url"><img src="https://cdn.rawgit.com/marcosgriselli/ViewAnimator/cf065e96/Resources/twitterLogo.svg" height="17"></a> [@marcosgriselli](https://twitter.com/marcosgriselli)
 
-
 [![Twitter Follow](https://img.shields.io/twitter/follow/marcosgriselli.svg?style=social)](https://twitter.com/marcosgriselli)
 
+[![GitHub Follow](https://img.shields.io/github/followers/marcosgriselli.svg?style=social&label=Follow)](https://github.com/marcosgriselli)
+
 ### Contributors
-<a href="https://twitter.com/dev_jac"><img src="Assets/julio.png" width="60"></a>
-<a href="https://twitter.com/santzdesign"><img src="Assets/santiago.png" width="60"></a>
+[![](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/EasyTransitions/images/0)](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/EasyTransitions/links/0)[![](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/EasyTransitions/images/1)](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/EasyTransitions/links/1)[![](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/EasyTransitions/images/2)](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/EasyTransitions/links/2)[![](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/EasyTransitions/images/3)](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/EasyTransitions/links/3)[![](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/EasyTransitions/images/4)](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/EasyTransitions/links/4)[![](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/EasyTransitions/images/5)](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/EasyTransitions/links/5)[![](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/EasyTransitions/images/6)](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/EasyTransitions/links/6)[![](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/EasyTransitions/images/7)](https://sourcerer.io/fame/marcosgriselli/marcosgriselli/EasyTransitions/links/7)
 
 
 ### Contributing
-Feel free to collaborate with ideas 💭, issues ⁉️ and/or pull requests 🔃.
-
-If you use ViewAnimator in your app I'd love to hear about it and feature your animation here!
+This is an open source project, so feel free to contribute. How?
+- Open an [issue](https://github.com/marcosgriselli/EasyTransitions/issues/new).
+- Send feedback via [twitter](https://twitter.com/marcosgriselli).
+- Propose your own fixes, suggestions and open a pull request with the changes.
 
 ### License
 
-> Copyright (c) 2018 Marcos Griselli
+```
+MIT License
 
-> Permission is hereby granted, free of charge, to any person obtaining a copy
+Copyright (c) 2018 Marcos Griselli
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
-> The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
