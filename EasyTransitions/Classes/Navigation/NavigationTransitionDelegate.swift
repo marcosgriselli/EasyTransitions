@@ -10,7 +10,7 @@ import UIKit
 
 open class NavigationTransitionDelegate: NSObject {
 
-    private var animators = [UINavigationControllerOperation: NavigationTransitionAnimator]()
+    private var animators = [UINavigationController.Operation: NavigationTransitionAnimator]()
     private let interactiveController = TransitionInteractiveController()
     
     open func wire(viewController: UIViewController,
@@ -24,18 +24,18 @@ open class NavigationTransitionDelegate: NSObject {
     }
     
     open func set(animator: NavigationTransitionAnimator,
-                  for operation: UINavigationControllerOperation) {
+                  for operation: UINavigationController.Operation) {
         animators[operation] = animator
     }
 
-    open func removeAnimator(for operation: UINavigationControllerOperation) {
+    open func removeAnimator(for operation: UINavigationController.Operation) {
         animators.removeValue(forKey: operation)
     }
 }
 
 extension NavigationTransitionDelegate: UINavigationControllerDelegate {
     
-    open func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationControllerOperation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    open func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         guard let animator = animators[operation] else {
             return nil
         }

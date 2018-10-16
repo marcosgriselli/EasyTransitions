@@ -42,7 +42,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let cellFrame = view.convert(cell.poster.focusedFrameGuide.layoutFrame, from: cell)
 
         //We would like the blur to match the current tvOS theme
-        let blurEffectStyle: UIBlurEffectStyle = traitCollection.userInterfaceStyle == .light ? .light : .extraDark
+        let blurEffectStyle: UIBlurEffect.Style = traitCollection.userInterfaceStyle == .light ? .light : .extraDark
 
         appStoreAnimator = AppStoreAnimator(initialFrame: cellFrame, blurEffectStyle: blurEffectStyle)
         appStoreAnimator.onReady = { cell.isHidden = true }//To improve the ilussion that the cell is moving and not that a new VC is taking it's place.

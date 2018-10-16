@@ -23,7 +23,7 @@ class MoviePosterCell: UICollectionViewCell {
     //This is to keep focused cells from being stuck behind it's siblins
     override func didUpdateFocus(in context: UIFocusUpdateContext, with coordinator: UIFocusAnimationCoordinator) {
         if let cell = context.nextFocusedView as? UICollectionViewCell {
-            cell.superview?.bringSubview(toFront: cell);
+            cell.superview?.bringSubviewToFront(cell);
         }
     }
 }

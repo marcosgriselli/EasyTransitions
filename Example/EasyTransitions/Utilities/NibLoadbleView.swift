@@ -34,7 +34,7 @@ public extension NibOwnerLoadable where Self: UIView {
      Adds content loaded from the nib to the end of the receiver's list of subviews and adds constraints automatically.
      */
     func loadNibContent() {
-        let layoutAttributes: [NSLayoutAttribute] = [.top, .leading, .bottom, .trailing]
+        let layoutAttributes: [NSLayoutConstraint.Attribute] = [.top, .leading, .bottom, .trailing]
         for view in Self.nib.instantiate(withOwner: self, options: nil) {
             if let view = view as? UIView {
                 view.backgroundColor = UIColor.clear
