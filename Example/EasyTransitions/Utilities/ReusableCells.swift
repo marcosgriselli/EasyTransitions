@@ -68,7 +68,7 @@ extension UICollectionView {
     
     func registerHeader<T: UICollectionReusableView>(_: T.Type) where T: ReusableView {
         register(T.self,
-                 forSupplementaryViewOfKind: UICollectionElementKindSectionHeader,
+                 forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                  withReuseIdentifier: T.defaultReuseIdentifier)
     }
     
@@ -80,7 +80,7 @@ extension UICollectionView {
     }
     
     func dequeueReusableHeader<T: UICollectionReusableView>(forIndexPath indexPath: IndexPath) -> T where T: ReusableView {
-        guard let view = dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader,
+        guard let view = dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader,
                                                           withReuseIdentifier: T.defaultReuseIdentifier,
                                                           for: indexPath) as? T else {
                                                             fatalError("Could not dequeue view with identifier: \(T.defaultReuseIdentifier)")

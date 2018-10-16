@@ -60,7 +60,7 @@ public final class CardView: UIView, NibOwnerLoadable {
         let attributedString = NSMutableAttributedString(string: title)
         let paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineHeightMultiple = 0.8
-        attributedString.addAttribute(NSAttributedStringKey.paragraphStyle,
+        attributedString.addAttribute(NSAttributedString.Key.paragraphStyle,
                                       value: paragraphStyle,
                                       range: NSMakeRange(0, attributedString.length))
         titleLabel.attributedText = attributedString
