@@ -106,14 +106,17 @@ There's an example on `TodayCollectionViewController` but there should't be many
 
 ```swift 
 class MainViewController: UIViewController {
-var transitionDelegate = ModalTransitionDelegate()
+var modalTransitionDelegate = ModalTransitionDelegate()
 
 func showDetailViewController() {
 	let detailController = DetailViewController()
 	let animator = MyAnimator() // ModalTransitionAnimator
 	modalTransitionDelegate.set(animator: animator)
 	modalTransitionDelegate.wire(viewController: detailController,
-                            	  with: .regular(.fromTop))
+                            	  with: .regular(.fromTop),
+				  navigationAction: {
+                detailController.dismiss(animated: true, completion: nil) 
+	})
         
 	detailController.transitioningDelegate = modalTransitionDelegate
 	detailController.modalPresentationStyle = .custom
