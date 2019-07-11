@@ -14,5 +14,6 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '10.0'
     s.tvos.deployment_target = '10.0'
     s.source_files = 'EasyTransitions/Classes/**/*'
-    s.swift_version = '4.2'
+    s.swift_version = '5.1'
+    s.swift_versions = ['4.0', '4.2', '5.0', '5.1']
 end

@@ -38,8 +38,8 @@ public final class NavigationTransitionConfigurator: NSObject, UIViewControllerA
         }
 
         var isPush = false
-        if let toIndex = toViewController.navigationController?.viewControllers.index(of: toViewController),
-            let fromIndex = fromViewController.navigationController?.viewControllers.index(of: fromViewController) {
+        if let toIndex = toViewController.navigationController?.viewControllers.firstIndex(of: toViewController),
+            let fromIndex = fromViewController.navigationController?.viewControllers.firstIndex(of: fromViewController) {
             isPush = toIndex > fromIndex
         }
         
