@@ -8,9 +8,9 @@
 
 import UIKit
 
-fileprivate extension CGAffineTransform {
+private extension CGAffineTransform {
     
-    fileprivate static var image: CGAffineTransform {
+    static var image: CGAffineTransform {
         return CGAffineTransform(translationX: 0, y: 50.0)
             .concatenating(.init(scaleX: 0.8, y: 0.8))
     }

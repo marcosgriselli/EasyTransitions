@@ -10,7 +10,7 @@ import Foundation
 
 public extension Array {
 
-    public func enumeratedMap<T>(_ transform: (Int, Element) -> T) -> [T] {
+    func enumeratedMap<T>(_ transform: (Int, Element) -> T) -> [T] {
         var result: [T] = []
         result.reserveCapacity(count)
         for (index, element) in self.enumerated() {
