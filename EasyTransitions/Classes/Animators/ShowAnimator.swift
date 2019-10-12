@@ -37,7 +37,7 @@ open class ShowAnimator: NavigationTransitionAnimator {
         if presenting {
             let fromFrame = fromView.frame
             toView.frame = fromFrame
-            fromView.frame.offsetBy(dx: -fromFrame.size.width * 0.3, dy: 0)
+            fromView.frame = fromView.frame.offsetBy(dx: -fromFrame.size.width * 0.3, dy: 0)
         } else {
             let fromFrame = fromView.frame
             fromView.frame = fromFrame.offsetBy(dx: fromFrame.size.width,

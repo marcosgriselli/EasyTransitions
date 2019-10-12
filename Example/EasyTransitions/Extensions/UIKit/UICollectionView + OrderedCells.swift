@@ -13,7 +13,7 @@ public extension UICollectionView {
         return indexPath(for: cell)?.item ?? -1
     }
     
-    public var orderedVisibleCells: [UICollectionViewCell] {
+    var orderedVisibleCells: [UICollectionViewCell] {
         let items = visibleCells
         return items.sorted(by: { indexPathFor(cell: $1) > indexPathFor(cell: $0) })
     }
