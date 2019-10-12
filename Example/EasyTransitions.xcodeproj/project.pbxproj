@@ -701,7 +701,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EasyTransitions_Example/Pods-EasyTransitions_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-EasyTransitions_Example/Pods-EasyTransitions_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/EasyTransitions-iOS/EasyTransitions.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -710,7 +710,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyTransitions_Example/Pods-EasyTransitions_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyTransitions_Example/Pods-EasyTransitions_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		409F135E94EA41F44EDDFCBD /* [CP] Check Pods Manifest.lock */ = {
@@ -737,7 +737,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-EasyTransitionTVOS/Pods-EasyTransitionTVOS-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-EasyTransitionTVOS/Pods-EasyTransitionTVOS-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/EasyTransitions-tvOS/EasyTransitions.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -746,7 +746,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyTransitionTVOS/Pods-EasyTransitionTVOS-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyTransitionTVOS/Pods-EasyTransitionTVOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
